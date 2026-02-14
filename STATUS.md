@@ -30,6 +30,7 @@
 - `src/collectors/page_finder.py` — Phase 2 discovery using Wikidata + Playwright
 - **Phase 2 complete**: 60/60 homepages found (Wikidata), 51/60 waste pages found (Playwright)
 - Dependencies added: `duckduckgo-search`, `beautifulsoup4`, `googlesearch-python` (tested but unused — Wikidata was better)
+- Removed unused Google CSE config from `.env.example`
 
 ### In Progress
 
@@ -45,4 +46,4 @@
 
 ### Last Updated
 
-2026-02-15 — Phase 2 complete, 51/60 waste pages discovered
+2026-02-15 — Phase 2 complete, 51/60 waste pages discovered, cleanup and initial commit
