@@ -31,6 +31,9 @@
 - **Phase 2 complete**: 60/60 homepages found (Wikidata), 51/60 waste pages found (Playwright)
 - Dependencies added: `duckduckgo-search`, `beautifulsoup4`, `googlesearch-python` (tested but unused — Wikidata was better)
 - Removed unused Google CSE config from `.env.example`
+- Added `requirements.txt` with direct dependencies
+- Removed PyCharm boilerplate `main.py`
+- Repo made public on GitHub
 
 ### In Progress
 
@@ -38,12 +41,10 @@
 
 ### Blocked / Open Questions
 
-- No `requirements.txt` or `pyproject.toml` yet — need to decide on dependency management
 - Gemini Pro API key not yet configured — needed for Phase 4 extraction
-- `main.py` is still PyCharm placeholder — no real entry point yet
 - 9 cities missing waste page URLs (homepage links not found by Playwright — likely JS-rendered navigation):
   佐倉市, 旭市, 市原市, 四街道市, 匝瑳市, いすみ市, 酒々井町, 多古町, 長南町
 
 ### Last Updated
 
-2026-02-15 — Phase 2 complete, 51/60 waste pages discovered, cleanup and initial commit
+2026-02-15 — Cleanup for public release, requirements.txt added
