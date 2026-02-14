@@ -1,0 +1,228 @@
+検索API仕様
+​
+説明
+​
+
+検索APIでは、特定のデータセットに含まれるデータや、指定した範囲、日付など、様々な条件を設定してデータを検索、取得することできます。
+また検索条件の設定はAND/OR条件を組み合わせて行うことが可能です。
+
+検索条件に利用できるメタデータの一覧は カタログ情報取得APIdataCatalogで取得できます。
+
+
+検索結果の数が多い場合はページング処理を行うことが可能です。一度に取得できるデータの数は最大10,000件までとなります。
+
+GraphQL定義
+​
+
+GraphQLの定義を以下に示します。
+
+GraphQL
+type Query {
+  search(
+    term: Any
+    phraseMatch: Boolean
+    first: Int!
+    size: Int
+    sortAttributeName: String
+    sortOrder: String
+    locationFilter: LocationFilterInputType
+    attributeFilter: AttributeFilterInputType
+  ): SearchResultClass
+}
+パラメータ
+​
+
+各パラメーターの詳細を以下に示します。
+
+引数名	タイプ	説明
+term	String	検索キーワード。キーワード検索対象属性にキーワード、またはその同意語が含まれているデータを検索します。
+空の文字列を記載した場合は全データattributeFilterとlocationFilterで指定した検索条件でデータを検索します。
+phraseMatch	Boolean	trueにすることでキーワードが完全一致したデータのみを検索します。
+初期値：false
+first	Int	必須 全検索結果から何件目から取得するかを指定します。
+size	Int	データの取得件数を指定します。
+初期値：100
+sortAttributeName	String	検索結果の並べ替えに利用する属性名を指定します。指定しない場合は検索アルゴリズムによる類似性の順で並べ替えした結果になります。
+sortOrder	String	並べ替えの方法を指定します。以下の値が利用できます。
+asc：昇順
+dsc：降順
+locationFilter	LocationFilterInputType	空間検索を行います。
+locationFilterのみでは検索を行うことができません。termまたはattributeFilterに他の検索条件を記載する必要があります。
+attributeFilter	AttributeFilterInputType	メタデータを条件にして検索を行います。
+LocationFilterInputType
+​
+
+LocationFilterInputTypeは空間検索の条件として以下のオブジェクトで構成されます。
+
+
+rectangle
+緯度・経度の矩形範囲と交差するポイント・ライン・ポリゴンデータの検索
+geoDistance
+指定した緯度経度と半径によって作成される円形範囲と交差するポイント・ライン・ポリゴンデータの検索
+
+上記のパラメータを複数同時に使用する場合、すべての条件を満たすデータを検索します。
+
+LocationFilterInputType
+rectangle: RectangleInputType
+geoDistance: GeodistanceInputType
+union: [LocationFilterInputType]
+intersection: [LocationFilterInputType]
+RectangleInputType
+topLeft: LatLonPointInputType
+bottomRight: LatLonPointInputType
+GeodistanceInputType
+lat: Float
+lon: Float
+distance: Float
+LatLonPointInputType
+lat: Float
+lon: Float
+
+GraphQLの定義を以下に記載します。
+なお、unionとintersectionについては、同クラス内のその他メンバーとの同時利用ができません。
+また、unionとintersectionを条件に含む場合、その条件下に新たにunionとintersectionを含めることはできません(入れ子条件は利用不可)。
+
+GraphQL
+input LocationFilterInputType {
+  rectangle: RectangleInputType
+  geoDistance: GeodistanceInputType
+  union: [LocationFilterInputType]
+  intersection: [LocationFilterInputType]
+}
+メンバー名	タイプ	定義
+rectangle	RectangleInputType	空間検索に利用する矩形の情報
+geoDistance	GeodistanceInputType	空間検索に利用する円形の情報
+union	[LocationFilterInputType]	空間検索に利用するLocationFilterInputTypeの配列
+intersection	[LocationFilterInputType]	空間検索に利用するLocationFilterInputTypeの配列
+rectangle
+​
+
+rectangleを使用して検索する場合、以下のように設定します。
+
+GraphQL
+input RectangleInputType {
+  topLeft: LatLonPointInputType
+  bottomRight: LatLonPointInputType
+}
+メンバー名	タイプ	定義
+topLeft	LatLonPointInputType	矩形の北西端の位置座標
+bottomRight	LatLonPointInputType	矩形の南東端の位置座標
+GraphQL
+input LatLonPointInputType {
+  lat: Float
+  lon: Float
+}
+メンバー名	タイプ	定義
+lat	Float	位置座標の緯度（十進数表記、度単位）
+lon	Float	位置座標の経度（十進数表記、度単位）
+geoDistance
+​
+
+geoDistanceを使用して検索する場合、以下のように設定します。
+
+GraphQL
+input GeodistanceInputType {
+  lat: Float
+  lon: Float
+  distance: Float
+}
+メンバー名	タイプ	定義
+lat	Float	円形の中心の緯度（十進数表記、度単位）
+lon	Float	円形の中心の経度（十進数表記、度単位）
+distance	Float	円形の半径（メートル単位）
+union
+​
+
+unionを使用して検索する場合、LocationFilterInputTypeの配列を用います。 複数の矩形(rectangle)・円形(geoDistance)をOR条件で結合した領域を検索条件とします。
+
+intersection
+​
+
+intersectionを使用して検索する場合、LocationFilterInputTypeの配列を用います。 複数の矩形(rectangle)・円形(geoDistance)のAND条件の領域を検索条件とします。
+
+AttributeFilterInputType
+​
+
+AttributeFilterInputType は検索条件にメタデータを指定するために利用します。
+検索に利用するメタデータの項目名をattributeNameに記載し、is,similar,gte,gt,lte,ltのいずれかに属性に対する検索条件を記載します。
+AND/OR条件により複数の条件を組み合わせる場合は AND または OR のメンバーを利用し配列型で組み合わせることができます。
+
+GraphQLの定義を以下に記載します。
+
+GraphQL
+input AttributeFilterInputType {
+  attributeName: String
+  is: Any
+  similar: String
+  gte: Any
+  gt: Any
+  lte: Any
+  lt: Any
+  AND: [AttributeFilterInputType]
+  OR: [AttributeFilterInputType]
+}
+メンバー名	タイプ	定義
+attributeName	String	検索条件を設定する属性名を記載します。例：DPF:titleを指定することでデータのタイトルに対して検索条件を組むことができます。
+is	Any	指定した値で属性が完全一致した結果に絞ります。similarと同時に使用することはできません。
+similar	String	指定した値で属性が曖昧に一致した結果に絞ります。isと同時に使用することはできません。
+このフィルタは文字列型の属性にのみ利用できます。
+gte	Any	属性が指定した値以上の結果に絞ります。
+gt	Any	属性が指定した値より大きい結果に絞ります。
+lte	Any	属性が指定した値以下の結果に絞ります。
+lt	Any	属性が指定した値より小さい結果に絞ります。
+AND	[AttributeFilterInputType]	子の attributeFilter オブジェクトの配列で、配列に含まれるすべての条件を満たした結果に絞ります。
+ANDを利用する場合は他のメンバーが無視されます。ANDとORを同時に使用した場合はANDが優先されます。
+OR	[AttributeFilterInputType]	子の attributeFilter オブジェクトの配列で、配列に含まれる1つ以上の条件を満たした結果に絞ります。
+ORを利用する場合は他のメンバーが無視されます。ANDとORを同時に使用した場合はANDが優先されます。
+結果
+​
+
+検索APIの結果としてSearchResultClassが返されます。 検索条件に合致した件数を取得するにはtotalNumberを指定してください。 データのメタデータはsearchResultsから取得することができます。例えばデータのIDとタイトル情報を取得する場合はsearchResultsにidとtitleを指定してください。
+
+例：
+
+リクエスト内容：
+
+GraphQL
+query {
+  search(term:"橋梁", phraseMatch:true, first:0, size:5) {
+    totalNumber
+    searchResults {
+      id
+      title
+    }
+  }
+}
+
+レスポンス結果：
+
+JSON
+{
+  "data": {
+    "search": {
+      "totalNumber": 10000,
+      "searchResults": [
+        {
+          "id": "6a036a82-27be-4a18-a79d-463b5b6a6fca",
+          "title": "滝の平橋"
+        },
+        {
+          "id": "9f7be6bd-1947-481e-9468-9e13ee31ff5b",
+          "title": "ブリッジ"
+        },
+        {
+          "id": "13b1d620-097d-4909-ba4b-4352fe5024a3",
+          "title": "ブリッジ"
+        },
+        {
+          "id": "66ed9f96-8ad9-46f8-ad5f-aa64a4cd88ec",
+          "title": "橋北公民館"
+        },
+        {
+          "id": "5307df79-cdb0-46ed-981e-da595f7f4014",
+          "title": "橋南公民館"
+        }
+      ]
+    }
+  }
+}

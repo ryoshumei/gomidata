@@ -1,0 +1,130 @@
+APIアクセス方法
+​
+利用登録がお済みでない方
+​
+
+APIの使用には国土交通DPFのアカウント登録、APIキーの取得が必要です。
+詳しくはAPI利用方法をご確認ください。
+
+
+アクセス概要
+​
+
+国土交通DPFのAPIではGraphQL形式を採用しています。 GraphQLによるクエリーをPOST メソッドで送信することで情報を取得することが可能です。 リクエストの作成にはクラス構造の理解が必要となります。クラス構造の詳細はクラス構成図をご参照ください。
+また、具体的なリクエスト内容の例についてはチュートリアルをご参照ください。
+
+アクセス方法
+​
+
+APIリクエストを送信するエンドポイントや利用可能なHTTPメソッド、レスポンス形式は次の表のとおりです。
+
+項目	値
+エンドポイント	https://data-platform.mlit.go.jp/api/v1/
+利用可能なHTTPメソッド	POST
+レスポンス形式	JSON
+
+POSTメソッドでサーバーに送信する情報はGraphQLで作成したJSON形式のデータです。
+
+json
+{
+  "query": "GraphQLクエリー内容"
+}
+
+例：
+
+json
+{
+  "query": "{ search(term:\"橋梁\", first:0) { totalNumber \n searchResults { title } } }"
+}
+
+GraphQLのクエリー内容の詳細ついては各クエリーの説明をご参照ください。
+
+APIの認証
+​
+
+取得したAPIキーをリクエストヘッダーのapikeyに設定し、リクエストを送信します。 リクエストヘッダーの例を以下に示します。
+
+ヘッダーの例：
+
+yaml
+POST /api/v1/ HTTP/1.1
+Accept: application/json
+Accept-Language: ja,en-US;q=0.7,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+apikey: [your api key]
+
+APIキーを指定しない場合、または存在しないキーを指定した場合はステータス401（Unauthorized）が返されます。
+また、リクエストがWAF(Web Application Firewall)にブロックされる可能性があります。
+
+リクエストの例
+​
+APIキーを正しく設定した場合
+​
+
+正しくAPIキーを設定したリクエストの例を以下に示します。
+
+bash
+curl -X POST -H "Content-Type: application/json" \
+    -H "apikey: [your api key]" \
+    -d "{\"query\": \"{ search(term:\\\"橋梁\\\", first:0) { totalNumber } }\" }" \
+    -i https://data-platform.mlit.go.jp/api/v1/
+
+APIキーを正しく設定した場合、次のようなレスポンスが返されます。
+
+bash
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 27 Jul 2023 12:21:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 41
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"29-PV7PKvhdj8U3HucR/PkvX9bJZ+o"
+Content-Security-Policy: frame-ancestors 'self';
+
+{"data":{"search":{"totalNumber":10000}}}
+APIキーを設定しない場合
+​
+
+APIキーを設定せずにリクエストを送信する例を以下に示します。
+
+bash
+curl -X POST -H "Content-Type: application/json" \
+    -d "{\"query\": \"{ search(term:\\\"橋梁\\\", first:0) { totalNumber } }\" }" \
+    -i https://data-platform.mlit.go.jp/api/v1/
+
+APIキーを設定しない場合、次のようなレスポンスが返されます。
+
+bash
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Thu, 27 Jul 2023 12:20:32 GMT
+Content-Length: 0
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk"
+不正なAPIキーを設定した場合
+​
+
+誤ったAPIキーを設定した例を以下に示します。
+
+bash
+curl -X POST -H "Content-Type: application/json" \
+    -H "apikey: some_wrong_value" \
+    -d "{\"query\": \"{ search(term:\\\"橋梁\\\", first:0) { totalNumber } }\" }" \
+    -i https://data-platform.mlit.go.jp/api/v1/
+
+誤ったAPIキーを設定した場合、次のようなレスポンスが返されます。
+
+bash
+HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Thu, 27 Jul 2023 12:20:32 GMT
+Content-Length: 0
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk"

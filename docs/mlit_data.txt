@@ -1,0 +1,68 @@
+データ取得API仕様
+​
+説明
+​
+
+データを検索する際、検索結果が多いとデータ量が大きくなる場合があります。 データIDが既知の場合は 検索APIsearchよりデータ取得APIを利用する方がデータの内容を容易に取得することができます。
+
+GraphQL定義
+​
+
+GraphQLの定義を以下に示します。
+
+GraphQL
+type Query {
+  data(
+    dataSetID: String!
+    dataID: String!
+  ): GetDataResultClass
+}
+パラメータ
+​
+
+各パラメーターの詳細を以下に示します。
+
+引数名	タイプ	説明
+dataSetID	String	必須 データが含まれるデータセットのIDを指定します。
+dataID	String	必須 データのIDを指定します。データのIDは 検索APIsearchで取得したDataClassのidから取得可能です。
+結果
+​
+
+データ取得APIの結果としてGetDataResultClassが返されます。 指定したIDに一致するデータがない場合はtotalNumberが0になります。 取得するデータの内容はgetDataResultsを参照し取得します。
+
+例：
+
+リクエスト内容：
+
+GraphQL
+query {
+  data(
+    dataSetID: "cals_construction"
+    dataID: "d3ed9339-da75-4428-ad6b-9bb597c1c527"
+  ) {
+    totalNumber
+    getDataResults{
+      id
+      title
+    }
+  }
+}
+
+注意：この例で指定しているdataIDは国土交通DPFには実在していません。実在するdataIDを入力して下さい。
+
+レスポンス結果：
+
+JSON
+{
+  "data": {
+    "data": {
+      "totalNumber": 1,
+      "getDataResults": [
+        {
+          "id": "d3ed9339-da75-4428-ad6b-9bb597c1c527",
+          "title": "平成27年度筑後川水系(片ノ瀬右岸地区)河川維持工事"
+        }
+      ]
+    }
+  }
+}

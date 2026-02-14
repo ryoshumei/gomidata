@@ -1,0 +1,160 @@
+市区町村コード情報取得API仕様
+​
+説明
+​
+
+国土交通DPFで利用する市区町村コードとコードに対応する市区町村名の一覧を取得するAPIです。
+
+GraphQL定義
+​
+
+GraphQLの定義を以下に示します。
+
+GraphQL
+type Query {
+  municipalities(
+    muniCodes: [Any], 
+    prefCodes: [Any]
+  ): [MunicipalityClass]
+}
+パラメータ
+​
+
+各パラメーターの詳細を以下に示します。
+
+引数名	タイプ	説明
+muniCodes	Any	情報を取得する市区町村コードです。
+文字列または整数として設定します。
+prefCodes	Any	市区町村情報を取得する都道府県コードです。コードで指定した都道府県に含まれる市区町村情報を取得します。
+文字列または整数として設定します。
+
+muniCodesとprefCodesで情報の取得範囲を指定しない場合は全市区町村情報を取得します。
+
+結果
+​
+
+市区町村情報取得APIの結果としてMunicipalityClassの配列を返します。
+
+サンプル
+​
+
+例１：
+
+リクエスト内容：
+
+GraphQL
+query{
+  municipalities {
+    code
+    prefecture_code
+    name
+  }
+}
+
+レスポンス結果：
+
+JSON
+{
+  "data": {
+    "municipalities": [
+      {
+        "code_as_string": "011002",
+        "prefecture_code": 1,
+        "name": "札幌市"
+      },
+      {
+        "code_as_string": "011011",
+        "prefecture_code": 1,
+        "name": "札幌市中央区"
+      },
+      {
+        "code_as_string": "011029",
+        "prefecture_code": 1,
+        "name": "札幌市北区"
+      },
+      {
+        "code_as_string": "011037",
+        "prefecture_code": 1,
+        "name": "札幌市東区"
+      },
+      {
+        "code_as_string": "011045",
+        "prefecture_code": 1,
+        "name": "札幌市白石区"
+      },
+      // 省略...
+    ]
+  }
+}
+
+例２：
+
+リクエスト内容：
+
+GraphQL
+query{
+  municipalities(muniCodes:[11002,11011]) {
+    code
+    prefecture_code
+    name
+  }
+}
+
+レスポンス結果：
+
+JSON
+{
+  "data": {
+    "municipalities": [
+      {
+        "code": 11002,
+        "prefecture_code": 1,
+        "name": "札幌市"
+      },
+      {
+        "code": 11011,
+        "prefecture_code": 1,
+        "name": "札幌市中央区"
+      }
+    ]
+  }
+}
+
+例３：
+
+リクエスト内容：
+
+GraphQL
+query{
+  municipalities(prefCodes:["01"]) {
+    code
+    prefecture_code
+    name
+  }
+}
+
+レスポンス結果：
+
+JSON
+{
+  "data": {
+    "municipalities": [
+      {
+        "code": 11002,
+        "prefecture_code": 1,
+        "name": "札幌市"
+      },
+      {
+        "code": 11011,
+        "prefecture_code": 1,
+        "name": "札幌市中央区"
+      },
+      {
+        "code": 11029,
+        "prefecture_code": 1,
+        "name": "札幌市北区"
+      },
+      // 省略...
+    ]
+  }
+}

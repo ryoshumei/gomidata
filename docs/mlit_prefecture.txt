@@ -1,0 +1,75 @@
+都道府県コード情報取得API仕様
+​
+説明
+​
+
+国土交通DPFで利用する都道府県コードとコードに対応する都道府県名の一覧を取得するAPIです。
+
+GraphQL定義
+​
+
+GraphQLの定義を以下に示します。
+
+GraphQL
+type Query {
+  prefecture: [PrefectureClass]
+}
+パラメータ
+​
+
+本APIにパラメータはありません。全都道府県のデータを取得します。
+
+結果
+​
+
+都道府県情報取得APIの結果としてPrefectureClassの配列を返します。
+
+サンプル
+​
+
+例：
+
+リクエスト内容：
+
+GraphQL
+query {
+  prefecture {
+    code
+    name
+  }
+}
+
+レスポンス結果：
+
+JSON
+{
+  "data": {
+    "prefecture": [
+      {
+        "code": 1,
+        "name": "北海道"
+      },
+      {
+        "code": 2,
+        "name": "青森県"
+      },
+      {
+        "code": 3,
+        "name": "岩手県"
+      },
+      {
+        "code": 4,
+        "name": "宮城県"
+      },
+      {
+        "code": 5,
+        "name": "秋田県"
+      },
+      {
+        "code": 6,
+        "name": "山形県"
+      },
+      // 省略...
+    ]
+  }
+}
