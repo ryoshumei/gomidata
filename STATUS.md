@@ -7,7 +7,7 @@
 | Phase | Description | Status |
 |-------|-------------|--------|
 | 1 | City Database — collect Chiba municipalities | Done (60 cities) |
-| 2 | Waste Page Discovery — find schedule URLs | Done (51/60 found) |
+| 2 | Waste Page Discovery — find schedule URLs | Done (60/60 found) |
 | 3 | Download Sources — fetch HTML/PDFs | Not started |
 | 4 | Data Extraction — Gemini Pro extraction | Not started |
 | 5 | Validation — verify against Funabashi | Not started |
@@ -28,7 +28,8 @@
 - **Phase 1 complete**: 60 Chiba municipalities saved to `data/cities/chiba.json`
 - Project directory structure created (`src/collectors/`, `src/utils/`, `data/`)
 - `src/collectors/page_finder.py` — Phase 2 discovery using Wikidata + Playwright
-- **Phase 2 complete**: 60/60 homepages found (Wikidata), 51/60 waste pages found (Playwright)
+- **Phase 2 complete**: 60/60 homepages found (Wikidata), 60/60 waste pages found (Playwright + 2-level crawl)
+- Improved `find_waste_page`: networkidle wait, text normalization, 2-level crawl via くらし links
 - Dependencies added: `duckduckgo-search`, `beautifulsoup4`, `googlesearch-python` (tested but unused — Wikidata was better)
 - Removed unused Google CSE config from `.env.example`
 - Added `requirements.txt` with direct dependencies
@@ -42,9 +43,7 @@
 ### Blocked / Open Questions
 
 - Gemini Pro API key not yet configured — needed for Phase 4 extraction
-- 9 cities missing waste page URLs (homepage links not found by Playwright — likely JS-rendered navigation):
-  佐倉市, 旭市, 市原市, 四街道市, 匝瑳市, いすみ市, 酒々井町, 多古町, 長南町
 
 ### Last Updated
 
-2026-02-15 — Cleanup for public release, requirements.txt added
+2026-02-23 — Phase 2 fully complete: 60/60 waste pages found with improved 2-level crawler

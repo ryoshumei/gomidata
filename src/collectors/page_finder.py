@@ -116,8 +116,64 @@ def _match_homepage(city_name: str, wikidata: dict[str, str]) -> str | None:
     return None
 
 
+LIFE_KEYWORDS = ["くらし", "暮らし", "生活"]
+
+
+def _extract_links(page, base_url: str) -> tuple[list[dict], list[dict]]:
+    """Extract waste links and life-category links from a page.
+
+    Returns (waste_links, life_links).
+    """
+    links = page.query_selector_all("a[href]")
+    waste_links = []
+    life_links = []
+
+    for link in links:
+        try:
+            href = link.get_attribute("href") or ""
+            text = " ".join(link.inner_text().split())  # normalize whitespace
+        except Exception:
+            continue
+
+        if not href or "@@" in href or href.startswith("#") or href.startswith("javascript:"):
+            continue
+
+        combined = text + " " + href
+        full_url = urljoin(base_url, href)
+
+        # Check waste keywords
+        for kw in WASTE_KEYWORDS:
+            if kw in combined:
+                waste_links.append({"url": full_url, "text": text, "keyword": kw})
+                break
+        else:
+            # Check life-category keywords (for 2-level crawl)
+            for kw in LIFE_KEYWORDS:
+                if kw in text:
+                    life_links.append({"url": full_url, "text": text})
+                    break
+
+    return waste_links, life_links
+
+
+def _pick_best_waste_link(waste_links: list[dict]) -> dict | None:
+    """Pick the best waste link from a list, prioritized by keyword relevance."""
+    if not waste_links:
+        return None
+    priority = {"ごみ": 0, "ゴミ": 0, "収集": 1, "分別": 1, "廃棄物": 2}
+    waste_links.sort(key=lambda x: priority.get(x["keyword"], 3))
+    best = waste_links[0]
+    url = best["url"]
+    source_format = "pdf" if url.lower().endswith(".pdf") else "html"
+    return {"waste_page_url": url, "source_format": source_format}
+
+
 def find_waste_page(homepage_url: str, city_name: str) -> dict | None:
     """Use Playwright to crawl a municipality homepage and find waste collection pages.
+
+    Uses a 2-level strategy:
+    1. Search homepage for direct waste links
+    2. If none found, follow "くらし" (daily life) category links and search there
 
     Returns dict with 'waste_page_url' and 'source_format', or None if not found.
     """
@@ -126,59 +182,50 @@ def find_waste_page(homepage_url: str, city_name: str) -> dict | None:
         page = browser.new_page()
 
         try:
-            page.goto(homepage_url, timeout=30000, wait_until="domcontentloaded")
+            page.goto(homepage_url, timeout=30000, wait_until="networkidle")
         except PlaywrightTimeout:
-            logger.warning("Timeout loading %s", homepage_url)
-            browser.close()
-            return None
+            # Fallback to domcontentloaded if networkidle times out
+            try:
+                page.goto(homepage_url, timeout=15000, wait_until="domcontentloaded")
+            except Exception:
+                logger.warning("Failed to load %s", homepage_url)
+                browser.close()
+                return None
         except Exception as e:
             logger.warning("Error loading %s: %s", homepage_url, e)
             browser.close()
             return None
 
-        # Find all links on the page
-        links = page.query_selector_all("a[href]")
+        # Level 1: Search homepage directly
+        waste_links, life_links = _extract_links(page, homepage_url)
 
-        waste_links = []
-        for link in links:
+        if not waste_links and life_links:
+            # Level 2: Follow the first life-category link and search there
+            life_url = life_links[0]["url"]
+            logger.info("No waste links on homepage, following '%s' -> %s",
+                        life_links[0]["text"], life_url)
             try:
-                href = link.get_attribute("href") or ""
-                text = link.inner_text().strip()
+                page.goto(life_url, timeout=30000, wait_until="networkidle")
+            except PlaywrightTimeout:
+                try:
+                    page.goto(life_url, timeout=15000, wait_until="domcontentloaded")
+                except Exception:
+                    pass
             except Exception:
-                continue
+                pass
 
-            # Skip invalid/placeholder URLs
-            if not href or "@@" in href or href.startswith("#") or href.startswith("javascript:"):
-                continue
-
-            # Check if link text or href contains waste keywords
-            combined = text + " " + href
-            for kw in WASTE_KEYWORDS:
-                if kw in combined:
-                    full_url = urljoin(homepage_url, href)
-                    waste_links.append({"url": full_url, "text": text, "keyword": kw})
-                    break
+            waste_links, _ = _extract_links(page, life_url)
 
         browser.close()
 
     if not waste_links:
-        logger.warning("No waste links found on %s", homepage_url)
+        logger.warning("No waste links found for %s", city_name)
         return None
 
-    # Prioritize: prefer links with ごみ in text, then 収集, then others
-    priority = {"ごみ": 0, "ゴミ": 0, "収集": 1, "分別": 1, "廃棄物": 2}
-    waste_links.sort(key=lambda x: priority.get(x["keyword"], 3))
-
-    best = waste_links[0]
-    url = best["url"]
-    logger.info("Found waste page: %s (%s)", url, best["text"])
-
-    # Determine source format from URL
-    source_format = "html"
-    if url.lower().endswith(".pdf"):
-        source_format = "pdf"
-
-    return {"waste_page_url": url, "source_format": source_format}
+    result = _pick_best_waste_link(waste_links)
+    if result:
+        logger.info("Found waste page: %s", result["waste_page_url"])
+    return result
 
 
 def discover_all(
