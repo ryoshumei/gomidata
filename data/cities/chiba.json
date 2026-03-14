@@ -4,90 +4,90 @@
     "prefecture": "千葉県",
     "city_name": "千葉市",
     "homepage_url": "https://www.city.chiba.jp",
-    "waste_page_url": "https://www.city.chiba.jp/kurashi/gomi/index.html",
+    "waste_page_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-02-24"
   },
   {
     "city_id": "121011",
     "prefecture": "千葉県",
     "city_name": "千葉市中央区",
     "homepage_url": "https://www.city.chiba.jp",
-    "waste_page_url": "https://www.city.chiba.jp/kurashi/gomi/index.html",
+    "waste_page_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "121029",
     "prefecture": "千葉県",
     "city_name": "千葉市花見川区",
     "homepage_url": "https://www.city.chiba.jp",
-    "waste_page_url": "https://www.city.chiba.jp/kurashi/gomi/index.html",
+    "waste_page_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "121037",
     "prefecture": "千葉県",
     "city_name": "千葉市稲毛区",
     "homepage_url": "https://www.city.chiba.jp",
-    "waste_page_url": "https://www.city.chiba.jp/kurashi/gomi/index.html",
+    "waste_page_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "121045",
     "prefecture": "千葉県",
     "city_name": "千葉市若葉区",
     "homepage_url": "https://www.city.chiba.jp",
-    "waste_page_url": "https://www.city.chiba.jp/kurashi/gomi/index.html",
+    "waste_page_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "121053",
     "prefecture": "千葉県",
     "city_name": "千葉市緑区",
     "homepage_url": "https://www.city.chiba.jp",
-    "waste_page_url": "https://www.city.chiba.jp/kurashi/gomi/index.html",
+    "waste_page_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "121061",
     "prefecture": "千葉県",
     "city_name": "千葉市美浜区",
     "homepage_url": "https://www.city.chiba.jp",
-    "waste_page_url": "https://www.city.chiba.jp/kurashi/gomi/index.html",
+    "waste_page_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122025",
     "prefecture": "千葉県",
     "city_name": "銚子市",
     "homepage_url": "https://www.city.choshi.chiba.jp",
-    "waste_page_url": "https://www.city.choshi.chiba.jp/kurashi/index0507.html",
+    "waste_page_url": "https://www.city.choshi.chiba.jp/kurashi/page150059_00001.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122033",
     "prefecture": "千葉県",
     "city_name": "市川市",
     "homepage_url": "https://www.city.ichikawa.lg.jp",
-    "waste_page_url": "https://www.city.ichikawa.lg.jp/catpage/kurashi-shigengomi.html",
+    "waste_page_url": "http://www.city.ichikawa.lg.jp/page/3716.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122041",
     "prefecture": "千葉県",
     "city_name": "船橋市",
     "homepage_url": "https://www.city.funabashi.lg.jp",
-    "waste_page_url": "https://www.city.funabashi.lg.jp/other/0001/frequent_gomi.html",
+    "waste_page_url": "https://www.city.funabashi.lg.jp/kurashi/gomi/001/p001523.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122050",
@@ -103,27 +103,27 @@
     "prefecture": "千葉県",
     "city_name": "木更津市",
     "homepage_url": "https://www.city.kisarazu.lg.jp",
-    "waste_page_url": "https://www.city.kisarazu.lg.jp/kurashi/gomi_recycle/index.html",
+    "waste_page_url": "https://www.city.kisarazu.lg.jp/kurashi/gomi_recycle/gominodashikata/12026.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122076",
     "prefecture": "千葉県",
     "city_name": "松戸市",
     "homepage_url": "https://www.city.matsudo.chiba.jp",
-    "waste_page_url": "https://www.city.matsudo.chiba.jp/kurashi/gomi_shinyou/index.html",
+    "waste_page_url": "https://www.city.matsudo.chiba.jp/kurashi/gomi_shinyou/shuushuubi/tiiki-kijyun.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122084",
     "prefecture": "千葉県",
     "city_name": "野田市",
     "homepage_url": "https://www.city.noda.chiba.jp",
-    "waste_page_url": "https://www.city.noda.chiba.jp/kurashi/kankyo/gomi/index.html",
+    "waste_page_url": "https://www.city.noda.chiba.jp/kurashi/kankyo/gomi/1000597.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122106",
@@ -139,63 +139,63 @@
     "prefecture": "千葉県",
     "city_name": "成田市",
     "homepage_url": "https://www.city.narita.chiba.jp",
-    "waste_page_url": "https://www.city.narita.chiba.jp/kurashi/index0150.html",
+    "waste_page_url": "https://www.city.narita.chiba.jp/kurashi/page117400_00007.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122122",
     "prefecture": "千葉県",
     "city_name": "佐倉市",
     "homepage_url": "https://www.city.sakura.lg.jp",
-    "waste_page_url": "https://www.city.sakura.lg.jp/soshiki/haikibutsutaisakuka/index.html",
+    "waste_page_url": "https://www.city.sakura.lg.jp/material/files/group/38/B3_ja_0127.pdf",
     "source_format": "html",
-    "last_updated": "2026-02-23"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122131",
     "prefecture": "千葉県",
     "city_name": "東金市",
     "homepage_url": "https://www.city.togane.chiba.jp",
-    "waste_page_url": "https://www.city.togane.chiba.jp/0000010366.html",
+    "waste_page_url": "https://www.city.togane.chiba.jp/0000005742.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122157",
     "prefecture": "千葉県",
     "city_name": "旭市",
     "homepage_url": "https://www.city.asahi.lg.jp",
-    "waste_page_url": "https://www.city.asahi.lg.jp/life/1/1/3/",
+    "waste_page_url": "https://www.city.asahi.lg.jp/soshiki/8/39548.html",
     "source_format": "html",
-    "last_updated": "2026-02-23"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122165",
     "prefecture": "千葉県",
     "city_name": "習志野市",
     "homepage_url": "https://www.city.narashino.lg.jp",
-    "waste_page_url": "https://www.city.narashino.lg.jp/kurashi/gomi/index.html",
+    "waste_page_url": "https://www.city.narashino.lg.jp/kurashi/gomi/gomi/r8calendar.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122173",
     "prefecture": "千葉県",
     "city_name": "柏市",
     "homepage_url": "https://www.city.kashiwa.lg.jp",
-    "waste_page_url": "https://www.city.kashiwa.lg.jp/garbage_environment/index.html",
+    "waste_page_url": "https://www.city.kashiwa.lg.jp/kankyoservice/garbage_environment/kashiwaarea/calender.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122181",
     "prefecture": "千葉県",
     "city_name": "勝浦市",
     "homepage_url": "https://www.city.katsuura.lg.jp",
-    "waste_page_url": "https://www.city.katsuura.lg.jp/life/1/3/",
+    "waste_page_url": "https://www.city.katsuura.lg.jp/page/1680.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122190",
@@ -211,9 +211,9 @@
     "prefecture": "千葉県",
     "city_name": "流山市",
     "homepage_url": "https://www.city.nagareyama.chiba.jp",
-    "waste_page_url": "https://www.city.nagareyama.chiba.jp/life/1002401/index.html",
+    "waste_page_url": "https://www.city.nagareyama.chiba.jp/life/1002401/1002416/1048910/1048914.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122211",
@@ -229,117 +229,117 @@
     "prefecture": "千葉県",
     "city_name": "我孫子市",
     "homepage_url": "https://www.city.abiko.chiba.jp",
-    "waste_page_url": "https://www.city.abiko.chiba.jp/kurashi/gomi_shigen/shushubi/index.html",
+    "waste_page_url": "https://www.city.abiko.chiba.jp/kurashi/gomi_shigen/shushubi/clean.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122238",
     "prefecture": "千葉県",
     "city_name": "鴨川市",
     "homepage_url": "https://www.city.kamogawa.lg.jp",
-    "waste_page_url": "https://www.city.kamogawa.lg.jp/life/1/5/",
+    "waste_page_url": "https://www.city.kamogawa.lg.jp/uploaded/attachment/20889.pdf",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122246",
     "prefecture": "千葉県",
     "city_name": "鎌ケ谷市",
     "homepage_url": "https://www.city.kamagaya.chiba.jp",
-    "waste_page_url": "https://www.city.kamagaya.chiba.jp/kurashi-tetsuzuki/gomi/index.html",
+    "waste_page_url": "https://www.city.kamagaya.chiba.jp/kurashi-tetsuzuki/gomi/shuushuu/gomidashi.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122254",
     "prefecture": "千葉県",
     "city_name": "君津市",
     "homepage_url": "https://www.city.kimitsu.lg.jp",
-    "waste_page_url": "https://www.city.kimitsu.lg.jp/soshiki/15/63410.html",
+    "waste_page_url": "https://www.city.kimitsu.lg.jp/soshiki/15/29742.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122262",
     "prefecture": "千葉県",
     "city_name": "富津市",
     "homepage_url": "https://www.city.futtsu.lg.jp",
-    "waste_page_url": "https://www.city.futtsu.lg.jp/category/1-5-0-0-0-0-0-0-0-0.html",
+    "waste_page_url": "https://www.city.futtsu.lg.jp/0000005451.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122271",
     "prefecture": "千葉県",
     "city_name": "浦安市",
     "homepage_url": "https://www.city.urayasu.lg.jp",
-    "waste_page_url": "https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/index.html",
+    "waste_page_url": "https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/1009098.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122289",
     "prefecture": "千葉県",
     "city_name": "四街道市",
     "homepage_url": "https://www.city.yotsukaido.chiba.jp",
-    "waste_page_url": "https://www.city.yotsukaido.chiba.jp/kurashi/gomi/index.html",
+    "waste_page_url": "https://www.city.yotsukaido.chiba.jp/kurashi/gomi/gominobunbetsu/gomi_bunnbetsu_guide/yhaiki202103.html",
     "source_format": "html",
-    "last_updated": "2026-02-23"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122297",
     "prefecture": "千葉県",
     "city_name": "袖ケ浦市",
     "homepage_url": "https://www.city.sodegaura.lg.jp",
-    "waste_page_url": "https://www.city.sodegaura.lg.jp/soshiki/haikibutsu/gomimotikomiitibuseigennituite.html",
+    "waste_page_url": "https://www.city.sodegaura.lg.jp/soshiki/haikibutsu/waste-calendar.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122301",
     "prefecture": "千葉県",
     "city_name": "八街市",
     "homepage_url": "https://www.city.yachimata.lg.jp",
-    "waste_page_url": "https://www.city.yachimata.lg.jp/life/1/4/",
+    "waste_page_url": "https://www.city.yachimata.lg.jp/soshiki/22/52202.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122319",
     "prefecture": "千葉県",
     "city_name": "印西市",
     "homepage_url": "https://www.city.inzai.lg.jp",
-    "waste_page_url": "https://www.city.inzai.lg.jp/category/1-4-0-0-0.html",
+    "waste_page_url": "https://www.city.inzai.lg.jp/0000001685.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122327",
     "prefecture": "千葉県",
     "city_name": "白井市",
     "homepage_url": "https://www.city.shiroi.chiba.jp",
-    "waste_page_url": "https://www.city.shiroi.chiba.jp/kurashi/gomi/index.html",
+    "waste_page_url": "https://www.city.shiroi.chiba.jp/kurashi/gomi/g02/1458797227371.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122335",
     "prefecture": "千葉県",
     "city_name": "富里市",
     "homepage_url": "https://www.city.tomisato.lg.jp",
-    "waste_page_url": "https://www.city.tomisato.lg.jp/category/8-4-0-0-0-0-0-0-0-0.html",
+    "waste_page_url": "https://www.city.tomisato.lg.jp/0000001069.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122343",
     "prefecture": "千葉県",
     "city_name": "南房総市",
     "homepage_url": "https://www.city.minamiboso.chiba.jp",
-    "waste_page_url": "https://www.city.minamiboso.chiba.jp/category/8-4-0-0-0-0-0-0-0-0.html",
+    "waste_page_url": "https://www.city.minamiboso.chiba.jp/0000018208.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122351",
@@ -355,36 +355,36 @@
     "prefecture": "千葉県",
     "city_name": "香取市",
     "homepage_url": "https://www.city.katori.lg.jp",
-    "waste_page_url": "https://www.city.katori.lg.jp/living/gomi_recycling/index.html",
+    "waste_page_url": "https://www.city.katori.lg.jp/living/gomi_recycling/GOMI/R7gomisyusyu.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122378",
     "prefecture": "千葉県",
     "city_name": "山武市",
     "homepage_url": "https://www.city.sammu.lg.jp",
-    "waste_page_url": "https://www.city.sammu.lg.jp/lifeevent.php?code=7",
+    "waste_page_url": "https://www.city.sammu.lg.jp/kurashi/gomi/page002179.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122386",
     "prefecture": "千葉県",
     "city_name": "いすみ市",
     "homepage_url": "https://www.city.isumi.lg.jp",
-    "waste_page_url": "https://www.city.isumi.lg.jp/gyosei/lifescene/gomi_recycle/index.html",
+    "waste_page_url": "https://www.city.isumi.lg.jp/soshikikarasagasu/kankyosuidoka/kurashi_tetsuzuki/1/1/1354.html",
     "source_format": "html",
-    "last_updated": "2026-02-23"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "122394",
     "prefecture": "千葉県",
     "city_name": "大網白里市",
     "homepage_url": "https://www.city.oamishirasato.lg.jp",
-    "waste_page_url": "https://www.city.oamishirasato.lg.jp/module/garbage.php",
+    "waste_page_url": "https://www.city.oamishirasato.lg.jp/0000013555.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "123226",
@@ -400,72 +400,72 @@
     "prefecture": "千葉県",
     "city_name": "印旛郡栄町",
     "homepage_url": "https://www.town.sakae.chiba.jp",
-    "waste_page_url": "https://www.town.sakae.chiba.jp/search.php?keyword=%E3%81%94%E3%81%BF",
+    "waste_page_url": "https://www.town.sakae.chiba.jp/kurashi/gomi/gomi-rules/page000497.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "123421",
     "prefecture": "千葉県",
     "city_name": "香取郡神崎町",
     "homepage_url": "https://www.town.kozaki.chiba.jp",
-    "waste_page_url": "https://www.town.kozaki.chiba.jp/search_result.html?q=ごみ収集日#gsc.tab=0&gsc.q=ごみ収集日&gsc.page=1",
+    "waste_page_url": "https://www.town.kozaki.chiba.jp/kurashi/living_bosai/seikatsu/gomi.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "123471",
     "prefecture": "千葉県",
     "city_name": "香取郡多古町",
     "homepage_url": "https://www.town.tako.chiba.jp",
-    "waste_page_url": "https://www.town.tako.chiba.jp/category/bunya/kankyo/",
+    "waste_page_url": "https://www.town.tako.chiba.jp/docs/file_contents/2025gomibunbetuchou.pdf",
     "source_format": "html",
-    "last_updated": "2026-02-23"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "123498",
     "prefecture": "千葉県",
     "city_name": "香取郡東庄町",
     "homepage_url": "https://www.town.tohnosho.chiba.jp",
-    "waste_page_url": "https://www.town.tohnosho.chiba.jp/life_scene/gomi/index.html",
+    "waste_page_url": "https://www.town.tohnosho.chiba.jp/life_scene/gomi/3324.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "124036",
     "prefecture": "千葉県",
     "city_name": "山武郡九十九里町",
     "homepage_url": "https://www.town.kujukuri.chiba.jp",
-    "waste_page_url": "https://www.town.kujukuri.chiba.jp/0000007943.html",
+    "waste_page_url": "https://www.town.kujukuri.chiba.jp/0000008620.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "124095",
     "prefecture": "千葉県",
     "city_name": "山武郡芝山町",
     "homepage_url": "https://www.town.shibayama.lg.jp",
-    "waste_page_url": "https://www.town.shibayama.lg.jp/category/22-4-0-0-0-0-0-0-0-0.html",
+    "waste_page_url": "https://www.town.shibayama.lg.jp/0000005619.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "124109",
     "prefecture": "千葉県",
     "city_name": "山武郡横芝光町",
     "homepage_url": "https://www.town.yokoshibahikari.chiba.jp",
-    "waste_page_url": "https://www.town.yokoshibahikari.chiba.jp/life/1/9/45/ ",
+    "waste_page_url": "https://www.town.yokoshibahikari.chiba.jp/soshiki/5/13005.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "124214",
     "prefecture": "千葉県",
     "city_name": "長生郡一宮町",
     "homepage_url": "https://www.town.ichinomiya.chiba.jp",
-    "waste_page_url": "https://www.town.ichinomiya.chiba.jp/navi/purpose/key4.html",
+    "waste_page_url": "https://www.town.ichinomiya.chiba.jp/kurashi/kankyo/gomi/25.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "124222",
@@ -490,9 +490,9 @@
     "prefecture": "千葉県",
     "city_name": "長生郡白子町",
     "homepage_url": "https://www.town.shirako.lg.jp",
-    "waste_page_url": "https://www.town.shirako.lg.jp/category/6-5-0-0-0-0-0-0-0-0.html",
+    "waste_page_url": "https://www.town.shirako.lg.jp/0000002270.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "124265",
@@ -508,27 +508,27 @@
     "prefecture": "千葉県",
     "city_name": "長生郡長南町",
     "homepage_url": "https://www.town.chonan.chiba.jp",
-    "waste_page_url": "https://www.town.chonan.chiba.jp/kurashi/gomi/",
+    "waste_page_url": "https://www.town.chonan.chiba.jp/kurashi/gomi/35414",
     "source_format": "html",
-    "last_updated": "2026-02-23"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "124419",
     "prefecture": "千葉県",
     "city_name": "夷隅郡大多喜町",
     "homepage_url": "https://www.town.otaki.chiba.jp",
-    "waste_page_url": "https://www.town.otaki.chiba.jp/life_event/gomi/index.html",
+    "waste_page_url": "https://www.town.otaki.chiba.jp/life_event/gomi/1593.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "124435",
     "prefecture": "千葉県",
     "city_name": "夷隅郡御宿町",
     "homepage_url": "https://www.town.onjuku.chiba.jp",
-    "waste_page_url": "https://www.town.onjuku.chiba.jp/sub1/6/",
+    "waste_page_url": "https://www.town.onjuku.chiba.jp/sub1/6/kannkyoukarenda.html",
     "source_format": "html",
-    "last_updated": "2026-02-15"
+    "last_updated": "2026-03-14"
   },
   {
     "city_id": "124630",
