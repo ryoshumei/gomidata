@@ -182,13 +182,15 @@ gomidata/
 ### Funabashi Test Case
 
 ```
-Address: 船橋市宮本 2-1-7
-Postal Code: 274-0072
+City ID: 122041
+Address: 船橋市宮本 2丁目
+Postal Code: 273-0003
 
-Expected Output:
-- 可燃ごみ: 毎週 月・木
-- 不燃ごみ: 第4週 水
-- (other categories as per actual schedule)
+Expected Output (宮本2丁目):
+- 可燃ごみ: 毎週 水・土 (夜間収集)
+- 不燃ごみ: 第3週 火
+- 資源ごみ/ペットボトル: 毎週 月
+- 有価物: 毎週 月
 ```
 
 ### Success Metrics for MVP

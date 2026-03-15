@@ -8,7 +8,7 @@
 |-------|-------------|--------|
 | 1 | City Database — collect Chiba municipalities | Done (60 cities) |
 | 2 | Waste Page Discovery — find schedule URLs | Done (60/60 found) |
-| 3 | Deep Crawl & Schedule Page Discovery | 59/60 done (5 null) |
+| 3 | Deep Crawl & Schedule Page Discovery | 60/60 done (3 null) |
 | 4 | Data Extraction — Gemini Pro extraction | Not started |
 | 5 | Validation — verify against Funabashi | Not started |
 
@@ -39,15 +39,18 @@
 - Installed Crawl4AI v0.8.0 for Phase 3 deep crawling
 - `src/collectors/downloader.py` — Phase 3 simple downloader using Crawl4AI (60/60 success)
 - `src/collectors/deep_crawler.py` — LLM-guided deep crawler using Crawl4AI + Gemini 3.1 Pro
-- **Phase 3 deep crawl**: 59/60 cities crawled, 54 schedule pages found, 5 null results
+- **Phase 3 deep crawl**: 60/60 cities crawled, 57 schedule pages found, 3 null results
 - Early stopping optimization: Gemini identifies schedule pages during navigation, stops crawling immediately
 - Snippet extraction: strips nav boilerplate from page content for better LLM evaluation
 - Quota-aware abort: detects Gemini daily limit (250 RPD) and stops gracefully
+- Relative URL resolution: fixes crawlers that return relative paths instead of absolute URLs
+- Flexible domain matching: handles `.chiba.jp` vs `.lg.jp` redirects (八千代市 fix)
+- JS SPA delay: `delay_before_return_html=2.0` for dynamic content rendering
 
 ### In Progress
 
-- Phase 3: 1 remaining city (鋸南町) — quota limited, will complete on next run
-- 5 null results to investigate: 市原市, 八千代市, 匝瑳市, 酒々井町, 長柄町
+- Phase 3: 3 null results remaining: 市原市 (JS SPA), 匝瑳市 (boilerplate snippets), 鋸南町 (no web schedule)
+- Consider Google search fallback for SPA sites that don't expose article URLs in static HTML
 
 ### Blocked / Open Questions
 
@@ -55,4 +58,4 @@
 
 ### Last Updated
 
-2026-03-14 — Phase 3 deep crawl near complete (59/60); LLM-guided crawler with early stopping
+2026-03-16 — Phase 3 complete (57/60 found); fixed relative URLs, domain redirects, JS SPA delay; 3 nulls remain

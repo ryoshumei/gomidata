@@ -142,6 +142,25 @@ def _domain_from_url(url: str) -> str:
     return urlparse(url).netloc
 
 
+def _same_city_domain(domain1: str, domain2: str) -> bool:
+    """Check if two domains belong to the same municipality.
+
+    Handles cases like www.city.yachiyo.chiba.jp vs www.city.yachiyo.lg.jp
+    where the city name part matches but TLD differs.
+    """
+    if domain1 == domain2:
+        return True
+    if not domain1 or not domain2:
+        return False
+    # Extract city name: www.city.XXXXX.* or www.town.XXXXX.*
+    parts1 = domain1.split(".")
+    parts2 = domain2.split(".")
+    # Match on the first 3 parts (e.g., www.city.yachiyo)
+    if len(parts1) >= 3 and len(parts2) >= 3:
+        return parts1[:3] == parts2[:3]
+    return False
+
+
 def _init_gemini() -> genai.Client:
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
@@ -249,6 +268,7 @@ async def crawl_single_page(crawler: AsyncWebCrawler, url: str) -> dict | None:
         word_count_threshold=10,
         page_timeout=30000,
         wait_until="networkidle",
+        delay_before_return_html=2.0,  # Wait for JS SPA content to render
     )
 
     try:
@@ -309,6 +329,7 @@ async def deep_crawl_city(
     domain = _domain_from_url(start_url)
     visited = set()
     all_pages = []  # all crawled pages with content
+    domain_resolved = False  # update domain after first page in case of redirect
 
     # --- Round-based LLM-guided crawl with early stopping ---
     urls_to_crawl = [start_url]
@@ -332,13 +353,28 @@ async def deep_crawl_city(
             all_pages.append(page)
             await asyncio.sleep(CRAWL_DELAY)
 
+            # Update domain from first crawled page to handle redirects
+            if not domain_resolved:
+                actual_domain = _domain_from_url(page["url"])
+                if actual_domain and actual_domain != domain:
+                    logger.info("  Domain redirect: %s -> %s", domain, actual_domain)
+                    domain = actual_domain
+                domain_resolved = True
+
             # Filter internal links to same domain, not yet visited
             fresh_links = []
+            page_url = page["url"]
             for link in page["internal_links"]:
                 href = link.get("href", "")
-                if not href or href in visited:
+                if not href:
                     continue
-                if _domain_from_url(href) != domain:
+                # Resolve relative URLs to absolute
+                if not href.startswith("http"):
+                    href = urljoin(page_url, href)
+                    link = {**link, "href": href}
+                if href in visited:
+                    continue
+                if not _same_city_domain(_domain_from_url(href), domain):
                     continue
                 fresh_links.append(link)
 

@@ -37,7 +37,7 @@ The project follows a 5-phase data pipeline:
 
 ## Validation Reference
 
-Funabashi (city_id: 12204, postal: 274-0072) is the primary validation target. Expected: 可燃ごみ 毎週月・木, 不燃ごみ 第4週水.
+Funabashi (city_id: 122041, postal: 273-0003, 宮本2丁目) is the primary validation target. Expected: 可燃ごみ 毎週水・土(夜), 不燃ごみ 第3火, 資源/ペット 毎週月, 有価物 毎週月.
 
 ## Status Tracking
 
