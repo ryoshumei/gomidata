@@ -9,7 +9,7 @@
 | 1 | City Database — collect Chiba municipalities | Done (60 cities) |
 | 2 | Waste Page Discovery — find schedule URLs | Done (60/60 found) |
 | 3 | Deep Crawl & Schedule Page Discovery | 60/60 done (3 null) |
-| 4 | Data Extraction — Gemini Pro extraction | Not started |
+| 4 | Data Extraction — Gemini Pro extraction | In progress |
 | 5 | Validation — verify against Funabashi | Not started |
 
 ### Completed
@@ -51,11 +51,16 @@
 
 - Phase 3: 3 null results remaining: 市原市 (JS SPA), 匝瑳市 (boilerplate snippets), 鋸南町 (no web schedule)
 - Consider Google search fallback for SPA sites that don't expose article URLs in static HTML
+- `src/extractors/gemini_extractor.py` — Phase 4 extractor using HTML tables (not markdown)
+- **Phase 4 Funabashi validation**: 306 areas, 100% match rate against PostgreSQL DB (0 mismatches, 248/274 matched)
+- HTML table approach: preserves rowspan/colspan structure, eliminates markdown conversion errors
+- Compact JSON output format: reduces token usage, allows full extraction in 1 API call
 
 ### Blocked / Open Questions
 
 - Gemini 3.1 Pro Preview daily quota: 250 requests/day — limits ~30-40 cities per session
+- PDF-only cities need multimodal (image) extraction (future)
 
 ### Last Updated
 
-2026-03-16 — Phase 3 complete (57/60 found); fixed relative URLs, domain redirects, JS SPA delay; 3 nulls remain
+2026-03-22 — Phase 4 extractor rewritten to use HTML tables; Funabashi 100% match rate against DB

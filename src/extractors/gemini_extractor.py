@@ -1,8 +1,11 @@
 """Phase 4: Extract structured waste schedules from crawled pages using Gemini.
 
-For each city's waste_page.md, sends the content to Gemini 3.1 Pro with a
-structured extraction prompt. Gemini returns per-area schedules with
-standardized waste types, frequencies, and collection days.
+Strategy:
+- HTML pages: Extract <table> elements, strip attributes (keep rowspan/colspan),
+  send clean HTML to Gemini. HTML preserves table structure that markdown loses.
+- PDF pages: (future) Render as images and use Gemini multimodal.
+
+Gemini returns compact JSON per area, which we expand to the full schema.
 """
 
 from __future__ import annotations
@@ -10,9 +13,11 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 import time
 from pathlib import Path
 
+from bs4 import BeautifulSoup
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
@@ -29,7 +34,7 @@ load_dotenv(DATA_DIR.parent / ".env")
 GEMINI_MODEL = "gemini-3.1-pro-preview"
 
 
-# --- Gemini client (reuse pattern from deep_crawler) ---
+# --- Gemini client ---
 
 class QuotaExhaustedError(Exception):
     pass
@@ -42,7 +47,10 @@ def _init_gemini() -> genai.Client:
     return genai.Client(api_key=api_key)
 
 
-def _call_gemini(client: genai.Client, prompt: str, retries: int = 2) -> dict | list | None:
+def _call_gemini(
+    client: genai.Client, prompt: str,
+    retries: int = 2, max_output_tokens: int = 65536,
+) -> dict | list | None:
     """Call Gemini and parse JSON response, with retries."""
     for attempt in range(retries + 1):
         try:
@@ -55,12 +63,17 @@ def _call_gemini(client: genai.Client, prompt: str, retries: int = 2) -> dict | 
                     ),
                 ],
                 config=types.GenerateContentConfig(
-                    thinking_config=types.ThinkingConfig(thinking_level="LOW"),
+                    max_output_tokens=max_output_tokens,
                 ),
             )
 
+            candidate = response.candidates[0]
+            finish = getattr(candidate, "finish_reason", None)
+            if finish and str(finish) not in ("STOP", "FinishReason.STOP", "1"):
+                logger.warning("Gemini finish_reason: %s", finish)
+
             text = ""
-            for part in response.candidates[0].content.parts:
+            for part in candidate.content.parts:
                 if part.text and not getattr(part, "thought", False):
                     text += part.text
             text = text.strip()
@@ -81,165 +94,233 @@ def _call_gemini(client: genai.Client, prompt: str, retries: int = 2) -> dict | 
     return None
 
 
-# --- Content cleaning ---
+# --- HTML table extraction ---
 
-def clean_markdown_for_extraction(raw_markdown: str) -> str:
-    """Strip nav boilerplate, images, and footer from markdown for extraction."""
-    import re
+def extract_schedule_tables(html: str) -> str:
+    """Extract schedule tables from HTML, stripping all attributes except rowspan/colspan.
 
-    lines = raw_markdown.split("\n")
-    cleaned = []
-    in_content = False
-
-    nav_keywords = [
-        "文字サイズ", "配色", "よみがな", "Language", "メニュー",
-        "音声読み上げ", "English", "中文", "한국어", "Español",
-        "transer.com", "javascript:", "share/imgs", "検索",
-    ]
-    footer_keywords = [
-        "このページについてのご意見", "お問い合わせ", "Copyright",
-        "サイトポリシー", "個人情報保護", "アクセシビリティ",
-        "このページを見ている人は", "関連リンク",
-    ]
-
-    for line in lines:
-        stripped = line.strip()
-        if not stripped:
-            continue
-
-        # Skip nav boilerplate before content starts
-        if not in_content:
-            if any(kw in stripped for kw in nav_keywords):
-                continue
-            # Content starts at a heading, breadcrumb with ごみ, or table separator
-            if (stripped.startswith("#")
-                    or "---|" in stripped
-                    or ("ごみ" in stripped and len(stripped) > 5)
-                    or "収集日" in stripped
-                    or "カレンダー" in stripped
-                    or "現在の場所" in stripped):
-                in_content = True
-
-        if not in_content:
-            continue
-
-        # Stop at footer
-        if any(kw in stripped for kw in footer_keywords):
-            break
-
-        # Remove image references
-        if stripped.startswith("![") or stripped.startswith("_!["):
-            continue
-
-        # Strip URLs from links but keep text
-        stripped = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', stripped)
-
-        cleaned.append(stripped)
-
-    result = "\n".join(cleaned)
-    if len(result) < 200:
-        # Fallback: skip first 1000 chars of nav boilerplate
-        result = raw_markdown[1000:]
-    return result
-
-
-def classify_page_format(markdown: str) -> str:
-    """Classify page content format.
-
-    Returns: "table", "pdf_links", or "insufficient"
+    Returns clean HTML containing only the schedule <table> elements.
     """
-    if len(markdown) < 200:
+    soup = BeautifulSoup(html, "html.parser")
+    tables = soup.find_all("table")
+
+    schedule_tables = []
+    seen_row_counts = set()
+
+    for t in tables:
+        rows = t.find_all("tr")
+        if len(rows) < 2:
+            continue
+
+        # Check if this looks like a schedule table
+        header_text = rows[0].get_text(strip=True)
+        has_waste_keywords = any(
+            kw in header_text
+            for kw in ["町", "地区", "可燃", "不燃", "ごみ", "収集", "曜"]
+        )
+        if not has_waste_keywords:
+            continue
+
+        # Deduplicate tables with same row count (many pages have display/print duplicates)
+        key = len(rows)
+        if key in seen_row_counts:
+            continue
+        seen_row_counts.add(key)
+
+        # Strip all attributes except rowspan/colspan
+        for tag in t.find_all(True):
+            allowed = {}
+            for attr in ("rowspan", "colspan"):
+                if tag.get(attr):
+                    allowed[attr] = tag[attr]
+            tag.attrs = allowed
+
+        schedule_tables.append(t)
+
+    if not schedule_tables:
+        return ""
+
+    return "\n".join(str(t) for t in schedule_tables)
+
+
+def classify_source(html: str, markdown: str) -> str:
+    """Classify the source format.
+
+    Returns: "html_table", "text", "pdf_links", or "insufficient"
+    """
+    # Check HTML for tables first
+    if html and len(html) > 500:
+        tables_html = extract_schedule_tables(html)
+        if tables_html and len(tables_html) > 200:
+            return "html_table"
+
+    # Fall back to markdown analysis
+    if not markdown or len(markdown) < 200:
         return "insufficient"
 
-    has_table = "---|" in markdown
-    has_waste_keywords = any(kw in markdown for kw in ["可燃", "不燃", "ごみ", "収集"])
+    has_waste = any(kw in markdown for kw in ["可燃", "不燃", "ごみ", "収集"])
     has_pdf = ".pdf" in markdown.lower()
 
-    if has_table and has_waste_keywords:
-        return "table"
-    if has_pdf and has_waste_keywords:
+    if has_pdf and has_waste:
         return "pdf_links"
-    if has_waste_keywords and len(markdown) > 1000:
-        return "table"  # text-based schedule, treat as extractable
+    if has_waste and len(markdown) > 1000:
+        return "text"
     return "insufficient"
 
 
 # --- Extraction prompt ---
 
-EXTRACTION_PROMPT = """あなたは日本の自治体のごみ収集スケジュールデータを構造化JSONに変換するエキスパートです。
+EXTRACTION_PROMPT = """あなたは日本の自治体のごみ収集スケジュールデータを構造化するエキスパートです。
 
-以下は「{city_name}」（city_id: {city_id}）のごみ収集スケジュールページの内容です。
+以下は「{city_name}」（city_id: {city_id}）のごみ収集スケジュールデータです。
+{format_note}
 
 ---
 {content}
 ---
 
-タスク：
-上記の内容から、地区別のごみ収集スケジュールを以下のJSON形式で抽出してください。
+各行を解析し、以下のコンパクトなJSON配列に変換してください。
 
-出力形式（JSON配列）：
+出力形式 — 各エリアを1オブジェクトで表現：
 [
   {{
-    "area_name": "町名＋丁目",
-    "address_detail": "番地詳細（あれば）",
-    "schedules": [
-      {{
-        "waste_type": "burnable",
-        "waste_type_ja": "可燃ごみ",
-        "frequency": "weekly",
-        "day_of_week": ["月", "木"],
-        "week_of_month": null,
-        "collection_time": null
-      }}
-    ]
+    "a": "町名＋丁目",
+    "d": "番地詳細（なければ空文字）",
+    "t": "daytime/nighttime（なければ空文字）",
+    "b": "月木",
+    "nb": "2木",
+    "r": "水",
+    "p": "水",
+    "v": "水"
   }}
 ]
 
-waste_type の標準化マッピング：
-- burnable: 可燃ごみ, 燃えるごみ, 燃やすごみ, 普通ごみ
-- non_burnable: 不燃ごみ, 燃えないごみ
-- plastic: プラスチック, 容器包装プラスチック
-- recyclable: 資源ごみ, 資源物
-- cans: 缶, 空き缶, カン
-- bottles: びん, 空きびん, ビン
-- pet_bottles: ペットボトル, ペット
-- paper: 古紙, 紙類, 雑紙
-- cardboard: 段ボール
-- clothing: 衣類, 布類, 古着
-- metals: 金属, 金属類
-- hazardous: 有害ごみ
-- valuables: 有価物
-- branches: 木の枝, 刈り草, 木の枝・刈り草・葉
-- large_waste: 粗大ごみ (on_demand)
+フィールド説明：
+- a: area_name（町名＋丁目）
+- d: address_detail（番地詳細）
+- t: collection_time（昼→daytime, 夜→nighttime）
+- b: burnable（可燃ごみ/燃えるごみ/普通ごみ）の収集日
+- nb: non_burnable（不燃ごみ）の収集日
+- 以下はページのカラムに応じて使い分け：
+  - r: recyclable（資源ごみ）, p: pet_bottles（ペットボトル）, v: valuables（有価物）
+  - bn: bottles（びん）, c: cans（缶）, pp: paper（古紙/紙類）, cl: clothing（衣類/布類）
+  - pl: plastic（プラスチック）, m: metals（金属類）, h: hazardous（有害ごみ）
+  - br: branches（木の枝/刈り草）, cd: cardboard（段ボール）
 
-frequency の判定ルール：
-- 「毎週月・木」「月木」「火・金」→ frequency: "weekly", day_of_week: ["月", "木"]
-- 「第2・4水」「2・4水」→ frequency: "monthly", week_of_month: [2, 4], day_of_week: ["水"]
-- 「2木」「第2木曜」→ frequency: "monthly", week_of_month: [2], day_of_week: ["木"]
-- 「予約制」「電話申し込み制」→ frequency: "on_demand", day_of_week: null
+収集日の表記ルール：
+- 「月木」「火金」「水土」= 毎週（曜日をそのまま記載）
+- 「2木」「3火」= 第N回目の曜日（数字＋曜日をそのまま記載）
+- 「ー」や該当なし = 空文字
 
-注意事項：
-- 同じ町名でも番地によって収集日が異なる場合は、別のエントリに分ける
-- 「資源/ペット」が1列で同じ曜日なら、recyclable と pet_bottles を別のscheduleエントリに分ける
-- 「びん・缶・ペットボトル」が1列なら、bottles, cans, pet_bottles の3つに分ける（同じ曜日）
-- 「(昼)」→ collection_time: "daytime"、「(夜)」→ collection_time: "nighttime"
-- ページにスケジュールデータがない場合は空配列 [] を返す
-- すべての地区を漏れなく抽出すること
-
+すべての地区を漏れなく出力してください。省略禁止。
 JSON配列のみを出力してください。"""
 
+
+# --- Compact output expansion ---
+
+COMPACT_FIELD_MAP = {
+    "b": ("burnable", "可燃ごみ"),
+    "nb": ("non_burnable", "不燃ごみ"),
+    "r": ("recyclable", "資源ごみ"),
+    "p": ("pet_bottles", "ペットボトル"),
+    "v": ("valuables", "有価物"),
+    "bn": ("bottles", "びん"),
+    "c": ("cans", "缶"),
+    "pp": ("paper", "古紙"),
+    "cl": ("clothing", "衣類"),
+    "pl": ("plastic", "プラスチック"),
+    "m": ("metals", "金属類"),
+    "h": ("hazardous", "有害ごみ"),
+    "br": ("branches", "木の枝・刈り草"),
+    "cd": ("cardboard", "段ボール"),
+}
+
+
+def _parse_schedule_value(val: str) -> dict | None:
+    """Parse a compact schedule value like '月木', '2木', 'on_demand'."""
+    if not val or val == "null":
+        return None
+
+    val = val.strip()
+
+    if val in ("予約制", "on_demand"):
+        return {"frequency": "on_demand", "day_of_week": None, "week_of_month": None}
+
+    # Monthly: "2木", "3火", "1・3金", "2,4水"
+    monthly_match = re.match(r'^([0-9][・,]?)+([月火水木金土日])$', val)
+    if monthly_match:
+        day = val[-1]
+        weeks = [int(w) for w in re.findall(r'[0-9]', val[:-1])]
+        return {"frequency": "monthly", "day_of_week": [day], "week_of_month": weeks}
+
+    # Weekly: "月木", "火金", "水土", "月", etc.
+    days = re.findall(r'[月火水木金土日]', val)
+    if days:
+        return {"frequency": "weekly", "day_of_week": days, "week_of_month": None}
+
+    return None
+
+
+def _expand_compact_areas(compact_list: list[dict]) -> list[dict]:
+    """Expand compact Gemini output to full schema."""
+    areas = []
+    for item in compact_list:
+        if not isinstance(item, dict):
+            continue
+
+        if "schedules" in item:
+            areas.append(item)
+            continue
+
+        area_name = item.get("a", item.get("area_name", ""))
+        address_detail = item.get("d", item.get("address_detail", ""))
+        collection_time = item.get("t", "")
+
+        ct = None
+        if collection_time == "nighttime":
+            ct = "nighttime"
+        elif collection_time == "daytime":
+            ct = "daytime"
+
+        schedules = []
+        for key, (waste_type, waste_type_ja) in COMPACT_FIELD_MAP.items():
+            val = item.get(key, "")
+            if not val:
+                continue
+            parsed = _parse_schedule_value(str(val))
+            if parsed:
+                schedule = {
+                    "waste_type": waste_type,
+                    "waste_type_ja": waste_type_ja,
+                    **parsed,
+                }
+                if ct and waste_type == "burnable":
+                    schedule["collection_time"] = ct
+                schedules.append(schedule)
+
+        if schedules:
+            areas.append({
+                "area_name": area_name,
+                "address_detail": address_detail or None,
+                "schedules": schedules,
+            })
+
+    return areas
+
+
+# --- Main extraction ---
 
 def extract_city_schedule(
     client: genai.Client,
     city_id: str,
     city_name: str,
+    html_content: str,
     markdown_content: str,
 ) -> dict:
-    """Extract structured schedule data from a city's waste page markdown."""
-    cleaned = clean_markdown_for_extraction(markdown_content)
-    page_format = classify_page_format(cleaned)
+    """Extract structured schedule data from a city's waste page."""
+    source_format = classify_source(html_content, markdown_content)
 
-    if page_format == "insufficient":
+    if source_format == "insufficient":
         return {
             "city_id": city_id,
             "city_name": city_name,
@@ -248,10 +329,19 @@ def extract_city_schedule(
             "warnings": ["Insufficient content for extraction"],
         }
 
+    if source_format == "html_table":
+        content = extract_schedule_tables(html_content)
+        format_note = "HTML表形式です。rowspan/colspan属性に注意して正確に抽出してください。"
+    else:
+        # Text-based fallback (markdown)
+        content = markdown_content
+        format_note = "テキスト形式です。"
+
     prompt = EXTRACTION_PROMPT.format(
         city_name=city_name,
         city_id=city_id,
-        content=cleaned,
+        content=content,
+        format_note=format_note,
     )
 
     result = _call_gemini(client, prompt)
@@ -262,9 +352,9 @@ def extract_city_schedule(
     if result is None:
         warnings.append("Gemini returned no result")
     elif isinstance(result, list):
-        areas = result
+        areas = _expand_compact_areas(result)
     elif isinstance(result, dict) and "areas" in result:
-        areas = result["areas"]
+        areas = _expand_compact_areas(result["areas"])
     else:
         warnings.append(f"Unexpected result format: {type(result)}")
 
@@ -276,7 +366,7 @@ def extract_city_schedule(
         )
         if burnable_count == 0:
             warnings.append("No burnable waste schedules found")
-        if burnable_count < len(areas) * 0.5:
+        elif burnable_count < len(areas) * 0.5:
             warnings.append(f"Only {burnable_count}/{len(areas)} areas have burnable waste")
 
     waste_types_found = set()
@@ -287,7 +377,7 @@ def extract_city_schedule(
     return {
         "city_id": city_id,
         "city_name": city_name,
-        "source_format": page_format,
+        "source_format": source_format,
         "areas": areas,
         "warnings": warnings,
         "stats": {
@@ -337,26 +427,33 @@ def extract_all(
 
         print(f"[{i+1}/{len(targets)}] {city_name}...", end=" ", flush=True)
 
-        # Skip if already extracted
         if skip_existing and out_file.exists():
             stats["skipped_cached"] += 1
             print("CACHED")
             continue
 
-        # Read source markdown
+        # Read source files
+        html_file = raw_dir / city_id / "waste_page.html"
         md_file = raw_dir / city_id / "waste_page.md"
-        if not md_file.exists() or md_file.stat().st_size < 100:
+
+        html_content = ""
+        md_content = ""
+
+        if html_file.exists() and html_file.stat().st_size > 100:
+            html_content = html_file.read_text(encoding="utf-8")
+        if md_file.exists() and md_file.stat().st_size > 100:
+            md_content = md_file.read_text(encoding="utf-8")
+
+        if not html_content and not md_content:
             stats["skipped_no_data"] += 1
             print("NO DATA")
             continue
 
-        markdown = md_file.read_text(encoding="utf-8")
-
-        # Classify format
-        fmt = classify_page_format(markdown)
+        # Classify
+        fmt = classify_source(html_content, md_content)
         if fmt == "insufficient":
             stats["skipped_no_data"] += 1
-            print(f"INSUFFICIENT ({len(markdown)} chars)")
+            print(f"INSUFFICIENT")
             continue
         if fmt == "pdf_links":
             stats["skipped_pdf_only"] += 1
@@ -365,7 +462,7 @@ def extract_all(
 
         # Extract
         try:
-            result = extract_city_schedule(client, city_id, city_name, markdown)
+            result = extract_city_schedule(client, city_id, city_name, html_content, md_content)
         except QuotaExhaustedError:
             print(f"\n⚠ Gemini daily quota exhausted. Stopping.")
             print(f"  Completed {stats['extracted']}/{len(targets)} cities.")
@@ -410,7 +507,6 @@ def extract_all(
 
 def run(limit: int | None = None, city: str | None = None):
     """Synchronous entry point."""
-    import asyncio
     return extract_all(limit=limit, city_filter=city)
 
 
