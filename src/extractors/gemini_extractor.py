@@ -113,19 +113,19 @@ def extract_schedule_tables(html: str) -> str:
             continue
 
         # Check if this looks like a schedule table
-        header_text = rows[0].get_text(strip=True)
+        table_text = t.get_text(strip=True)[:500]
         has_waste_keywords = any(
-            kw in header_text
-            for kw in ["町", "地区", "可燃", "不燃", "ごみ", "収集", "曜"]
+            kw in table_text
+            for kw in ["町", "地区", "可燃", "不燃", "ごみ", "収集", "曜", "カレンダー"]
         )
         if not has_waste_keywords:
             continue
 
-        # Deduplicate tables with same row count (many pages have display/print duplicates)
-        key = len(rows)
-        if key in seen_row_counts:
+        # Deduplicate tables with same content (many pages have display/print duplicates)
+        table_content = t.get_text(strip=True)[:200]
+        if table_content in seen_row_counts:
             continue
-        seen_row_counts.add(key)
+        seen_row_counts.add(table_content)
 
         # Strip all attributes except rowspan/colspan
         for tag in t.find_all(True):

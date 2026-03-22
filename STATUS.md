@@ -70,4 +70,4 @@
 
 ### Last Updated
 
-2026-03-22 — Phase 4 complete: 48/60 cities (80%) extracted with HTML tables + PDF multimodal
+2026-03-22 — Phase 4: fixing table detection for cities like 銚子市 (header keyword matching too strict)
