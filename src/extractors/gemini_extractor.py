@@ -409,10 +409,17 @@ PDF_SCHEDULE_PROMPT = """このPDFは「{city_name}」のごみ収集スケジ�
 以下はPDFのカラムに応じて使い分け：
 r=資源ごみ, p=ペットボトル, v=有価物, bn=びん, c=缶, pp=古紙/紙類, cl=衣類, pl=プラスチック, m=金属類, h=有害ごみ, br=木の枝/刈り草, cd=段ボール
 
-値：「月木」=毎週, 「2木」=第2木曜, 「1,3水」=第1・3水曜, 該当なし=空文字
+収集日の表記ルール：
+- 毎週のパターン → 「月木」「火金」「水土」（曜日をそのまま）
+- 月Nの回目 → 「2木」（第2木曜）、「1,3水」（第1・3水曜）
+- パターンが不規則な場合 → 該当なし（空文字）
 
-PDFがカレンダー形式の場合は、曜日パターンを読み取ってください。
-PDFが地区一覧の場合は、各地区の収集日を抽出してください。
+PDFがカレンダー形式（月ごとに日付がマークされている）の場合：
+- カレンダーから規則的な曜日パターンを読み取ってください
+- 例：毎月第2・第4金曜に印がある → 「2,4金」
+- 例：毎週月・木に印がある → 「月木」
+- 明確なパターンがない場合は、無理に規則を見つけず空文字にしてください
+
 すべての地区を漏れなく出力。JSON配列のみ。"""
 
 
@@ -450,17 +457,40 @@ def extract_from_pdfs(
 
     pdf_links.sort(key=pdf_score)
 
-    # Filter out accessibility/duplicate PDFs
+    # Filter out accessibility/duplicate/old-year PDFs
     filtered_pdfs = []
+    # Determine latest fiscal year in the links
+    import re as _re
+    years_found = set()
+    for p in pdf_links:
+        combined = p["text"] + p["url"]
+        for m in _re.findall(r'令和(\d+)年度', combined):
+            years_found.add(int(m))
+        for m in _re.findall(r'[Rr](\d+)[_\-]', p["url"]):
+            years_found.add(int(m))
+    latest_year = max(years_found) if years_found else None
+
     for p in pdf_links:
         text = p["text"]
         url = p["url"]
+        combined = text + url
         # Skip accessibility versions
         if "弱視" in text or "音声" in text or "点字" in text:
             continue
         # Skip English/foreign language versions
         if url.startswith("e2") or "/e2" in url:
             continue
+        # Skip older fiscal years if we found multiple
+        if latest_year and years_found and len(years_found) > 1:
+            year_matches = _re.findall(r'令和(\d+)年度', combined)
+            url_year = _re.findall(r'[Rr](\d+)[_\-]', url)
+            found_year = None
+            if year_matches:
+                found_year = int(year_matches[0])
+            elif url_year:
+                found_year = int(url_year[0])
+            if found_year and found_year < latest_year:
+                continue
         filtered_pdfs.append(p)
 
     all_areas = []

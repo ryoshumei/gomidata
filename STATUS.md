@@ -9,7 +9,7 @@
 | 1 | City Database — collect Chiba municipalities | Done (60 cities) |
 | 2 | Waste Page Discovery — find schedule URLs | Done (60/60 found) |
 | 3 | Deep Crawl & Schedule Page Discovery | Done (57/60 found, 3 null) |
-| 4 | Data Extraction — Gemini Pro extraction | **48/60 (80%)** |
+| 4 | Data Extraction — Gemini Pro extraction | 48/60 (80%) + 木更津市 fixed |
 | 5 | Validation — verify against Funabashi | Funabashi validated (100% match) |
 
 ### Phase 4 Extraction Results
@@ -57,8 +57,8 @@ These cities extracted successfully but have incomplete area coverage — typica
 
 | City | ID | Areas | PDF Links | Issue |
 |------|----|-------|-----------|-------|
-| 木更津市 | 122068 | 3 | 241 | Massive number of area-specific calendar PDFs. Only first calendar processed. |
-| 東金市 | 122131 | 1 | 42 | Multiple area PDFs, only first extracted. |
+| ~~木更津市~~ | ~~122068~~ | ~~3~~ | ~~241~~ | **FIXED**: 160 areas extracted from 14 calendar PDFs. |
+| ~~東金市~~ | ~~122131~~ | ~~1~~ | ~~42~~ | **FIXED**: 22 areas from 21 令和8年度 PDFs. |
 | 習志野市 | 122165 | 1 | 23 | Multiple area PDFs, only first extracted. |
 | 四街道市 | 122289 | 1 | 6 | Multiple area (A/B/C/D) calendars, only A extracted. |
 | 富里市 | 122335 | 1 | 9 | Multiple area calendars, only first extracted. |
@@ -112,4 +112,4 @@ These cities extracted successfully but have incomplete area coverage — typica
 
 ### Last Updated
 
-2026-03-22 — Phase 4 at 48/60 (80%); detailed remaining issues documented
+2026-03-23 — Year filtering + calendar pattern extraction; 木更津市 (160 areas), 東金市 (22 areas) fixed
