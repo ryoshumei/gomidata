@@ -1,0 +1,14 @@
+{
+  "city_id": "122360",
+  "city_name": "香取市",
+  "source_format": "html_table",
+  "areas": [],
+  "warnings": [],
+  "stats": {
+    "total_areas": 0,
+    "waste_types_found": []
+  },
+  "source_url": "https://www.city.katori.lg.jp/living/gomi_recycling/GOMI/R7gomisyusyu.html",
+  "extracted_at": "2026-03-22T08:19:04",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

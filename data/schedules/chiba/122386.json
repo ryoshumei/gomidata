@@ -1,0 +1,240 @@
+{
+  "city_id": "122386",
+  "city_name": "いすみ市",
+  "source_format": "pdf",
+  "areas": [
+    {
+      "area_name": "大原・東海",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            1,
+            2
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            4
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            3
+          ]
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            1
+          ]
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2
+          ]
+        },
+        {
+          "waste_type": "paper",
+          "waste_type_ja": "古紙",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            4
+          ]
+        },
+        {
+          "waste_type": "metals",
+          "waste_type_ja": "金属類",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2
+          ]
+        },
+        {
+          "waste_type": "cardboard",
+          "waste_type_ja": "段ボール",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "area_name": "東・布施・浪花・釈迦谷",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            1,
+            2
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            4
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            3
+          ]
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            1
+          ]
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            2
+          ]
+        },
+        {
+          "waste_type": "paper",
+          "waste_type_ja": "古紙",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            4
+          ]
+        },
+        {
+          "waste_type": "metals",
+          "waste_type_ja": "金属類",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            2
+          ]
+        },
+        {
+          "waste_type": "cardboard",
+          "waste_type_ja": "段ボール",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "stats": {
+    "total_areas": 2,
+    "waste_types_found": [
+      "bottles",
+      "burnable",
+      "cans",
+      "cardboard",
+      "metals",
+      "non_burnable",
+      "paper",
+      "pet_bottles",
+      "recyclable"
+    ],
+    "pdfs_tried": 2
+  },
+  "source_url": "https://www.city.isumi.lg.jp/soshikikarasagasu/kankyosuidoka/kurashi_tetsuzuki/1/1/1354.html",
+  "extracted_at": "2026-03-22T18:51:37",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

@@ -1,0 +1,88 @@
+{
+  "city_id": "122335",
+  "city_name": "富里市",
+  "source_format": "pdf",
+  "areas": [
+    {
+      "area_name": "日吉台地区",
+      "address_detail": "真空ゴミ輸送施設利用地域等（ＧＲＡＮＤＥＵＲⅥ、第６印東マンション、第８印東マンション、成田コリンズ、ハートランド）",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "stats": {
+    "total_areas": 1,
+    "waste_types_found": [
+      "bottles",
+      "burnable",
+      "hazardous",
+      "non_burnable",
+      "pet_bottles"
+    ],
+    "pdfs_tried": 1
+  },
+  "source_url": "https://www.city.tomisato.lg.jp/0000001069.html",
+  "extracted_at": "2026-03-22T18:48:13",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

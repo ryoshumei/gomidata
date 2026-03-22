@@ -1,0 +1,5060 @@
+{
+  "city_id": "122319",
+  "city_name": "印西市",
+  "source_format": "html_table",
+  "areas": [
+    {
+      "area_name": "大森",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "西埜原",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "七畝割",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "六軒",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "中の口",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "発作上",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "発作下",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "亀成",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "西の原",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "東の原",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "牧の原",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "牧の台",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "原",
+      "address_detail": "千葉ニュータウン",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "木下",
+      "address_detail": "上町・下町・幸町",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "木下東",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "竹袋",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "木下南",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "宗甫",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "石道台",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "七軒屋",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "内川",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "寺台",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "仲の側",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "柏木台",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "原",
+      "address_detail": "草深",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "結縁寺",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "松崎",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金",
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "鹿黒",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "鹿黒南",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "泉",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "草深上",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "多々羅田",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "船尾",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "戸神",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "戸神台",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "武西",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "武西学園台",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "中央南",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "中央北",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "内野",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "原山",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "高花",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "古新田",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "別所",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "鳴沢",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "本郷",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "宮内",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "白幡",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "浦部",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "浦幡新田",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "小倉",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "和泉",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "木刈",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "牧の木戸",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "大塚",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "小倉台",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "高西新田",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "平岡",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "馬場",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "小林牧場",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "小林台方",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "小林新田",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "砂田",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "小林北",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "小林浅間",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "小林大門下",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木",
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "岩戸",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "大廻",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "鎌苅",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "瀬戸",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "造谷",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "つくりや台",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "萩原",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "平賀",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "平賀学園台",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "舞姫",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "松虫",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "美瀬",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "師戸",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "山田",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "吉高",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "吉田",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "若萩",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "安食卜杭",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "和泉屋",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "押付",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "笠神",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "川向",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "行徳",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "荒野",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "酒直卜杭",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "桜野",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "佐野屋",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "下井",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "下曽根",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "将監",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "甚兵衛",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "滝",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "滝野",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "立埜原",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "角田",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "中",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "中田切",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "中根",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "長門屋",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "萩埜",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "松木",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "みどり台",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "本埜小林",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "物木",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "竜腹寺",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "レーベンプラッツ印西牧の原ブランクラス",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "stats": {
+    "total_areas": 112,
+    "waste_types_found": [
+      "burnable",
+      "hazardous",
+      "non_burnable",
+      "recyclable"
+    ]
+  },
+  "source_url": "https://www.city.inzai.lg.jp/0000001685.html",
+  "extracted_at": "2026-03-22T08:16:42",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

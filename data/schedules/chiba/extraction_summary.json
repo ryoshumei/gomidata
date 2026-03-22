@@ -1,8 +1,50 @@
 {
-  "total": 1,
-  "extracted": 1,
-  "skipped_cached": 0,
-  "skipped_no_data": 0,
+  "total": 60,
+  "extracted": 21,
+  "skipped_cached": 27,
+  "skipped_no_data": 5,
   "skipped_pdf_only": 0,
-  "failed": []
+  "failed": [
+    {
+      "city_id": "122301",
+      "city_name": "八街市",
+      "warnings": []
+    },
+    {
+      "city_id": "123226",
+      "city_name": "印旛郡酒々井町",
+      "warnings": [
+        "Tried 1 PDFs but extracted no areas"
+      ]
+    },
+    {
+      "city_id": "123471",
+      "city_name": "香取郡多古町",
+      "warnings": [
+        "No PDF links found"
+      ]
+    },
+    {
+      "city_id": "123498",
+      "city_name": "香取郡東庄町",
+      "warnings": [
+        "Tried 5 PDFs but extracted no areas"
+      ]
+    },
+    {
+      "city_id": "124214",
+      "city_name": "長生郡一宮町",
+      "warnings": []
+    },
+    {
+      "city_id": "124231",
+      "city_name": "長生郡長生村",
+      "warnings": []
+    },
+    {
+      "city_id": "124435",
+      "city_name": "夷隅郡御宿町",
+      "warnings": []
+    }
+  ]
 }

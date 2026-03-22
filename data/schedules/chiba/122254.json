@@ -1,0 +1,14 @@
+{
+  "city_id": "122254",
+  "city_name": "君津市",
+  "source_format": "html_table",
+  "areas": [],
+  "warnings": [],
+  "stats": {
+    "total_areas": 0,
+    "waste_types_found": []
+  },
+  "source_url": "https://www.city.kimitsu.lg.jp/soshiki/15/29742.html",
+  "extracted_at": "2026-03-22T08:13:37",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

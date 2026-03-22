@@ -1,0 +1,79 @@
+{
+  "city_id": "122394",
+  "city_name": "大網白里市",
+  "source_format": "html_table",
+  "areas": [
+    {
+      "area_name": "区分1",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "monthly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": [
+            1
+          ]
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "metals",
+          "waste_type_ja": "金属類",
+          "frequency": "monthly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": [
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "stats": {
+    "total_areas": 1,
+    "waste_types_found": [
+      "bottles",
+      "burnable",
+      "cans",
+      "metals",
+      "pet_bottles"
+    ]
+  },
+  "source_url": "https://www.city.oamishirasato.lg.jp/0000013555.html",
+  "extracted_at": "2026-03-22T08:19:32",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

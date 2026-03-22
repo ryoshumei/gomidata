@@ -1,0 +1,101 @@
+{
+  "city_id": "122131",
+  "city_name": "東金市",
+  "source_format": "pdf",
+  "areas": [
+    {
+      "area_name": "東金地区東金",
+      "address_detail": "旧国道126号線沿いの地域、片貝県道、豊海県道、旧国道126号線、国道126号線に囲まれた地域",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "火",
+            "水",
+            "木",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "metals",
+          "waste_type_ja": "金属類",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "stats": {
+    "total_areas": 1,
+    "waste_types_found": [
+      "bottles",
+      "burnable",
+      "cans",
+      "hazardous",
+      "metals",
+      "pet_bottles"
+    ],
+    "pdfs_tried": 1
+  },
+  "source_url": "https://www.city.togane.chiba.jp/0000005742.html",
+  "extracted_at": "2026-03-22T18:40:28",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

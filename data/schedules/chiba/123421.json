@@ -1,0 +1,115 @@
+{
+  "city_id": "123421",
+  "city_name": "香取郡神崎町",
+  "source_format": "pdf",
+  "areas": [
+    {
+      "area_name": "神崎町全域",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "paper",
+          "waste_type_ja": "古紙",
+          "frequency": "weekly",
+          "day_of_week": [
+            "日"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "clothing",
+          "waste_type_ja": "衣類",
+          "frequency": "weekly",
+          "day_of_week": [
+            "日"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "cardboard",
+          "waste_type_ja": "段ボール",
+          "frequency": "weekly",
+          "day_of_week": [
+            "日"
+          ],
+          "week_of_month": null
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "stats": {
+    "total_areas": 1,
+    "waste_types_found": [
+      "bottles",
+      "burnable",
+      "cans",
+      "cardboard",
+      "clothing",
+      "non_burnable",
+      "paper",
+      "pet_bottles",
+      "plastic"
+    ],
+    "pdfs_tried": 1
+  },
+  "source_url": "https://www.town.kozaki.chiba.jp/kurashi/living_bosai/seikatsu/gomi.html",
+  "extracted_at": "2026-03-22T18:52:04",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

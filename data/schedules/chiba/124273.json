@@ -1,0 +1,136 @@
+{
+  "city_id": "124273",
+  "city_name": "長生郡長南町",
+  "source_format": "html_table",
+  "areas": [
+    {
+      "area_name": "東・豊栄地区",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "area_name": "長南地区",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "area_name": "西地区",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            1
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "stats": {
+    "total_areas": 3,
+    "waste_types_found": [
+      "burnable",
+      "non_burnable",
+      "recyclable"
+    ]
+  },
+  "source_url": "https://www.town.chonan.chiba.jp/kurashi/gomi/35414",
+  "extracted_at": "2026-03-22T08:20:35",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

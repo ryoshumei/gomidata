@@ -1,0 +1,14 @@
+{
+  "city_id": "122025",
+  "city_name": "銚子市",
+  "source_format": "html_table",
+  "areas": [],
+  "warnings": [],
+  "stats": {
+    "total_areas": 0,
+    "waste_types_found": []
+  },
+  "source_url": "https://www.city.choshi.chiba.jp/kurashi/page150059_00001.html",
+  "extracted_at": "2026-03-22T08:03:31",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

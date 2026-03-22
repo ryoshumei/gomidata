@@ -1,0 +1,3028 @@
+{
+  "city_id": "122246",
+  "city_name": "鎌ケ谷市",
+  "source_format": "html_table",
+  "areas": [
+    {
+      "area_name": "粟野",
+      "address_detail": "426から514番地まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "粟野",
+      "address_detail": "28の一部、29から31まで、779から790まで、795番地",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "粟野",
+      "address_detail": "上記以外",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "右京塚",
+      "address_detail": "1から4番まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "右京塚",
+      "address_detail": "5・6番",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "右京塚",
+      "address_detail": "7から15番まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "鎌ケ谷1丁目",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "鎌ケ谷2丁目から9丁目まで",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "軽井沢",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "北中沢1丁目から3丁目まで",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "北初富",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "串崎新田",
+      "address_detail": "1から34番地まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "串崎新田",
+      "address_detail": "237から302番地まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "くぬぎ山",
+      "address_detail": "1丁目から5丁目4番まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "くぬぎ山5丁目",
+      "address_detail": "5番から10番まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "佐津間",
+      "address_detail": "1299から1389番地まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "佐津間",
+      "address_detail": "上記以外",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "新鎌ケ谷1丁目",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "新鎌ケ谷2丁目",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "新鎌ケ谷3丁目",
+      "address_detail": "1番から3番まで(3番の一部を除く）",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "新鎌ケ谷3丁目",
+      "address_detail": "3番の一部、4番から22番まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "新鎌ケ谷4丁目",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "中央1丁目",
+      "address_detail": "1番、8番",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "中央1丁目",
+      "address_detail": "2から7番まで、13から20番まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "中央2丁目",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "富岡1丁目から3丁目まで",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "中佐津間1丁目から2丁目まで",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "中沢",
+      "address_detail": "1384、1439から1444番地まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "中沢",
+      "address_detail": "上記以外",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "中沢新町",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "西佐津間1丁目から2丁目まで",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "西道野辺",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "初富",
+      "address_detail": "22から24まで、29から99番地まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "初富",
+      "address_detail": "727から857番地まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "初富",
+      "address_detail": "858から924番地まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "初富",
+      "address_detail": "上記以外",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "初富本町1丁目",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "初富本町2丁目",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "東鎌ケ谷1丁目",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "東鎌ケ谷2丁目から3丁目まで",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "東中沢1丁目から4丁目まで",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "東初富",
+      "address_detail": "1丁目から3丁目8番まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "東初富3丁目",
+      "address_detail": "9から32番まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "東初富4丁目",
+      "address_detail": "1から5番まで、12番の一部",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "東初富",
+      "address_detail": "4丁目6番から6丁目まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "東道野辺1丁目",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "東道野辺",
+      "address_detail": "2丁目から5丁目7番まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "東道野辺5丁目",
+      "address_detail": "8から22番まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "東道野辺6丁目",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "東道野辺7丁目",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "馬込沢",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "丸山1丁目",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "丸山2丁目から3丁目まで",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "道野辺",
+      "address_detail": "1から228番地まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "道野辺",
+      "address_detail": "370、1026から1051番地まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "道野辺本町1丁目から2丁目まで",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "道野辺中央1丁目から5丁目まで",
+      "address_detail": "(3丁目12番から14番までの一部を除く)",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "道野辺中央3丁目",
+      "address_detail": "12番から14番までの一部",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "南鎌ケ谷1丁目",
+      "address_detail": "1から8番まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "南鎌ケ谷1丁目",
+      "address_detail": "9から15番まで",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "南鎌ケ谷2丁目",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "南鎌ケ谷3丁目から4丁目まで",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "南佐津間",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "南初富1丁目から6丁目まで",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "木",
+            "土"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "stats": {
+    "total_areas": 64,
+    "waste_types_found": [
+      "burnable",
+      "non_burnable",
+      "plastic",
+      "recyclable"
+    ]
+  },
+  "source_url": "https://www.city.kamagaya.chiba.jp/kurashi-tetsuzuki/gomi/shuushuu/gomidashi.html",
+  "extracted_at": "2026-03-22T08:12:54",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

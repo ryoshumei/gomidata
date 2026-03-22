@@ -1,0 +1,65 @@
+{
+  "city_id": "123293",
+  "city_name": "印旛郡栄町",
+  "source_format": "html_table",
+  "areas": [
+    {
+      "area_name": "",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": [
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "stats": {
+    "total_areas": 1,
+    "waste_types_found": [
+      "burnable",
+      "hazardous",
+      "non_burnable",
+      "recyclable"
+    ]
+  },
+  "source_url": "https://www.town.sakae.chiba.jp/kurashi/gomi/gomi-rules/page000497.html",
+  "extracted_at": "2026-03-22T08:19:41",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

@@ -1,0 +1,15 @@
+{
+  "city_id": "124435",
+  "city_name": "夷隅郡御宿町",
+  "source_format": "pdf",
+  "areas": [],
+  "warnings": [],
+  "stats": {
+    "total_areas": 0,
+    "waste_types_found": [],
+    "pdfs_tried": 0
+  },
+  "source_url": "https://www.town.onjuku.chiba.jp/sub1/6/kannkyoukarenda.html",
+  "extracted_at": "2026-03-22T19:13:35",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

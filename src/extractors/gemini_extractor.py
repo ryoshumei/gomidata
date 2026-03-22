@@ -308,6 +308,185 @@ def _expand_compact_areas(compact_list: list[dict]) -> list[dict]:
     return areas
 
 
+# --- PDF extraction ---
+
+def _find_pdf_links(html: str, base_url: str) -> list[dict]:
+    """Extract PDF links from an HTML page, categorized by type."""
+    from urllib.parse import urljoin
+    soup = BeautifulSoup(html, "html.parser")
+    pdfs = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if ".pdf" not in href.lower():
+            continue
+        text = a.get_text(strip=True)
+        full_url = urljoin(base_url, href)
+        pdfs.append({"url": full_url, "text": text})
+    return pdfs
+
+
+def _download_pdf(url: str, timeout: int = 60) -> bytes | None:
+    """Download a PDF file, return bytes or None on failure."""
+    import requests
+    try:
+        resp = requests.get(url, timeout=timeout)
+        resp.raise_for_status()
+        if len(resp.content) < 100:
+            return None
+        return resp.content
+    except Exception as e:
+        logger.warning("PDF download failed for %s: %s", url, e)
+        return None
+
+
+def _call_gemini_with_pdf(
+    client: genai.Client, pdf_data: bytes, prompt: str,
+    max_output_tokens: int = 65536, retries: int = 2,
+) -> dict | list | None:
+    """Call Gemini with a PDF file + text prompt."""
+    for attempt in range(retries + 1):
+        try:
+            response = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=[
+                    types.Content(
+                        role="user",
+                        parts=[
+                            types.Part.from_bytes(data=pdf_data, mime_type="application/pdf"),
+                            types.Part.from_text(text=prompt),
+                        ],
+                    ),
+                ],
+                config=types.GenerateContentConfig(max_output_tokens=max_output_tokens),
+            )
+
+            candidate = response.candidates[0]
+            finish = getattr(candidate, "finish_reason", None)
+            if finish and str(finish) not in ("STOP", "FinishReason.STOP", "1"):
+                logger.warning("Gemini finish_reason: %s", finish)
+
+            text = ""
+            for part in candidate.content.parts:
+                if part.text and not getattr(part, "thought", False):
+                    text += part.text
+            text = text.strip()
+
+            if "```" in text:
+                text = text.split("```")[1]
+                if text.startswith("json"):
+                    text = text[4:]
+                text = text.strip()
+            return json.loads(text)
+        except Exception as e:
+            err_str = str(e)
+            if "RESOURCE_EXHAUSTED" in err_str and "per_model_per_day" in err_str:
+                raise QuotaExhaustedError(f"Daily quota exhausted for {GEMINI_MODEL}") from e
+            logger.warning("Gemini PDF error (attempt %d/%d): %s", attempt + 1, retries + 1, e)
+            if attempt < retries:
+                time.sleep(3)
+    return None
+
+
+PDF_SCHEDULE_PROMPT = """このPDFは「{city_name}」のごみ収集スケジュールに関するデータです。
+
+このPDFから、地区別のごみ収集スケジュールを以下のコンパクトなJSON配列に変換してください。
+
+出力形式：
+[
+  {{
+    "a": "町名/地区名",
+    "d": "番地詳細（なければ空文字）",
+    "t": "",
+    "b": "月木",
+    "nb": "2木",
+    "r": "水",
+    "p": "水",
+    "v": "水"
+  }}
+]
+
+フィールド：a=地区名, d=番地詳細, t=収集時間(昼→daytime,夜→nighttime), b=可燃/燃えるごみ/普通ごみ, nb=不燃ごみ
+以下はPDFのカラムに応じて使い分け：
+r=資源ごみ, p=ペットボトル, v=有価物, bn=びん, c=缶, pp=古紙/紙類, cl=衣類, pl=プラスチック, m=金属類, h=有害ごみ, br=木の枝/刈り草, cd=段ボール
+
+値：「月木」=毎週, 「2木」=第2木曜, 「1,3水」=第1・3水曜, 該当なし=空文字
+
+PDFがカレンダー形式の場合は、曜日パターンを読み取ってください。
+PDFが地区一覧の場合は、各地区の収集日を抽出してください。
+すべての地区を漏れなく出力。JSON配列のみ。"""
+
+
+def extract_from_pdfs(
+    client: genai.Client,
+    city_id: str,
+    city_name: str,
+    html_content: str,
+    waste_page_url: str,
+) -> dict:
+    """Extract schedule data from PDF links found in the waste page HTML."""
+    pdf_links = _find_pdf_links(html_content, waste_page_url)
+
+    if not pdf_links:
+        return {
+            "city_id": city_id,
+            "city_name": city_name,
+            "source_format": "pdf_no_links",
+            "areas": [],
+            "warnings": ["No PDF links found"],
+        }
+
+    # Try each PDF until we get results
+    # Prioritize PDFs with schedule-related keywords in their text/URL
+    schedule_keywords = ["地区", "収集", "カレンダー", "スケジュール", "曜日", "一覧", "分別", "分け方", "出し方"]
+    pdf_links.sort(key=lambda p: -sum(1 for kw in schedule_keywords if kw in p["text"] + p["url"]))
+
+    all_areas = []
+    warnings = []
+    pdfs_tried = 0
+    max_pdfs = 5  # Limit to avoid burning API quota
+
+    for pdf_info in pdf_links[:max_pdfs]:
+        url = pdf_info["url"]
+        text = pdf_info["text"]
+        logger.info("  Trying PDF: %s (%s)", text[:40], url[-40:])
+
+        pdf_data = _download_pdf(url)
+        if not pdf_data:
+            continue
+
+        pdfs_tried += 1
+        prompt = PDF_SCHEDULE_PROMPT.format(city_name=city_name)
+        result = _call_gemini_with_pdf(client, pdf_data, prompt)
+
+        if isinstance(result, list) and len(result) > 0:
+            areas = _expand_compact_areas(result)
+            if areas:
+                logger.info("  PDF extracted %d areas", len(areas))
+                all_areas.extend(areas)
+                break  # Got results, stop trying more PDFs
+
+    if not all_areas and pdfs_tried > 0:
+        warnings.append(f"Tried {pdfs_tried} PDFs but extracted no areas")
+
+    waste_types_found = set()
+    for a in all_areas:
+        for s in a.get("schedules", []):
+            waste_types_found.add(s.get("waste_type", "unknown"))
+
+    return {
+        "city_id": city_id,
+        "city_name": city_name,
+        "source_format": "pdf",
+        "areas": all_areas,
+        "warnings": warnings,
+        "stats": {
+            "total_areas": len(all_areas),
+            "waste_types_found": sorted(waste_types_found),
+            "pdfs_tried": pdfs_tried,
+        },
+    }
+
+
 # --- Main extraction ---
 
 def extract_city_schedule(
@@ -455,14 +634,16 @@ def extract_all(
             stats["skipped_no_data"] += 1
             print(f"INSUFFICIENT")
             continue
-        if fmt == "pdf_links":
-            stats["skipped_pdf_only"] += 1
-            print("PDF LINKS ONLY")
-            continue
 
         # Extract
         try:
-            result = extract_city_schedule(client, city_id, city_name, html_content, md_content)
+            if fmt == "pdf_links":
+                result = extract_from_pdfs(
+                    client, city_id, city_name, html_content,
+                    city.get("waste_page_url", ""),
+                )
+            else:
+                result = extract_city_schedule(client, city_id, city_name, html_content, md_content)
         except QuotaExhaustedError:
             print(f"\n⚠ Gemini daily quota exhausted. Stopping.")
             print(f"  Completed {stats['extracted']}/{len(targets)} cities.")

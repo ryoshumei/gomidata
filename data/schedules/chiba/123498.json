@@ -1,0 +1,17 @@
+{
+  "city_id": "123498",
+  "city_name": "香取郡東庄町",
+  "source_format": "pdf",
+  "areas": [],
+  "warnings": [
+    "Tried 5 PDFs but extracted no areas"
+  ],
+  "stats": {
+    "total_areas": 0,
+    "waste_types_found": [],
+    "pdfs_tried": 5
+  },
+  "source_url": "https://www.town.tohnosho.chiba.jp/life_scene/gomi/3324.html",
+  "extracted_at": "2026-03-22T18:53:04",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

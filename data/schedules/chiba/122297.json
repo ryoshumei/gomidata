@@ -1,0 +1,14 @@
+{
+  "city_id": "122297",
+  "city_name": "袖ケ浦市",
+  "source_format": "html_table",
+  "areas": [],
+  "warnings": [],
+  "stats": {
+    "total_areas": 0,
+    "waste_types_found": []
+  },
+  "source_url": "https://www.city.sodegaura.lg.jp/soshiki/haikibutsu/waste-calendar.html",
+  "extracted_at": "2026-03-22T08:15:17",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

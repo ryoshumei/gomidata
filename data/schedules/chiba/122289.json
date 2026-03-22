@@ -1,0 +1,79 @@
+{
+  "city_id": "122289",
+  "city_name": "四街道市",
+  "source_format": "pdf",
+  "areas": [
+    {
+      "area_name": "A地区",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "水",
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            1
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "stats": {
+    "total_areas": 1,
+    "waste_types_found": [
+      "burnable",
+      "hazardous",
+      "non_burnable",
+      "plastic",
+      "recyclable"
+    ],
+    "pdfs_tried": 1
+  },
+  "source_url": "https://www.city.yotsukaido.chiba.jp/kurashi/gomi/gominobunbetsu/gomi_bunnbetsu_guide/yhaiki202103.html",
+  "extracted_at": "2026-03-22T18:46:30",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

@@ -1,0 +1,17 @@
+{
+  "city_id": "123226",
+  "city_name": "印旛郡酒々井町",
+  "source_format": "pdf",
+  "areas": [],
+  "warnings": [
+    "Tried 1 PDFs but extracted no areas"
+  ],
+  "stats": {
+    "total_areas": 0,
+    "waste_types_found": [],
+    "pdfs_tried": 1
+  },
+  "source_url": "https://www.town.shisui.chiba.jp/docs/2019041800010/",
+  "extracted_at": "2026-03-22T18:51:45",
+  "extraction_model": "gemini-3.1-pro-preview"
+}

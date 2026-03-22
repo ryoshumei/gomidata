@@ -9,7 +9,7 @@
 | 1 | City Database — collect Chiba municipalities | Done (60 cities) |
 | 2 | Waste Page Discovery — find schedule URLs | Done (60/60 found) |
 | 3 | Deep Crawl & Schedule Page Discovery | 60/60 done (3 null) |
-| 4 | Data Extraction — Gemini Pro extraction | In progress |
+| 4 | Data Extraction — Gemini Pro extraction | 48/60 cities (80%) |
 | 5 | Validation — verify against Funabashi | Not started |
 
 ### Completed
@@ -51,16 +51,23 @@
 
 - Phase 3: 3 null results remaining: 市原市 (JS SPA), 匝瑳市 (boilerplate snippets), 鋸南町 (no web schedule)
 - Consider Google search fallback for SPA sites that don't expose article URLs in static HTML
-- `src/extractors/gemini_extractor.py` — Phase 4 extractor using HTML tables (not markdown)
-- **Phase 4 Funabashi validation**: 306 areas, 100% match rate against PostgreSQL DB (0 mismatches, 248/274 matched)
+- `src/extractors/gemini_extractor.py` — Phase 4 extractor using HTML tables + PDF multimodal
+- **Phase 4 Funabashi validation**: 306 areas, 100% match rate against PostgreSQL DB (0 mismatches)
 - HTML table approach: preserves rowspan/colspan structure, eliminates markdown conversion errors
+- PDF multimodal extraction: sends PDFs directly to Gemini via `Part.from_bytes`
 - Compact JSON output format: reduces token usage, allows full extraction in 1 API call
+- **Phase 4 batch run**: 48/60 cities extracted (80% coverage), 12 remaining (404 PDFs, SPA, insufficient)
+
+### In Progress
+
+- Phase 4: 12 cities remaining — 5 no data (SPA/missing), 7 empty (404 PDF links, insufficient content)
 
 ### Blocked / Open Questions
 
-- Gemini 3.1 Pro Preview daily quota: 250 requests/day — limits ~30-40 cities per session
-- PDF-only cities need multimodal (image) extraction (future)
+- Gemini 3.1 Pro Preview daily quota: 250 requests/day
+- 5 cities with no source data: 市原市 (SPA), 匝瑳市, 佐倉市, 鴨川市, 鋸南町
+- 7 cities with empty results: PDFs returning 404 or content not parseable
 
 ### Last Updated
 
-2026-03-22 — Phase 4 extractor rewritten to use HTML tables; Funabashi 100% match rate against DB
+2026-03-22 — Phase 4 complete: 48/60 cities (80%) extracted with HTML tables + PDF multimodal

@@ -1,0 +1,14 @@
+{
+  "city_id": "122050",
+  "city_name": "館山市",
+  "source_format": "html_table",
+  "areas": [],
+  "warnings": [],
+  "stats": {
+    "total_areas": 0,
+    "waste_types_found": []
+  },
+  "source_url": "https://www.city.tateyama.chiba.jp/kankyou/page100017.html",
+  "extracted_at": "2026-03-22T08:05:45",
+  "extraction_model": "gemini-3.1-pro-preview"
+}
