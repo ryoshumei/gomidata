@@ -436,9 +436,19 @@ def extract_from_pdfs(
         }
 
     # Try each PDF until we get results
-    # Prioritize PDFs with schedule-related keywords in their text/URL
-    schedule_keywords = ["地区", "収集", "カレンダー", "スケジュール", "曜日", "一覧", "分別", "分け方", "出し方"]
-    pdf_links.sort(key=lambda p: -sum(1 for kw in schedule_keywords if kw in p["text"] + p["url"]))
+    # Prioritize PDFs with schedule-related keywords (収集日/カレンダー first, 分け方 last)
+    high_priority = ["収集日", "カレンダー", "calendar", "地区別", "曜日", "スケジュール"]
+    med_priority = ["地区", "収集", "一覧"]
+    low_priority = ["分別", "分け方", "出し方"]
+
+    def pdf_score(p):
+        combined = p["text"] + p["url"]
+        score = sum(10 for kw in high_priority if kw in combined.lower())
+        score += sum(3 for kw in med_priority if kw in combined)
+        score += sum(1 for kw in low_priority if kw in combined)
+        return -score
+
+    pdf_links.sort(key=pdf_score)
 
     all_areas = []
     warnings = []

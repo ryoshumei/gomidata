@@ -70,4 +70,4 @@
 
 ### Last Updated
 
-2026-03-22 — Phase 4: fixing table detection for cities like 銚子市 (header keyword matching too strict)
+2026-03-22 — Phase 4: 47/60 extracted; PDF fallback, improved PDF sorting, fixing remaining 13 cities
