@@ -450,12 +450,25 @@ def extract_from_pdfs(
 
     pdf_links.sort(key=pdf_score)
 
+    # Filter out accessibility/duplicate PDFs
+    filtered_pdfs = []
+    for p in pdf_links:
+        text = p["text"]
+        url = p["url"]
+        # Skip accessibility versions
+        if "弱視" in text or "音声" in text or "点字" in text:
+            continue
+        # Skip English/foreign language versions
+        if url.startswith("e2") or "/e2" in url:
+            continue
+        filtered_pdfs.append(p)
+
     all_areas = []
     warnings = []
     pdfs_tried = 0
-    max_pdfs = 5  # Limit to avoid burning API quota
+    max_pdfs = 20  # Allow processing all area calendars
 
-    for pdf_info in pdf_links[:max_pdfs]:
+    for pdf_info in filtered_pdfs[:max_pdfs]:
         url = pdf_info["url"]
         text = pdf_info["text"]
         logger.info("  Trying PDF: %s (%s)", text[:40], url[-40:])
@@ -473,7 +486,6 @@ def extract_from_pdfs(
             if areas:
                 logger.info("  PDF extracted %d areas", len(areas))
                 all_areas.extend(areas)
-                break  # Got results, stop trying more PDFs
 
     if not all_areas and pdfs_tried > 0:
         warnings.append(f"Tried {pdfs_tried} PDFs but extracted no areas")
