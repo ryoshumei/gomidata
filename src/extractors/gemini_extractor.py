@@ -644,6 +644,15 @@ def extract_all(
                 )
             else:
                 result = extract_city_schedule(client, city_id, city_name, html_content, md_content)
+                # Fallback: if HTML table extraction got 0 areas, try PDF extraction
+                if result.get("stats", {}).get("total_areas", 0) == 0 and html_content:
+                    logger.info("  HTML extraction empty, trying PDF fallback...")
+                    pdf_result = extract_from_pdfs(
+                        client, city_id, city_name, html_content,
+                        city.get("waste_page_url", ""),
+                    )
+                    if pdf_result.get("stats", {}).get("total_areas", 0) > 0:
+                        result = pdf_result
         except QuotaExhaustedError:
             print(f"\n⚠ Gemini daily quota exhausted. Stopping.")
             print(f"  Completed {stats['extracted']}/{len(targets)} cities.")
