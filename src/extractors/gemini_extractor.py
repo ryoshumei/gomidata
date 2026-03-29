@@ -326,17 +326,58 @@ def _find_pdf_links(html: str, base_url: str) -> list[dict]:
 
 
 def _download_pdf(url: str, timeout: int = 60) -> bytes | None:
-    """Download a PDF file, return bytes or None on failure."""
+    """Download a PDF file, return bytes or None on failure.
+
+    Falls back to Playwright for SPA sites that block direct HTTP (403).
+    """
     import requests
     try:
         resp = requests.get(url, timeout=timeout)
+        if resp.status_code == 403:
+            logger.info("  HTTP 403, trying Playwright download...")
+            return _download_pdf_playwright(url)
         resp.raise_for_status()
         if len(resp.content) < 100:
+            return None
+        # Verify it's actually a PDF
+        if not resp.content[:5].startswith(b"%PDF"):
+            logger.warning("  Not a PDF (got %s)", resp.headers.get("content-type", "unknown"))
             return None
         return resp.content
     except Exception as e:
         logger.warning("PDF download failed for %s: %s", url, e)
         return None
+
+
+def _download_pdf_playwright(url: str) -> bytes | None:
+    """Download a PDF using Playwright browser context (for SPA sites)."""
+    import asyncio
+    from playwright.async_api import async_playwright
+
+    async def _download():
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(headless=True)
+            page = await browser.new_page()
+            try:
+                resp = await page.request.get(url)
+                if resp.status != 200:
+                    return None
+                data = await resp.body()
+                if len(data) < 100 or not data[:5].startswith(b"%PDF"):
+                    return None
+                return data
+            except Exception as e:
+                logger.warning("Playwright PDF download failed: %s", e)
+                return None
+            finally:
+                await browser.close()
+
+    try:
+        return asyncio.run(_download())
+    except RuntimeError:
+        # Already in an event loop
+        loop = asyncio.get_event_loop()
+        return loop.run_until_complete(_download())
 
 
 def _call_gemini_with_pdf(
@@ -479,6 +520,10 @@ def extract_from_pdfs(
             continue
         # Skip English/foreign language versions
         if url.startswith("e2") or "/e2" in url:
+            continue
+        foreign_kw = ["English", "英語", "中国語", "タイ語", "ベトナム", "ペルシャ",
+                      "Español", "Garbage Calendar", "Calendario", "シンハラ"]
+        if any(kw in text for kw in foreign_kw):
             continue
         # Skip older fiscal years if we found multiple
         if latest_year and years_found and len(years_found) > 1:
@@ -676,6 +721,53 @@ def extract_all(
         if md_file.exists() and md_file.stat().st_size > 100:
             md_content = md_file.read_text(encoding="utf-8")
 
+        waste_page_url = city.get("waste_page_url", "")
+
+        # Handle direct PDF URLs (waste_page_url ends with .pdf)
+        if waste_page_url.lower().endswith(".pdf"):
+            logger.info("  Direct PDF URL detected")
+            try:
+                pdf_data = _download_pdf(waste_page_url)
+                if pdf_data:
+                    prompt = PDF_SCHEDULE_PROMPT.format(city_name=city_name)
+                    gemini_result = _call_gemini_with_pdf(client, pdf_data, prompt)
+                    if isinstance(gemini_result, list) and gemini_result:
+                        areas = _expand_compact_areas(gemini_result)
+                        waste_types = set()
+                        for a in areas:
+                            for s in a.get("schedules", []):
+                                waste_types.add(s.get("waste_type"))
+                        result = {
+                            "city_id": city_id, "city_name": city_name,
+                            "source_format": "direct_pdf", "areas": areas,
+                            "warnings": [],
+                            "stats": {"total_areas": len(areas), "waste_types_found": sorted(waste_types)},
+                        }
+                    else:
+                        result = {"city_id": city_id, "city_name": city_name,
+                                  "source_format": "direct_pdf", "areas": [], "warnings": ["No data from PDF"]}
+                else:
+                    result = {"city_id": city_id, "city_name": city_name,
+                              "source_format": "direct_pdf", "areas": [], "warnings": ["PDF download failed"]}
+            except QuotaExhaustedError:
+                raise
+            except Exception as e:
+                result = {"city_id": city_id, "city_name": city_name,
+                          "source_format": "direct_pdf", "areas": [], "warnings": [str(e)]}
+
+            result["source_url"] = waste_page_url
+            result["extracted_at"] = time.strftime("%Y-%m-%dT%H:%M:%S")
+            result["extraction_model"] = GEMINI_MODEL
+            out_file.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+            n_areas = len(result.get("areas", []))
+            if n_areas > 0:
+                stats["extracted"] += 1
+                print(f"OK ({n_areas} areas, direct PDF)")
+            else:
+                stats["failed"].append({"city_id": city_id, "city_name": city_name})
+                print(f"EMPTY (direct PDF)")
+            continue
+
         if not html_content and not md_content:
             stats["skipped_no_data"] += 1
             print("NO DATA")
@@ -692,8 +784,7 @@ def extract_all(
         try:
             if fmt == "pdf_links":
                 result = extract_from_pdfs(
-                    client, city_id, city_name, html_content,
-                    city.get("waste_page_url", ""),
+                    client, city_id, city_name, html_content, waste_page_url,
                 )
             else:
                 result = extract_city_schedule(client, city_id, city_name, html_content, md_content)
@@ -701,8 +792,7 @@ def extract_all(
                 if result.get("stats", {}).get("total_areas", 0) == 0 and html_content:
                     logger.info("  HTML extraction empty, trying PDF fallback...")
                     pdf_result = extract_from_pdfs(
-                        client, city_id, city_name, html_content,
-                        city.get("waste_page_url", ""),
+                        client, city_id, city_name, html_content, waste_page_url,
                     )
                     if pdf_result.get("stats", {}).get("total_areas", 0) > 0:
                         result = pdf_result
