@@ -1,8 +1,16 @@
 {
-  "total": 60,
-  "extracted": 9,
-  "skipped_cached": 46,
-  "skipped_no_data": 5,
+  "total": 1,
+  "extracted": 0,
+  "skipped_cached": 0,
+  "skipped_no_data": 0,
   "skipped_pdf_only": 0,
-  "failed": []
+  "failed": [
+    {
+      "city_id": "123471",
+      "city_name": "香取郡多古町",
+      "warnings": [
+        "No PDF links found"
+      ]
+    }
+  ]
 }
