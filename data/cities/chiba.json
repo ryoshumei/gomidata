@@ -121,7 +121,7 @@
     "prefecture": "千葉県",
     "city_name": "野田市",
     "homepage_url": "https://www.city.noda.chiba.jp",
-    "waste_page_url": "https://www.city.noda.chiba.jp/kurashi/kankyo/gomi/1000597.html",
+    "waste_page_url": "https://manage.delight-system.com/threeR/web/calendar?jichitaiId=nodashi",
     "source_format": "html",
     "last_updated": "2026-03-14"
   },
@@ -391,7 +391,7 @@
     "prefecture": "千葉県",
     "city_name": "印旛郡酒々井町",
     "homepage_url": "https://www.town.shisui.chiba.jp",
-    "waste_page_url": "https://www.town.shisui.chiba.jp/docs/2019041800010/",
+    "waste_page_url": "https://www.town.shisui.chiba.jp/docs/2021092800017/",
     "source_format": "html",
     "last_updated": "2026-02-23"
   },
