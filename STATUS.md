@@ -9,7 +9,7 @@
 | 1 | City Database — collect Chiba municipalities | Done (60 cities) |
 | 2 | Waste Page Discovery — find schedule URLs | Done (60/60 found) |
 | 3 | Deep Crawl & Schedule Page Discovery | Done (57/60 found, 3 null) |
-| 4 | Data Extraction — Gemini Pro extraction | 48/60 (80%) + 木更津市 fixed |
+| 4 | Data Extraction — Gemini Pro extraction | **57/60 (95%)** |
 | 5 | Validation — verify against Funabashi | Funabashi validated (100% match) |
 
 ### Phase 4 Extraction Results
@@ -112,4 +112,4 @@ These cities extracted successfully but have incomplete area coverage — typica
 
 ### Last Updated
 
-2026-03-23 — Year filtering + calendar pattern extraction; 木更津市 (160 areas), 東金市 (22 areas) fixed
+2026-03-29 — Phase 4 at 57/60 (95%); 市原市 (Playwright), 一宮町 (URL fix), 鋸南町/多古町 (direct PDF); 3 remaining
