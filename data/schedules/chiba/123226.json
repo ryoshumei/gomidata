@@ -2,7 +2,10 @@
   "city_id": "123226",
   "city_name": "印旛郡酒々井町",
   "source_format": "pdf",
-  "source_url": "https://www.town.shisui.chiba.jp/docs/2021092800017/file_contents/2-5.pdf",
+  "source_url": [
+    "https://www.town.shisui.chiba.jp/docs/2021092800017/file_contents/2-4.pdf",
+    "https://www.town.shisui.chiba.jp/docs/2021092800017/file_contents/2-5.pdf"
+  ],
   "extracted_at": "2026-03-29T14:48:56",
   "extraction_model": "gemini-3.1-pro-preview",
   "areas": [
