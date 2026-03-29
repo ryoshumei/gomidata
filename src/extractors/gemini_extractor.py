@@ -498,6 +498,7 @@ def extract_from_pdfs(
     pdfs_tried = 0
     max_pdfs = 20  # Allow processing all area calendars
 
+    # todo can we parallelize this?
     for pdf_info in filtered_pdfs[:max_pdfs]:
         url = pdf_info["url"]
         text = pdf_info["text"]
