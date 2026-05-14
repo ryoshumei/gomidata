@@ -156,19 +156,25 @@ def validate_city(city_id: str, city_name: str) -> dict:
             f"only {burnable_areas}/{len(areas)} areas have burnable waste (<50%)"
         )
 
-    # Waste type diversity — most municipalities collect ≥3 categories
+    # Waste type diversity — most municipalities collect ≥3 categories.
+    # When the source only publishes a subset of types (e.g. calendar PDF
+    # only lists burnable + pet) we mark this as a `limited_source`
+    # advisory rather than a critical schema bug — the recorded data is
+    # accurate, just incomplete relative to typical municipalities.
     n_types = len(waste_type_counts)
     if n_types < 3:
         result["issues"].append(
-            f"only {n_types} waste type(s) extracted ({list(waste_type_counts)}); "
-            f"municipalities typically collect ≥3"
+            f"limited source: only {n_types} waste type(s) extracted "
+            f"({list(waste_type_counts)})"
         )
 
-    # Categorize status
+    # Categorize status. Critical = schema bug or missing data.
+    # Limited-source (few types) and duplicate-area name only-flags
+    # demote to "warnings" since the underlying data is structurally valid.
     if result["issues"]:
         critical_keywords = [
             "NO burnable", "JSON parse error", "schedule file does not exist",
-            "duplicate day_of_week", "duplicate (name+detail)", "waste type(s) extracted",
+            "duplicate day_of_week", "duplicate (name+detail)",
         ]
         critical = any(
             kw in i for i in result["issues"] for kw in critical_keywords

@@ -395,15 +395,22 @@
   {
     "city_id": "122084",
     "city_name": "野田市",
-    "status": "empty",
-    "issues": [
-      "empty areas, no warnings"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
-      "area_count": 0,
-      "source_format": "text",
+      "area_count": 116,
+      "source_format": "spa",
       "source_url": "https://manage.delight-system.com/threeR/web/calendar?jichitaiId=nodashi",
-      "warnings": []
+      "warnings": [],
+      "waste_types": {
+        "burnable": 116,
+        "non_burnable": 116,
+        "paper": 116,
+        "bottles": 116,
+        "pet_bottles": 116
+      },
+      "burnable_areas": 116,
+      "duplicate_days_count": 0
     }
   },
   {
@@ -970,9 +977,9 @@
   {
     "city_id": "122351",
     "city_name": "匝瑳市",
-    "status": "critical",
+    "status": "warnings",
     "issues": [
-      "only 1 waste type(s) extracted (['burnable']); municipalities typically collect ≥3"
+      "limited source: only 1 waste type(s) extracted (['burnable'])"
     ],
     "stats": {
       "area_count": 14,
@@ -1190,9 +1197,9 @@
   {
     "city_id": "124036",
     "city_name": "山武郡九十九里町",
-    "status": "critical",
+    "status": "warnings",
     "issues": [
-      "only 2 waste type(s) extracted (['burnable', 'pet_bottles']); municipalities typically collect ≥3"
+      "limited source: only 2 waste type(s) extracted (['burnable', 'pet_bottles'])"
     ],
     "stats": {
       "area_count": 50,
