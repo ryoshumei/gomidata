@@ -4,7 +4,7 @@
   "source_format": "pdf",
   "areas": [
     {
-      "area_name": "大原・東海",
+      "area_name": "大原・東海 #1",
       "address_detail": null,
       "schedules": [
         {
@@ -97,6 +97,79 @@
         {
           "waste_type": "cardboard",
           "waste_type_ja": "段ボール",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "area_name": "大原・東海 #2",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "金"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            1,
+            2
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            3
+          ]
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            1
+          ]
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "monthly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": [
+            2
+          ]
+        },
+        {
+          "waste_type": "paper",
+          "waste_type_ja": "古紙",
           "frequency": "monthly",
           "day_of_week": [
             "火"
@@ -316,79 +389,6 @@
       ]
     },
     {
-      "area_name": "大原・東海",
-      "address_detail": null,
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月",
-            "金"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": [
-            1,
-            2
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "monthly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": [
-            3
-          ]
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "monthly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": [
-            1
-          ]
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "monthly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": [
-            2
-          ]
-        },
-        {
-          "waste_type": "paper",
-          "waste_type_ja": "古紙",
-          "frequency": "monthly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": [
-            4
-          ]
-        }
-      ]
-    },
-    {
       "area_name": "東・布施・浪花・釈迦谷",
       "address_detail": null,
       "schedules": [
@@ -462,7 +462,7 @@
       ]
     },
     {
-      "area_name": "岬地域",
+      "area_name": "岬地域 #1",
       "address_detail": null,
       "schedules": [
         {
@@ -535,80 +535,7 @@
       ]
     },
     {
-      "area_name": "夷隅地域",
-      "address_detail": null,
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月",
-            "金"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            3,
-            4
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            2
-          ]
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            4
-          ]
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            3
-          ]
-        },
-        {
-          "waste_type": "paper",
-          "waste_type_ja": "古紙",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            1
-          ]
-        }
-      ]
-    },
-    {
-      "area_name": "岬地域",
+      "area_name": "岬地域 #2",
       "address_detail": null,
       "schedules": [
         {
@@ -682,7 +609,80 @@
       ]
     },
     {
-      "area_name": "夷隅地域",
+      "area_name": "夷隅地域 #1",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "金"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            3,
+            4
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            2
+          ]
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            4
+          ]
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            3
+          ]
+        },
+        {
+          "waste_type": "paper",
+          "waste_type_ja": "古紙",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "area_name": "夷隅地域 #2",
       "address_detail": null,
       "schedules": [
         {

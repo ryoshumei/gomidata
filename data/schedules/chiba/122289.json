@@ -1200,7 +1200,7 @@
       ]
     },
     {
-      "area_name": "旭ケ丘",
+      "area_name": "旭ケ丘 #1",
       "address_detail": null,
       "schedules": [
         {
@@ -1252,6 +1252,63 @@
           ],
           "week_of_month": [
             4
+          ]
+        }
+      ]
+    },
+    {
+      "area_name": "旭ケ丘 #2",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            4
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "plastic",
+          "waste_type_ja": "プラスチック",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": [
+            2
           ]
         }
       ]
@@ -4165,63 +4222,6 @@
     },
     {
       "area_name": "みそら",
-      "address_detail": null,
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火",
-            "金"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "月"
-          ],
-          "week_of_month": [
-            4
-          ]
-        },
-        {
-          "waste_type": "recyclable",
-          "waste_type_ja": "資源ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "plastic",
-          "waste_type_ja": "プラスチック",
-          "frequency": "weekly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "hazardous",
-          "waste_type_ja": "有害ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "月"
-          ],
-          "week_of_month": [
-            2
-          ]
-        }
-      ]
-    },
-    {
-      "area_name": "旭ケ丘",
       "address_detail": null,
       "schedules": [
         {

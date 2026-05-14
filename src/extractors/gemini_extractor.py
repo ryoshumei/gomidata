@@ -332,29 +332,74 @@ def _expand_compact_areas(compact_list: list[dict]) -> list[dict]:
     return areas
 
 
+def _schedule_signature(s: dict) -> tuple:
+    """Hashable comparison key for a schedule entry."""
+    return (
+        s.get("frequency"),
+        tuple(s.get("day_of_week") or []),
+        tuple(s.get("week_of_month") or []),
+        s.get("collection_time"),
+    )
+
+
 def _deduplicate_areas(areas: list[dict]) -> list[dict]:
-    """Merge areas with the same area_name + address_detail, keeping unique schedules."""
+    """Merge areas sharing the same (area_name, address_detail).
+
+    Areas are merged when their schedules are compatible (no waste_type appears
+    in two areas with different (frequency, days, weeks)). When schedules
+    conflict — i.e. multiple PDFs reported the same area name for distinct
+    sub-zones — the entries are kept separate, with area_name suffixed `#N`
+    to flag that the source did not disambiguate them.
+    """
     from collections import OrderedDict
 
-    key_map = OrderedDict()
+    groups: "OrderedDict[tuple, list[dict]]" = OrderedDict()
     for area in areas:
         name = area.get("area_name", "")
         detail = area.get("address_detail") or ""
-        key = (name, detail)
+        groups.setdefault((name, detail), []).append(area)
 
-        if key not in key_map:
-            key_map[key] = area
-        else:
-            existing = key_map[key]
-            existing_types = {
-                s["waste_type"] for s in existing.get("schedules", [])
-            }
+    result: list[dict] = []
+    for (name, _detail), group in groups.items():
+        if len(group) == 1:
+            result.append(group[0])
+            continue
+
+        # Detect schedule conflicts within the group
+        type_sigs: dict[str, tuple] = {}
+        conflict = False
+        for area in group:
             for s in area.get("schedules", []):
-                if s["waste_type"] not in existing_types:
-                    existing["schedules"].append(s)
-                    existing_types.add(s["waste_type"])
+                wt = s.get("waste_type")
+                if not wt:
+                    continue
+                sig = _schedule_signature(s)
+                if wt in type_sigs and type_sigs[wt] != sig:
+                    conflict = True
+                    break
+                type_sigs.setdefault(wt, sig)
+            if conflict:
+                break
 
-    return list(key_map.values())
+        if conflict:
+            # Keep each variant; disambiguate via #N suffix so downstream
+            # consumers can tell them apart and source maintainers can fix.
+            for i, area in enumerate(group, 1):
+                disamb = dict(area)
+                disamb["area_name"] = f"{name} #{i}" if name else f"area #{i}"
+                result.append(disamb)
+        else:
+            merged = dict(group[0])
+            merged["schedules"] = list(group[0].get("schedules", []))
+            seen_types = {s.get("waste_type") for s in merged["schedules"]}
+            for area in group[1:]:
+                for s in area.get("schedules", []):
+                    if s.get("waste_type") not in seen_types:
+                        merged["schedules"].append(s)
+                        seen_types.add(s.get("waste_type"))
+            result.append(merged)
+
+    return result
 
 
 def _validate_and_fix_areas(areas: list[dict], warnings: list[str]) -> list[dict]:
