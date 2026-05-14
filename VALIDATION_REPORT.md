@@ -1,10 +1,36 @@
 # Chiba Validation Report
 
-Generated: 2026-05-15 (Round 2 — post extractor post-processing fixes)
+Generated: 2026-05-15
+Last updated: 2026-05-15 (Round 3 — after iterative code fixes 5e8e21a–986471d)
 
 Run `python3 src/utils/validate_chiba.py` to regenerate `validation_report.json`.
 
-## Summary
+## Current Status
+
+| Status | Count |
+|--------|------:|
+| ✅ OK | **58** |
+| ⚠️ warnings (limited source) | 2 |
+| critical / empty / missing | 0 |
+
+| City | ID | Outstanding issue |
+|------|----|------|
+| 匝瑳市 | 122351 | Source PDF expresses recyclable/hazardous as calendar dates (13日・27日 of month) — outside our day-of-week schema |
+| 九十九里町 | 124036 | FY2026 calendar PDF only lists burnable + pet_bottles |
+
+Both records are structurally valid and faithful to the source; the
+warning is purely about coverage breadth.
+
+## History (initial → final)
+
+| Status | Initial | Final |
+|--------|------:|------:|
+| ✅ OK | 43 | 58 |
+| ⚠️ CRITICAL | 4 | 0 |
+| 🟡 EMPTY | 12 | 0 |
+| 🔴 MISSING | 1 | 0 |
+
+## Initial Issues (snapshot)
 
 | Status | Count | Meaning |
 |--------|------:|---------|

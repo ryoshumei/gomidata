@@ -119,8 +119,24 @@ See `VALIDATION_REPORT.md` for full fix plan (one commit per fix).
 |--------|-----|-----------------|
 | 06dee1b | Validation tooling + report | 43 OK / 12 empty / 4 critical / 1 missing |
 | 5e8e21a | Multi-PDF area-name collision dedup (conflict detection, `#N` disambiguation) | 46 OK / 12 empty / 1 critical / 1 missing |
-| _in progress_ | Direct-PDF fallback to cached HTML PDFs (fixes 鴨川市 single-type result) | _pending re-extract_ |
+| 53e2481 | Direct-PDF fallback to cached HTML PDFs (鴨川市) | 47 OK / 12 empty / 0 critical / 1 missing |
+| ab35a5a | Reuse extraction across same-URL cities (4 千葉市 wards) | 51 OK / 8 empty / 1 missing |
+| ef48553 | `<base href>` + Imperva 404→Playwright (御宿/市川) | 53 OK / 6 empty / 1 missing |
+| b564797 | Directory-URL urljoin + refresh_source.py (九十九里/酒々井/御宿) | 54 OK / 4 empty / 1 critical / 1 missing |
+| 3195440 | classify_source for HTML-only refreshed pages (流山/八街/匝瑳/多古) | 57 OK / 1 empty / 2 critical |
+| 986471d | 野田市 SPA extractor + softer validator severity | **58 OK / 2 warnings / 0 critical / 0 empty / 0 missing** |
+
+### Remaining Known Limitations
+
+| City | ID | Issue | Why |
+|------|----|-------|----|
+| 匝瑳市 | 122351 | Only burnable extracted | Source PDF lists 資源(有害)ごみ as calendar day-of-month (e.g. "13日・27日") — our schema models day_of_week only |
+| 九十九里町 | 124036 | Only burnable + pet_bottles | FY2026 calendar PDF only lists these two types; other types in separate sorting guide |
+
+Both have structurally valid data matching the source — flagged as
+`warnings` (limited source), not bugs.
 
 ### Last Updated
 
-2026-05-15 — Fix loop in progress: 46 OK / 12 empty / 1 critical / 1 missing.
+2026-05-15 — All 60 Chiba cities have schedule data. 58 fully OK,
+2 with limited source warnings.
