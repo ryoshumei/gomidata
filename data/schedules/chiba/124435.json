@@ -2,53 +2,14 @@
   "city_id": "124435",
   "city_name": "夷隅郡御宿町",
   "source_format": "pdf",
-  "source_url": "https://www.town.onjuku.chiba.jp/content/files/R8%20calendar.pdf",
-  "extracted_at": "2026-03-29T14:52:16",
-  "extraction_model": "gemini-3.1-pro-preview",
-  "areas": [
-    {
-      "area_name": "御宿町",
-      "address_detail": null,
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月",
-            "木"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
-            "金"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "plastic",
-          "waste_type_ja": "プラスチック",
-          "frequency": "weekly",
-          "day_of_week": [
-            "金"
-          ],
-          "week_of_month": null
-        }
-      ]
-    }
-  ],
+  "areas": [],
   "warnings": [],
   "stats": {
-    "total_areas": 1,
-    "waste_types_found": [
-      "burnable",
-      "pet_bottles",
-      "plastic"
-    ]
-  }
+    "total_areas": 0,
+    "waste_types_found": [],
+    "pdfs_tried": 0
+  },
+  "source_url": "https://www.town.onjuku.chiba.jp/sub1/6/kannkyoukarenda.html",
+  "extracted_at": "2026-04-25T13:30:02",
+  "extraction_model": "gemini-3.1-pro-preview"
 }

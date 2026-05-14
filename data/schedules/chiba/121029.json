@@ -23272,11 +23272,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "pet_bottles",
@@ -23326,11 +23329,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -23341,11 +23347,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "pet_bottles",
@@ -23395,11 +23404,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -25251,6 +25263,6 @@
     ]
   },
   "source_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
-  "extracted_at": "2026-03-22T06:22:27",
+  "extracted_at": "2026-03-29T15:39:57",
   "extraction_model": "gemini-3.1-pro-preview"
 }

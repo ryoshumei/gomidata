@@ -1,10 +1,7 @@
 {
   "city_id": "122238",
   "city_name": "鴨川市",
-  "source_format": "pdf",
-  "source_url": "https://www.city.kamogawa.lg.jp/uploaded/attachment/20889.pdf",
-  "extracted_at": "2026-03-29T13:20:06",
-  "extraction_model": "gemini-3.1-pro-preview",
+  "source_format": "direct_pdf",
   "areas": [
     {
       "area_name": "江見",
@@ -285,5 +282,8 @@
     "waste_types_found": [
       "burnable"
     ]
-  }
+  },
+  "source_url": "https://www.city.kamogawa.lg.jp/uploaded/attachment/20889.pdf",
+  "extracted_at": "2026-04-25T13:05:57",
+  "extraction_model": "gemini-3.1-pro-preview"
 }

@@ -20,12 +20,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -39,12 +41,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -65,12 +69,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -84,12 +90,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -110,12 +118,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -129,12 +139,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -155,12 +167,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -174,12 +188,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -200,12 +216,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -219,12 +237,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -245,12 +265,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -264,12 +286,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -290,12 +314,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -309,12 +335,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -335,12 +363,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -354,12 +384,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -380,12 +412,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -399,12 +433,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -425,12 +461,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -444,12 +482,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -470,12 +510,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -489,12 +531,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -515,12 +559,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -534,18 +580,20 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
     {
-      "area_name": "原",
-      "address_detail": "千葉ニュータウン",
+      "area_name": "原（千葉ニュータウン）",
+      "address_detail": null,
       "schedules": [
         {
           "waste_type": "burnable",
@@ -560,12 +608,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -579,18 +629,20 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
     {
-      "area_name": "木下",
-      "address_detail": "上町・下町・幸町",
+      "area_name": "木下（上町・下町・幸町）",
+      "address_detail": null,
       "schedules": [
         {
           "waste_type": "burnable",
@@ -605,12 +657,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -624,12 +678,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -650,12 +706,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -669,12 +727,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -695,12 +755,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -714,12 +776,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -740,12 +804,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -759,12 +825,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -785,12 +853,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -804,12 +874,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -830,12 +902,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -849,12 +923,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -875,12 +951,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -894,12 +972,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -920,12 +1000,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -939,12 +1021,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -965,12 +1049,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -984,12 +1070,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1010,12 +1098,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1029,12 +1119,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1055,12 +1147,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1074,18 +1168,20 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
     {
-      "area_name": "原",
-      "address_detail": "草深",
+      "area_name": "原（草深）",
+      "address_detail": null,
       "schedules": [
         {
           "waste_type": "burnable",
@@ -1100,12 +1196,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1119,12 +1217,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1145,12 +1245,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1164,12 +1266,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1190,12 +1294,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1209,12 +1315,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "金",
             "金"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1235,12 +1343,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1254,12 +1364,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1280,12 +1392,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1299,12 +1413,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1325,12 +1441,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1344,12 +1462,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1370,12 +1490,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1389,12 +1511,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1415,12 +1539,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1434,12 +1560,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1460,12 +1588,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1479,12 +1609,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1505,12 +1637,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1524,12 +1658,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1550,12 +1686,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1569,12 +1707,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1595,12 +1735,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1614,12 +1756,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1640,12 +1784,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1659,12 +1805,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1685,12 +1833,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1704,12 +1854,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1730,12 +1882,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1749,12 +1903,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1775,12 +1931,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1794,12 +1952,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1820,12 +1980,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1839,12 +2001,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1865,12 +2029,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1884,12 +2050,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1910,12 +2078,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1929,12 +2099,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -1955,12 +2127,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -1974,12 +2148,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2000,12 +2176,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2019,12 +2197,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2045,12 +2225,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2064,12 +2246,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2090,12 +2274,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2109,12 +2295,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2135,12 +2323,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2154,12 +2344,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2180,12 +2372,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2199,12 +2393,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2225,12 +2421,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2244,12 +2442,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2270,12 +2470,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2289,12 +2491,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2315,12 +2519,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2334,12 +2540,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2360,12 +2568,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2379,12 +2589,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2405,12 +2617,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2424,12 +2638,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2450,12 +2666,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2469,12 +2687,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2495,12 +2715,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2514,12 +2736,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2540,12 +2764,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2559,12 +2785,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "月",
             "月"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2585,12 +2813,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2604,12 +2834,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2630,12 +2862,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2649,12 +2883,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2675,12 +2911,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2694,12 +2932,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2720,12 +2960,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2739,12 +2981,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2765,12 +3009,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2784,12 +3030,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2810,12 +3058,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2829,12 +3079,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2855,12 +3107,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2874,12 +3128,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2900,12 +3156,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2919,12 +3177,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2945,12 +3205,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -2964,12 +3226,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "木",
             "木"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            2,
+            4
+          ]
         }
       ]
     },
@@ -2990,12 +3254,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3009,12 +3275,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3035,12 +3303,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3054,12 +3324,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3080,12 +3352,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3099,12 +3373,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3125,12 +3401,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3144,12 +3422,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3170,12 +3450,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3189,12 +3471,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3215,12 +3499,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3234,12 +3520,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3260,12 +3548,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3279,12 +3569,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3305,12 +3597,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3324,12 +3618,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3350,12 +3646,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3369,12 +3667,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3395,12 +3695,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3414,12 +3716,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3440,12 +3744,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3459,12 +3765,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3485,12 +3793,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3504,12 +3814,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3530,12 +3842,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3549,12 +3863,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3575,12 +3891,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3594,12 +3912,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3620,12 +3940,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3639,12 +3961,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3665,12 +3989,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3684,12 +4010,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3710,12 +4038,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3729,12 +4059,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "火",
             "火"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3755,12 +4087,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3774,12 +4108,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3800,12 +4136,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3819,12 +4157,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3845,12 +4185,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3864,12 +4206,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3890,12 +4234,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3909,12 +4255,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3935,12 +4283,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3954,12 +4304,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -3980,12 +4332,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -3999,12 +4353,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4025,12 +4381,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4044,12 +4402,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4070,12 +4430,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4089,12 +4451,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4115,12 +4479,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4134,12 +4500,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4160,12 +4528,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4179,12 +4549,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4205,12 +4577,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4224,12 +4598,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4250,12 +4626,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4269,12 +4647,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4295,12 +4675,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4314,12 +4696,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4340,12 +4724,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4359,12 +4745,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4385,12 +4773,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4404,12 +4794,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4430,12 +4822,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4449,12 +4843,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4475,12 +4871,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4494,12 +4892,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4520,12 +4920,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4539,12 +4941,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4565,12 +4969,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4584,12 +4990,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4610,12 +5018,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4629,12 +5039,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4655,12 +5067,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4674,12 +5088,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4700,12 +5116,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4719,12 +5137,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4745,12 +5165,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4764,12 +5186,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4790,12 +5214,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4809,12 +5235,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4835,12 +5263,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4854,12 +5284,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4880,12 +5312,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4899,12 +5333,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4925,12 +5361,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4944,12 +5382,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -4970,12 +5410,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -4989,12 +5431,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     },
@@ -5015,12 +5459,14 @@
         {
           "waste_type": "non_burnable",
           "waste_type_ja": "不燃ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         },
         {
           "waste_type": "recyclable",
@@ -5034,12 +5480,14 @@
         {
           "waste_type": "hazardous",
           "waste_type_ja": "有害ごみ",
-          "frequency": "weekly",
+          "frequency": "monthly",
           "day_of_week": [
-            "水",
             "水"
           ],
-          "week_of_month": null
+          "week_of_month": [
+            1,
+            3
+          ]
         }
       ]
     }
@@ -5055,6 +5503,6 @@
     ]
   },
   "source_url": "https://www.city.inzai.lg.jp/0000001685.html",
-  "extracted_at": "2026-03-22T08:16:42",
+  "extracted_at": "2026-04-25T13:17:51",
   "extraction_model": "gemini-3.1-pro-preview"
 }

@@ -237,7 +237,14 @@ COMPACT_FIELD_MAP = {
 
 
 def _parse_schedule_value(val: str) -> dict | None:
-    """Parse a compact schedule value like '月木', '2木', 'on_demand'."""
+    """Parse a compact schedule value like '月木', '2木', 'on_demand'.
+
+    Handles Gemini output variations:
+    - Clean: "2木", "1,3火", "月木"
+    - With 第/曜日: "第2木", "第1・第3火曜日", "第2,4火曜"
+    - Split format: "1火3火", "第1火・第3火"
+    - Duplicated days: "火火" → deduplicated to "火"
+    """
     if not val or val == "null":
         return None
 
@@ -246,17 +253,34 @@ def _parse_schedule_value(val: str) -> dict | None:
     if val in ("予約制", "on_demand"):
         return {"frequency": "on_demand", "day_of_week": None, "week_of_month": None}
 
-    # Monthly: "2木", "3火", "1・3金", "2,4水"
-    monthly_match = re.match(r'^([0-9][・,]?)+([月火水木金土日])$', val)
-    if monthly_match:
-        day = val[-1]
-        weeks = [int(w) for w in re.findall(r'[0-9]', val[:-1])]
-        return {"frequency": "monthly", "day_of_week": [day], "week_of_month": weeks}
+    # Normalize: strip 第, 曜日, 曜, whitespace, ・between 第N groups
+    normalized = val
+    normalized = re.sub(r'第', '', normalized)
+    normalized = re.sub(r'曜日?', '', normalized)
+    normalized = re.sub(r'\s+', '', normalized)
+
+    # Monthly: "2木", "3火", "1・3金", "2,4水", "1火3火"
+    # After normalization, "第2,4火曜日" → "2,4火", "第1火・第3火" → "1火・3火"
+    days_in_val = re.findall(r'[月火水木金土日]', normalized)
+    weeks_in_val = re.findall(r'[0-9]', normalized)
+
+    if weeks_in_val and days_in_val:
+        # Has both week numbers and day chars → monthly
+        unique_days = list(dict.fromkeys(days_in_val))
+        weeks = [int(w) for w in weeks_in_val]
+        # Validate week numbers (1-5 only)
+        weeks = sorted(set(w for w in weeks if 1 <= w <= 5))
+        if weeks and len(unique_days) == 1:
+            return {"frequency": "monthly", "day_of_week": unique_days, "week_of_month": weeks}
+        elif weeks and len(unique_days) > 1:
+            # Multiple different days with week numbers (rare) — treat each day as monthly
+            # Return first day with all weeks (best effort)
+            return {"frequency": "monthly", "day_of_week": [unique_days[0]], "week_of_month": weeks}
 
     # Weekly: "月木", "火金", "水土", "月", etc.
-    days = re.findall(r'[月火水木金土日]', val)
-    if days:
-        return {"frequency": "weekly", "day_of_week": days, "week_of_month": None}
+    if days_in_val:
+        unique_days = list(dict.fromkeys(days_in_val))
+        return {"frequency": "weekly", "day_of_week": unique_days, "week_of_month": None}
 
     return None
 
@@ -304,6 +328,61 @@ def _expand_compact_areas(compact_list: list[dict]) -> list[dict]:
                 "address_detail": address_detail or None,
                 "schedules": schedules,
             })
+
+    return areas
+
+
+def _deduplicate_areas(areas: list[dict]) -> list[dict]:
+    """Merge areas with the same area_name + address_detail, keeping unique schedules."""
+    from collections import OrderedDict
+
+    key_map = OrderedDict()
+    for area in areas:
+        name = area.get("area_name", "")
+        detail = area.get("address_detail") or ""
+        key = (name, detail)
+
+        if key not in key_map:
+            key_map[key] = area
+        else:
+            existing = key_map[key]
+            existing_types = {
+                s["waste_type"] for s in existing.get("schedules", [])
+            }
+            for s in area.get("schedules", []):
+                if s["waste_type"] not in existing_types:
+                    existing["schedules"].append(s)
+                    existing_types.add(s["waste_type"])
+
+    return list(key_map.values())
+
+
+def _validate_and_fix_areas(areas: list[dict], warnings: list[str]) -> list[dict]:
+    """Post-processing fixes for common extraction errors."""
+    for area in areas:
+        for schedule in area.get("schedules", []):
+            # Fix duplicate day_of_week entries
+            days = schedule.get("day_of_week")
+            if days and len(days) != len(set(days)):
+                unique_days = list(dict.fromkeys(days))
+                # If same day repeated (e.g. ["火","火"]), likely monthly not weekly
+                if len(unique_days) == 1 and schedule.get("frequency") == "weekly":
+                    schedule["frequency"] = "monthly"
+                    schedule["week_of_month"] = [1, 3]  # common default for biweekly
+                    warnings.append(
+                        f"{area.get('area_name')}: {schedule['waste_type']} "
+                        f"duplicate day {days} → assumed monthly 1,3"
+                    )
+                schedule["day_of_week"] = unique_days
+
+            # Validate week_of_month values (must be 1-5)
+            weeks = schedule.get("week_of_month")
+            if weeks:
+                valid_weeks = [w for w in weeks if isinstance(w, int) and 1 <= w <= 5]
+                if valid_weeks != weeks:
+                    schedule["week_of_month"] = valid_weeks or None
+                    if not valid_weeks:
+                        schedule["frequency"] = "weekly"
 
     return areas
 
@@ -566,6 +645,10 @@ def extract_from_pdfs(
     if not all_areas and pdfs_tried > 0:
         warnings.append(f"Tried {pdfs_tried} PDFs but extracted no areas")
 
+    # Post-process: deduplicate and validate
+    all_areas = _deduplicate_areas(all_areas)
+    all_areas = _validate_and_fix_areas(all_areas, warnings)
+
     waste_types_found = set()
     for a in all_areas:
         for s in a.get("schedules", []):
@@ -634,6 +717,10 @@ def extract_city_schedule(
         areas = _expand_compact_areas(result["areas"])
     else:
         warnings.append(f"Unexpected result format: {type(result)}")
+
+    # Post-process: deduplicate and validate
+    areas = _deduplicate_areas(areas)
+    areas = _validate_and_fix_areas(areas, warnings)
 
     # Basic validation
     if areas:
@@ -733,6 +820,9 @@ def extract_all(
                     gemini_result = _call_gemini_with_pdf(client, pdf_data, prompt)
                     if isinstance(gemini_result, list) and gemini_result:
                         areas = _expand_compact_areas(gemini_result)
+                        direct_warnings = []
+                        areas = _deduplicate_areas(areas)
+                        areas = _validate_and_fix_areas(areas, direct_warnings)
                         waste_types = set()
                         for a in areas:
                             for s in a.get("schedules", []):
@@ -740,7 +830,7 @@ def extract_all(
                         result = {
                             "city_id": city_id, "city_name": city_name,
                             "source_format": "direct_pdf", "areas": areas,
-                            "warnings": [],
+                            "warnings": direct_warnings,
                             "stats": {"total_areas": len(areas), "waste_types_found": sorted(waste_types)},
                         }
                     else:

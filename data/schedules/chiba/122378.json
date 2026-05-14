@@ -4,7 +4,7 @@
   "source_format": "pdf",
   "areas": [
     {
-      "area_name": "姫島",
+      "area_name": "姫島[成東]",
       "address_detail": null,
       "schedules": [
         {
@@ -35,7 +35,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "月"
           ],
           "week_of_month": null
         },
@@ -44,7 +44,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "木"
           ],
           "week_of_month": null
         },
@@ -60,8 +60,8 @@
       ]
     },
     {
-      "area_name": "成東",
-      "address_detail": "成東",
+      "area_name": "松ケ谷[成東]",
+      "address_detail": null,
       "schedules": [
         {
           "waste_type": "burnable",
@@ -91,7 +91,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "月"
           ],
           "week_of_month": null
         },
@@ -100,7 +100,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "木"
           ],
           "week_of_month": null
         },
@@ -116,8 +116,8 @@
       ]
     },
     {
-      "area_name": "宮崎",
-      "address_detail": "成東",
+      "area_name": "富田[成東]",
+      "address_detail": null,
       "schedules": [
         {
           "waste_type": "burnable",
@@ -147,7 +147,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "月"
           ],
           "week_of_month": null
         },
@@ -156,7 +156,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "木"
           ],
           "week_of_month": null
         },
@@ -173,7 +173,7 @@
     },
     {
       "area_name": "国道沿い",
-      "address_detail": "さんむ医療センター〜姫島",
+      "address_detail": "さんむ医療センター～姫島",
       "schedules": [
         {
           "waste_type": "burnable",
@@ -203,7 +203,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "月"
           ],
           "week_of_month": null
         },
@@ -212,7 +212,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "木"
           ],
           "week_of_month": null
         },
@@ -228,7 +228,7 @@
       ]
     },
     {
-      "area_name": "町田",
+      "area_name": "新須賀",
       "address_detail": null,
       "schedules": [
         {
@@ -259,7 +259,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "月"
           ],
           "week_of_month": null
         },
@@ -268,7 +268,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "木"
           ],
           "week_of_month": null
         },
@@ -315,7 +315,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "月"
           ],
           "week_of_month": null
         },
@@ -324,7 +324,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "木"
           ],
           "week_of_month": null
         },
@@ -340,7 +340,7 @@
       ]
     },
     {
-      "area_name": "和田",
+      "area_name": "和泉",
       "address_detail": null,
       "schedules": [
         {
@@ -371,7 +371,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "月"
           ],
           "week_of_month": null
         },
@@ -380,7 +380,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "木"
           ],
           "week_of_month": null
         },
@@ -427,7 +427,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "月"
           ],
           "week_of_month": null
         },
@@ -436,63 +436,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "殿台",
-      "address_detail": null,
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火",
-            "金"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            1,
-            3
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
             "木"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月"
           ],
           "week_of_month": null
         },
@@ -539,7 +483,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "月"
           ],
           "week_of_month": null
         },
@@ -548,7 +492,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "木"
           ],
           "week_of_month": null
         },
@@ -564,7 +508,7 @@
       ]
     },
     {
-      "area_name": "板中",
+      "area_name": "和田",
       "address_detail": null,
       "schedules": [
         {
@@ -595,284 +539,13 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
             "月"
           ],
           "week_of_month": null
         },
         {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "昭和",
-      "address_detail": "成東",
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水",
-            "土"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            1,
-            3
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
-            "金"
-          ],
-          "week_of_month": null
-        },
-        {
           "waste_type": "bottles",
           "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "野辺",
-      "address_detail": "成東",
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水",
-            "土"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            1,
-            3
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
-            "金"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "愛宕台",
-      "address_detail": "成東",
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水",
-            "土"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            1,
-            3
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
-            "金"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "富士見台",
-      "address_detail": "成東",
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水",
-            "土"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            1,
-            3
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
-            "金"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "上町",
-      "address_detail": "成東",
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水",
-            "土"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            1,
-            3
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
             "木"
@@ -880,11 +553,58 @@
           "week_of_month": null
         },
         {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "湯坂",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
           "waste_type": "bottles",
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "木"
           ],
           "week_of_month": null
         },
@@ -900,8 +620,8 @@
       ]
     },
     {
-      "area_name": "下町",
-      "address_detail": "成東",
+      "area_name": "昭和[成東]",
+      "address_detail": null,
       "schedules": [
         {
           "waste_type": "burnable",
@@ -931,7 +651,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "火"
           ],
           "week_of_month": null
         },
@@ -940,7 +660,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "金"
           ],
           "week_of_month": null
         },
@@ -949,15 +669,15 @@
           "waste_type_ja": "缶",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "火"
           ],
           "week_of_month": null
         }
       ]
     },
     {
-      "area_name": "花咲団地",
-      "address_detail": "成東",
+      "area_name": "愛宕[成東]",
+      "address_detail": null,
       "schedules": [
         {
           "waste_type": "burnable",
@@ -987,7 +707,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "火"
           ],
           "week_of_month": null
         },
@@ -996,7 +716,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "金"
           ],
           "week_of_month": null
         },
@@ -1005,7 +725,231 @@
           "waste_type_ja": "缶",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "富士見台[成東]",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "上町[成東]",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "下町[成東]",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "花咲団地[成東]",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
           ],
           "week_of_month": null
         }
@@ -1043,72 +987,16 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "東町",
-      "address_detail": "津辺",
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月",
-            "木"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            1,
-            3
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
             "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
           ],
           "week_of_month": null
         },
@@ -1124,7 +1012,7 @@
       ]
     },
     {
-      "area_name": "島",
+      "area_name": "東町[津辺]",
       "address_detail": null,
       "schedules": [
         {
@@ -1155,7 +1043,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "水"
+            "火"
           ],
           "week_of_month": null
         },
@@ -1164,7 +1052,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "金"
           ],
           "week_of_month": null
         },
@@ -1211,7 +1099,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "水"
+            "火"
           ],
           "week_of_month": null
         },
@@ -1220,7 +1108,63 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
             "火"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "島",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
           ],
           "week_of_month": null
         },
@@ -1267,7 +1211,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "金"
+            "水"
           ],
           "week_of_month": null
         },
@@ -1276,7 +1220,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "金"
           ],
           "week_of_month": null
         },
@@ -1285,14 +1229,14 @@
           "waste_type_ja": "缶",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "水"
           ],
           "week_of_month": null
         }
       ]
     },
     {
-      "area_name": "嶋戸",
+      "area_name": "崎戸",
       "address_detail": null,
       "schedules": [
         {
@@ -1323,7 +1267,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "金"
+            "水"
           ],
           "week_of_month": null
         },
@@ -1332,7 +1276,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "金"
           ],
           "week_of_month": null
         },
@@ -1341,7 +1285,7 @@
           "waste_type_ja": "缶",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "水"
           ],
           "week_of_month": null
         }
@@ -1379,7 +1323,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "金"
+            "水"
           ],
           "week_of_month": null
         },
@@ -1388,7 +1332,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "金"
           ],
           "week_of_month": null
         },
@@ -1397,7 +1341,7 @@
           "waste_type_ja": "缶",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "水"
           ],
           "week_of_month": null
         }
@@ -1435,7 +1379,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "金"
+            "水"
           ],
           "week_of_month": null
         },
@@ -1444,7 +1388,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "金"
           ],
           "week_of_month": null
         },
@@ -1453,14 +1397,14 @@
           "waste_type_ja": "缶",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "水"
           ],
           "week_of_month": null
         }
       ]
     },
     {
-      "area_name": "富田",
+      "area_name": "富田幸谷",
       "address_detail": null,
       "schedules": [
         {
@@ -1491,7 +1435,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "金"
+            "水"
           ],
           "week_of_month": null
         },
@@ -1500,7 +1444,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "金"
           ],
           "week_of_month": null
         },
@@ -1509,7 +1453,7 @@
           "waste_type_ja": "缶",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "水"
           ],
           "week_of_month": null
         }
@@ -1547,7 +1491,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "金"
+            "水"
           ],
           "week_of_month": null
         },
@@ -1556,7 +1500,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "金"
           ],
           "week_of_month": null
         },
@@ -1565,7 +1509,7 @@
           "waste_type_ja": "缶",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "水"
           ],
           "week_of_month": null
         }
@@ -1603,7 +1547,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "金"
+            "水"
           ],
           "week_of_month": null
         },
@@ -1612,7 +1556,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "金"
           ],
           "week_of_month": null
         },
@@ -1621,7 +1565,7 @@
           "waste_type_ja": "缶",
           "frequency": "weekly",
           "day_of_week": [
-            "火"
+            "水"
           ],
           "week_of_month": null
         }
@@ -1636,8 +1580,8 @@
           "waste_type_ja": "可燃ごみ",
           "frequency": "weekly",
           "day_of_week": [
-            "火",
-            "金"
+            "水",
+            "土"
           ],
           "week_of_month": null,
           "collection_time": "daytime"
@@ -1650,8 +1594,8 @@
             "土"
           ],
           "week_of_month": [
-            2,
-            4
+            1,
+            3
           ]
         },
         {
@@ -1659,7 +1603,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "水"
           ],
           "week_of_month": null
         },
@@ -1668,7 +1612,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "水"
+            "金"
           ],
           "week_of_month": null
         },
@@ -1684,7 +1628,7 @@
       ]
     },
     {
-      "area_name": "上野",
+      "area_name": "上横地",
       "address_detail": null,
       "schedules": [
         {
@@ -1715,7 +1659,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "水"
           ],
           "week_of_month": null
         },
@@ -1724,63 +1668,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "水"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "寺崎",
-      "address_detail": "寺崎",
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火",
-            "金"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            2,
-            4
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
             "月"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水"
           ],
           "week_of_month": null
         },
@@ -1827,7 +1715,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "水"
           ],
           "week_of_month": null
         },
@@ -1836,7 +1724,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "水"
+            "月"
           ],
           "week_of_month": null
         },
@@ -1883,60 +1771,13 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "月"
+            "水"
           ],
           "week_of_month": null
         },
         {
           "waste_type": "bottles",
           "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "八田",
-      "address_detail": null,
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火",
-            "金"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            2,
-            4
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
             "月"
@@ -1944,15 +1785,6 @@
           "week_of_month": null
         },
         {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水"
-          ],
-          "week_of_month": null
-        },
-        {
           "waste_type": "cans",
           "waste_type_ja": "缶",
           "frequency": "weekly",
@@ -1964,287 +1796,7 @@
       ]
     },
     {
-      "area_name": "木原",
-      "address_detail": null,
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火",
-            "金"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            2,
-            4
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "富田幸谷",
-      "address_detail": null,
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火",
-            "金"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            2,
-            4
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "相谷・川代",
-      "address_detail": "松ヶ谷",
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火",
-            "金"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            2,
-            4
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "水"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "日向",
-      "address_detail": null,
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月",
-            "木"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            2,
-            4
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "金"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "金"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "本須賀",
-      "address_detail": null,
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月",
-            "木"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "土"
-          ],
-          "week_of_month": [
-            2,
-            4
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "weekly",
-          "day_of_week": [
-            "金"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "weekly",
-          "day_of_week": [
-            "金"
-          ],
-          "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "小松",
+      "area_name": "矢部",
       "address_detail": null,
       "schedules": [
         {
@@ -2284,7 +1836,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "月"
           ],
           "week_of_month": null
         },
@@ -2293,7 +1845,7 @@
           "waste_type_ja": "缶",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "水"
           ],
           "week_of_month": null
         }
@@ -2340,7 +1892,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "月"
           ],
           "week_of_month": null
         },
@@ -2349,15 +1901,15 @@
           "waste_type_ja": "缶",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "水"
           ],
           "week_of_month": null
         }
       ]
     },
     {
-      "area_name": "ケ谷",
-      "address_detail": "相谷・川代を除く",
+      "area_name": "森",
+      "address_detail": null,
       "schedules": [
         {
           "waste_type": "burnable",
@@ -2396,7 +1948,343 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "相谷・川代",
+      "address_detail": "松ケ谷",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "白幡",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
             "木"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "八田",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
+            "金"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "木原",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "小松",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "cans",
+          "waste_type_ja": "缶",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "松ケ谷",
+      "address_detail": "鳴浜・川代を除く",
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "土"
+          ],
+          "week_of_month": [
+            2,
+            4
+          ]
+        },
+        {
+          "waste_type": "pet_bottles",
+          "waste_type_ja": "ペットボトル",
+          "frequency": "weekly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "bottles",
+          "waste_type_ja": "びん",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
           ],
           "week_of_month": null
         },
@@ -2443,7 +2331,7 @@
           "waste_type_ja": "ペットボトル",
           "frequency": "weekly",
           "day_of_week": [
-            "水"
+            "木"
           ],
           "week_of_month": null
         },
@@ -2452,7 +2340,7 @@
           "waste_type_ja": "びん",
           "frequency": "weekly",
           "day_of_week": [
-            "木"
+            "水"
           ],
           "week_of_month": null
         },
@@ -2466,21 +2354,170 @@
           "week_of_month": null
         }
       ]
+    },
+    {
+      "area_name": "山武地域",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水",
+            "土"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "木"
+          ],
+          "week_of_month": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "area_name": "松尾地域",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "火",
+            "金"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": null
+        }
+      ]
+    },
+    {
+      "area_name": "蓮沼地域",
+      "address_detail": null,
+      "schedules": [
+        {
+          "waste_type": "burnable",
+          "waste_type_ja": "可燃ごみ",
+          "frequency": "weekly",
+          "day_of_week": [
+            "月",
+            "木"
+          ],
+          "week_of_month": null,
+          "collection_time": "daytime"
+        },
+        {
+          "waste_type": "non_burnable",
+          "waste_type_ja": "不燃ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": [
+            3
+          ]
+        },
+        {
+          "waste_type": "recyclable",
+          "waste_type_ja": "資源ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": [
+            3
+          ]
+        },
+        {
+          "waste_type": "hazardous",
+          "waste_type_ja": "有害ごみ",
+          "frequency": "monthly",
+          "day_of_week": [
+            "水"
+          ],
+          "week_of_month": [
+            3
+          ]
+        }
+      ]
     }
   ],
   "warnings": [],
   "stats": {
-    "total_areas": 44,
+    "total_areas": 45,
     "waste_types_found": [
       "bottles",
       "burnable",
       "cans",
+      "hazardous",
       "non_burnable",
-      "pet_bottles"
+      "pet_bottles",
+      "recyclable"
     ],
-    "pdfs_tried": 2
+    "pdfs_tried": 14
   },
   "source_url": "https://www.city.sammu.lg.jp/kurashi/gomi/page002179.html",
-  "extracted_at": "2026-03-22T18:50:30",
+  "extracted_at": "2026-04-25T13:26:06",
   "extraction_model": "gemini-3.1-pro-preview"
 }

@@ -95,17 +95,6 @@
           "week_of_month": [
             3
           ]
-        },
-        {
-          "waste_type": "hazardous",
-          "waste_type_ja": "有害ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            3
-          ]
         }
       ]
     },
@@ -194,17 +183,6 @@
         {
           "waste_type": "clothing",
           "waste_type_ja": "衣類",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            4
-          ]
-        },
-        {
-          "waste_type": "cardboard",
-          "waste_type_ja": "段ボール",
           "frequency": "monthly",
           "day_of_week": [
             "木"
@@ -307,17 +285,6 @@
           "week_of_month": [
             1
           ]
-        },
-        {
-          "waste_type": "cardboard",
-          "waste_type_ja": "段ボール",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            1
-          ]
         }
       ]
     }
@@ -329,9 +296,7 @@
       "bottles",
       "burnable",
       "cans",
-      "cardboard",
       "clothing",
-      "hazardous",
       "non_burnable",
       "paper",
       "pet_bottles",
@@ -340,6 +305,6 @@
     "pdfs_tried": 7
   },
   "source_url": "https://www.town.shirako.lg.jp/0000002270.html",
-  "extracted_at": "2026-03-29T13:09:03",
+  "extracted_at": "2026-04-25T13:28:52",
   "extraction_model": "gemini-3.1-pro-preview"
 }

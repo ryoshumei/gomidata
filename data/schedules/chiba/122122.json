@@ -1,10 +1,7 @@
 {
   "city_id": "122122",
   "city_name": "佐倉市",
-  "source_format": "pdf",
-  "source_url": "https://www.city.sakura.lg.jp/material/files/group/38/B3_ja_0127.pdf",
-  "extracted_at": "2026-03-29T13:19:36",
-  "extraction_model": "gemini-3.1-pro-preview",
+  "source_format": "direct_pdf",
   "areas": [
     {
       "area_name": "佐倉市全域",
@@ -104,5 +101,8 @@
       "paper",
       "plastic"
     ]
-  }
+  },
+  "source_url": "https://www.city.sakura.lg.jp/material/files/group/38/B3_ja_0127.pdf",
+  "extracted_at": "2026-04-25T12:32:31",
+  "extraction_model": "gemini-3.1-pro-preview"
 }

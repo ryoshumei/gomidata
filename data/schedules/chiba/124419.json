@@ -29,95 +29,13 @@
           "week_of_month": null
         },
         {
-          "waste_type": "plastic",
-          "waste_type_ja": "プラスチック",
+          "waste_type": "valuables",
+          "waste_type_ja": "有価物",
           "frequency": "weekly",
           "day_of_week": [
             "火"
           ],
           "week_of_month": null
-        }
-      ]
-    },
-    {
-      "area_name": "夷隅郡大多喜町",
-      "address_detail": null,
-      "schedules": [
-        {
-          "waste_type": "burnable",
-          "waste_type_ja": "可燃ごみ",
-          "frequency": "weekly",
-          "day_of_week": [
-            "月",
-            "水",
-            "金"
-          ],
-          "week_of_month": null,
-          "collection_time": "daytime"
-        },
-        {
-          "waste_type": "non_burnable",
-          "waste_type_ja": "不燃ごみ",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            2
-          ]
-        },
-        {
-          "waste_type": "pet_bottles",
-          "waste_type_ja": "ペットボトル",
-          "frequency": "weekly",
-          "day_of_week": [
-            "火"
-          ],
-          "week_of_month": null
-        },
-        {
-          "waste_type": "bottles",
-          "waste_type_ja": "びん",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            1
-          ]
-        },
-        {
-          "waste_type": "cans",
-          "waste_type_ja": "缶",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            3
-          ]
-        },
-        {
-          "waste_type": "paper",
-          "waste_type_ja": "古紙",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            4
-          ]
-        },
-        {
-          "waste_type": "clothing",
-          "waste_type_ja": "衣類",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            4
-          ]
         },
         {
           "waste_type": "plastic",
@@ -127,38 +45,22 @@
             "火"
           ],
           "week_of_month": null
-        },
-        {
-          "waste_type": "cardboard",
-          "waste_type_ja": "段ボール",
-          "frequency": "monthly",
-          "day_of_week": [
-            "木"
-          ],
-          "week_of_month": [
-            4
-          ]
         }
       ]
     }
   ],
   "warnings": [],
   "stats": {
-    "total_areas": 2,
+    "total_areas": 1,
     "waste_types_found": [
-      "bottles",
       "burnable",
-      "cans",
-      "cardboard",
-      "clothing",
-      "non_burnable",
-      "paper",
       "pet_bottles",
-      "plastic"
+      "plastic",
+      "valuables"
     ],
     "pdfs_tried": 3
   },
   "source_url": "https://www.town.otaki.chiba.jp/life_event/gomi/1593.html",
-  "extracted_at": "2026-03-29T13:10:42",
+  "extracted_at": "2026-04-25T13:30:01",
   "extraction_model": "gemini-3.1-pro-preview"
 }
