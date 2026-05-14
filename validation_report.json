@@ -209,17 +209,26 @@
   {
     "city_id": "122033",
     "city_name": "市川市",
-    "status": "empty",
-    "issues": [
-      "empty areas; warnings: ['Gemini returned no result']"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
-      "area_count": 0,
+      "area_count": 83,
       "source_format": "html_table",
       "source_url": "http://www.city.ichikawa.lg.jp/page/3716.html",
-      "warnings": [
-        "Gemini returned no result"
-      ]
+      "warnings": [],
+      "waste_types": {
+        "burnable": 83,
+        "non_burnable": 83,
+        "bottles": 83,
+        "cans": 83,
+        "paper": 83,
+        "clothing": 83,
+        "plastic": 83,
+        "hazardous": 83,
+        "branches": 83
+      },
+      "burnable_areas": 83,
+      "duplicate_days_count": 0
     }
   },
   {
@@ -1348,15 +1357,27 @@
   {
     "city_id": "124435",
     "city_name": "夷隅郡御宿町",
-    "status": "empty",
-    "issues": [
-      "empty areas, no warnings"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
-      "area_count": 0,
+      "area_count": 4,
       "source_format": "pdf",
       "source_url": "https://www.town.onjuku.chiba.jp/sub1/6/kannkyoukarenda.html",
-      "warnings": []
+      "warnings": [],
+      "waste_types": {
+        "burnable": 4,
+        "pet_bottles": 4,
+        "bottles": 4,
+        "cans": 4,
+        "paper": 3,
+        "plastic": 4,
+        "non_burnable": 2,
+        "clothing": 1,
+        "metals": 1,
+        "cardboard": 1
+      },
+      "burnable_areas": 4,
+      "duplicate_days_count": 0
     }
   },
   {

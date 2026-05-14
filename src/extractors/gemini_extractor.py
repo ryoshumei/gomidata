@@ -435,16 +435,30 @@ def _validate_and_fix_areas(areas: list[dict], warnings: list[str]) -> list[dict
 # --- PDF extraction ---
 
 def _find_pdf_links(html: str, base_url: str) -> list[dict]:
-    """Extract PDF links from an HTML page, categorized by type."""
+    """Extract PDF links from an HTML page, categorized by type.
+
+    Honours `<base href>` when present — many municipal sites (e.g. 御宿町)
+    set a site-root base so relative `content/files/...` hrefs resolve from
+    `/` rather than from the page's directory. Ignoring the base tag
+    produced 404 URLs like `/sub1/6/content/files/...` instead of the
+    correct `/content/files/...`.
+    """
     from urllib.parse import urljoin
     soup = BeautifulSoup(html, "html.parser")
+
+    base_tag = soup.find("base", href=True)
+    if base_tag:
+        effective_base = urljoin(base_url, base_tag["href"]) if base_url else base_tag["href"]
+    else:
+        effective_base = base_url
+
     pdfs = []
     for a in soup.find_all("a", href=True):
         href = a["href"]
         if ".pdf" not in href.lower():
             continue
         text = a.get_text(strip=True)
-        full_url = urljoin(base_url, href)
+        full_url = urljoin(effective_base, href)
         pdfs.append({"url": full_url, "text": text})
     return pdfs
 
@@ -452,20 +466,36 @@ def _find_pdf_links(html: str, base_url: str) -> list[dict]:
 def _download_pdf(url: str, timeout: int = 60) -> bytes | None:
     """Download a PDF file, return bytes or None on failure.
 
-    Falls back to Playwright for SPA sites that block direct HTTP (403).
+    Falls back to Playwright when direct HTTP yields:
+    - 403 (classic anti-scraper)
+    - 404 with HTML content-type (bot-detection sites like Imperva return a
+      fake 404 page for direct downloads; rendered browsers get the real PDF)
     """
     import requests
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/120.0.0.0 Safari/537.36"
+        ),
+    }
     try:
-        resp = requests.get(url, timeout=timeout)
-        if resp.status_code == 403:
-            logger.info("  HTTP 403, trying Playwright download...")
-            return _download_pdf_playwright(url)
-        resp.raise_for_status()
+        resp = requests.get(url, timeout=timeout, headers=headers)
+        ct = resp.headers.get("content-type", "").lower()
+        looks_html = "html" in ct or (
+            len(resp.content) > 0 and resp.content[:6].lower().startswith(b"<html")
+        )
+        if resp.status_code == 403 or (resp.status_code == 404 and looks_html):
+            logger.info("  HTTP %d (HTML body), trying Playwright download...", resp.status_code)
+            pw = _download_pdf_playwright(url)
+            if pw:
+                return pw
+        if resp.status_code >= 400:
+            resp.raise_for_status()
         if len(resp.content) < 100:
             return None
-        # Verify it's actually a PDF
         if not resp.content[:5].startswith(b"%PDF"):
-            logger.warning("  Not a PDF (got %s)", resp.headers.get("content-type", "unknown"))
+            logger.warning("  Not a PDF (got %s)", ct or "unknown")
             return None
         return resp.content
     except Exception as e:
