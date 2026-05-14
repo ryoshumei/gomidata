@@ -154,6 +154,12 @@ def classify_source(html: str, markdown: str) -> str:
         if tables_html and len(tables_html) > 200:
             return "html_table"
 
+        # HTML present but no usable tables — check for PDF links in the
+        # raw HTML directly (covers Playwright-refreshed sources where we
+        # never wrote a markdown rendition).
+        if ".pdf" in html.lower() and any(kw in html for kw in ["可燃", "不燃", "ごみ", "収集"]):
+            return "pdf_links"
+
     # Fall back to markdown analysis
     if not markdown or len(markdown) < 200:
         return "insufficient"

@@ -618,15 +618,23 @@
   {
     "city_id": "122203",
     "city_name": "流山市",
-    "status": "empty",
-    "issues": [
-      "empty areas, no warnings"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
-      "area_count": 0,
+      "area_count": 98,
       "source_format": "pdf",
-      "source_url": "https://www.city.nagareyama.chiba.jp/life/1002401/1002416/1048910/1048914.html",
-      "warnings": []
+      "source_url": "https://www.city.nagareyama.chiba.jp/life/1002401/1053010/1053013.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 98,
+        "plastic": 98,
+        "hazardous": 98,
+        "non_burnable": 90,
+        "pet_bottles": 91,
+        "valuables": 1
+      },
+      "burnable_areas": 98,
+      "duplicate_days_count": 0
     }
   },
   {
@@ -851,15 +859,27 @@
   {
     "city_id": "122301",
     "city_name": "八街市",
-    "status": "empty",
-    "issues": [
-      "empty areas, no warnings"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
-      "area_count": 0,
+      "area_count": 121,
       "source_format": "pdf",
-      "source_url": "https://www.city.yachimata.lg.jp/soshiki/22/52202.html",
-      "warnings": []
+      "source_url": "https://www.city.yachimata.lg.jp/soshiki/22/57701.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 121,
+        "pet_bottles": 121,
+        "non_burnable": 82,
+        "bottles": 82,
+        "cans": 82,
+        "paper": 106,
+        "plastic": 82,
+        "metals": 82,
+        "hazardous": 82,
+        "branches": 4
+      },
+      "burnable_areas": 121,
+      "duplicate_days_count": 0
     }
   },
   {
@@ -950,11 +970,21 @@
   {
     "city_id": "122351",
     "city_name": "匝瑳市",
-    "status": "missing",
+    "status": "critical",
     "issues": [
-      "schedule file does not exist"
+      "only 1 waste type(s) extracted (['burnable']); municipalities typically collect ≥3"
     ],
-    "stats": {}
+    "stats": {
+      "area_count": 14,
+      "source_format": "pdf",
+      "source_url": "https://www.city.sosa.lg.jp/page/page003574.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 14
+      },
+      "burnable_areas": 14,
+      "duplicate_days_count": 0
+    }
   },
   {
     "city_id": "122360",
@@ -1117,17 +1147,20 @@
   {
     "city_id": "123471",
     "city_name": "香取郡多古町",
-    "status": "empty",
-    "issues": [
-      "empty areas; warnings: ['PDF download failed']"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
-      "area_count": 0,
-      "source_format": "direct_pdf",
-      "source_url": "https://www.town.tako.chiba.jp/docs/file_contents/2025gomibunbetuchou.pdf",
-      "warnings": [
-        "PDF download failed"
-      ]
+      "area_count": 51,
+      "source_format": "html_table",
+      "source_url": "https://www.town.tako.chiba.jp/docs/2021021000037/",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 51,
+        "non_burnable": 51,
+        "recyclable": 51
+      },
+      "burnable_areas": 51,
+      "duplicate_days_count": 0
     }
   },
   {
