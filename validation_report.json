@@ -633,19 +633,26 @@
   {
     "city_id": "122238",
     "city_name": "鴨川市",
-    "status": "critical",
-    "issues": [
-      "only 1 waste type(s) extracted (['burnable']); municipalities typically collect ≥3"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
-      "area_count": 17,
+      "area_count": 38,
       "source_format": "direct_pdf",
       "source_url": "https://www.city.kamogawa.lg.jp/uploaded/attachment/20889.pdf",
       "warnings": [],
       "waste_types": {
-        "burnable": 17
+        "burnable": 38,
+        "non_burnable": 21,
+        "pet_bottles": 21,
+        "bottles": 21,
+        "paper": 21,
+        "clothing": 21,
+        "plastic": 21,
+        "metals": 21,
+        "hazardous": 20,
+        "cans": 12
       },
-      "burnable_areas": 17,
+      "burnable_areas": 38,
       "duplicate_days_count": 0
     }
   },

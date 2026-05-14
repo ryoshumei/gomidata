@@ -113,6 +113,14 @@ Missing:
 
 See `VALIDATION_REPORT.md` for full fix plan (one commit per fix).
 
+### Fix Loop Progress (2026-05-15)
+
+| Commit | Fix | Validator after |
+|--------|-----|-----------------|
+| 06dee1b | Validation tooling + report | 43 OK / 12 empty / 4 critical / 1 missing |
+| 5e8e21a | Multi-PDF area-name collision dedup (conflict detection, `#N` disambiguation) | 46 OK / 12 empty / 1 critical / 1 missing |
+| _in progress_ | Direct-PDF fallback to cached HTML PDFs (fixes 鴨川市 single-type result) | _pending re-extract_ |
+
 ### Last Updated
 
-2026-05-15 — Validation round 2: 43 OK, 12 empty, 4 critical, 1 missing. Fix plan in VALIDATION_REPORT.md.
+2026-05-15 — Fix loop in progress: 46 OK / 12 empty / 1 critical / 1 missing.

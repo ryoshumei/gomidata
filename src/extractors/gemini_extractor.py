@@ -588,6 +588,45 @@ PDFがカレンダー形式（月ごとに日付がマークされている）�
 すべての地区を漏れなく出力。JSON配列のみ。"""
 
 
+def _gather_pdfs_from_raw_dir(prefecture: str, city_id: str) -> list[dict]:
+    """Find candidate PDF links by scanning cached .html files in raw/<pref>/<city>/.
+
+    Used as a fallback when a city's primary `waste_page_url` is a direct PDF
+    that yields a thin extraction — the deep crawler may have visited related
+    HTML pages whose PDFs cover other waste types or zones.
+    """
+    raw_dir = RAW_DIR / prefecture / city_id
+    if not raw_dir.exists():
+        return []
+
+    seen_urls = set()
+    pdfs: list[dict] = []
+    for f in sorted(raw_dir.glob("*.html")):
+        try:
+            html = f.read_text(encoding="utf-8")
+        except Exception:
+            continue
+        # Reconstruct base URL from filename (Playwright dump pattern)
+        # e.g. "https_www.city.kamogawa.lg.jp_site_gomino-bunbetsu_226.html.html"
+        stem = f.stem
+        if stem == "waste_page":
+            # Cannot reconstruct; rely on absolute hrefs only
+            base_url = ""
+        else:
+            base_url = stem.replace("_", "/").replace("https/", "https://").replace("http/", "http://")
+            if not base_url.startswith(("http://", "https://")):
+                base_url = ""
+
+        for p in _find_pdf_links(html, base_url):
+            if p["url"] in seen_urls:
+                continue
+            if not p["url"].startswith(("http://", "https://")):
+                continue
+            seen_urls.add(p["url"])
+            pdfs.append(p)
+    return pdfs
+
+
 def extract_from_pdfs(
     client: genai.Client,
     city_id: str,
@@ -858,6 +897,8 @@ def extract_all(
         # Handle direct PDF URLs (waste_page_url ends with .pdf)
         if waste_page_url.lower().endswith(".pdf"):
             logger.info("  Direct PDF URL detected")
+            areas: list[dict] = []
+            direct_warnings: list[str] = []
             try:
                 pdf_data = _download_pdf(waste_page_url)
                 if pdf_data:
@@ -865,25 +906,55 @@ def extract_all(
                     gemini_result = _call_gemini_with_pdf(client, pdf_data, prompt)
                     if isinstance(gemini_result, list) and gemini_result:
                         areas = _expand_compact_areas(gemini_result)
-                        direct_warnings = []
-                        areas = _deduplicate_areas(areas)
-                        areas = _validate_and_fix_areas(areas, direct_warnings)
-                        waste_types = set()
-                        for a in areas:
-                            for s in a.get("schedules", []):
-                                waste_types.add(s.get("waste_type"))
-                        result = {
-                            "city_id": city_id, "city_name": city_name,
-                            "source_format": "direct_pdf", "areas": areas,
-                            "warnings": direct_warnings,
-                            "stats": {"total_areas": len(areas), "waste_types_found": sorted(waste_types)},
-                        }
                     else:
-                        result = {"city_id": city_id, "city_name": city_name,
-                                  "source_format": "direct_pdf", "areas": [], "warnings": ["No data from PDF"]}
+                        direct_warnings.append("No data from direct PDF")
                 else:
-                    result = {"city_id": city_id, "city_name": city_name,
-                              "source_format": "direct_pdf", "areas": [], "warnings": ["PDF download failed"]}
+                    direct_warnings.append("Direct PDF download failed")
+
+                # Fallback: if direct PDF gave a thin result, scan cached HTML
+                # in raw/<city>/ for additional zone/calendar PDFs.
+                waste_types = {
+                    s.get("waste_type")
+                    for a in areas for s in a.get("schedules", [])
+                }
+                if len(waste_types) < 3 or len(areas) < 2:
+                    extra_pdfs = _gather_pdfs_from_raw_dir(prefecture, city_id)
+                    extra_pdfs = [
+                        p for p in extra_pdfs
+                        if p["url"].lower() != waste_page_url.lower()
+                    ]
+                    if extra_pdfs:
+                        logger.info(
+                            "  Direct PDF yielded thin result (%d areas, %d types); "
+                            "scanning %d additional cached-page PDFs",
+                            len(areas), len(waste_types), len(extra_pdfs),
+                        )
+                        # Build a minimal HTML doc embedding the discovered PDF
+                        # links so extract_from_pdfs can filter + prioritise them.
+                        synthetic_html = "<html><body>" + "".join(
+                            f'<a href="{p["url"]}">{p["text"]}</a>'
+                            for p in extra_pdfs
+                        ) + "</body></html>"
+                        extra_result = extract_from_pdfs(
+                            client, city_id, city_name, synthetic_html, waste_page_url,
+                        )
+                        for a in extra_result.get("areas", []):
+                            areas.append(a)
+                        direct_warnings.extend(extra_result.get("warnings", []) or [])
+
+                areas = _deduplicate_areas(areas)
+                areas = _validate_and_fix_areas(areas, direct_warnings)
+                waste_types = sorted({
+                    s.get("waste_type")
+                    for a in areas for s in a.get("schedules", [])
+                    if s.get("waste_type")
+                })
+                result = {
+                    "city_id": city_id, "city_name": city_name,
+                    "source_format": "direct_pdf", "areas": areas,
+                    "warnings": direct_warnings,
+                    "stats": {"total_areas": len(areas), "waste_types_found": waste_types},
+                }
             except QuotaExhaustedError:
                 raise
             except Exception as e:
@@ -973,9 +1044,9 @@ def extract_all(
     return stats
 
 
-def run(limit: int | None = None, city: str | None = None):
+def run(limit: int | None = None, city: str | None = None, force: bool = False):
     """Synchronous entry point."""
-    return extract_all(limit=limit, city_filter=city)
+    return extract_all(limit=limit, city_filter=city, skip_existing=not force)
 
 
 if __name__ == "__main__":
@@ -985,10 +1056,13 @@ if __name__ == "__main__":
 
     city = None
     limit = None
+    force = False
     for arg in sys.argv[1:]:
         if arg.startswith("--city="):
             city = arg.split("=")[1]
+        elif arg == "--force":
+            force = True
         elif arg.isdigit():
             limit = int(arg)
 
-    run(limit=limit, city=city)
+    run(limit=limit, city=city, force=force)
