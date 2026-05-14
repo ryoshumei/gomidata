@@ -868,6 +868,29 @@ def extract_all(
 
     client = _init_gemini()
 
+    # Multiple cities (e.g. 千葉市 wards) often share one waste_page_url —
+    # reuse any already-extracted result with non-empty areas instead of
+    # re-querying Gemini for each.
+    def _shared_url_result(target_url: str, current_id: str) -> dict | None:
+        if not target_url:
+            return None
+        for other in cities:
+            if other.get("city_id") == current_id:
+                continue
+            if other.get("waste_page_url") != target_url:
+                continue
+            other_path = out_dir / f"{other['city_id']}.json"
+            if not other_path.exists():
+                continue
+            try:
+                with open(other_path, encoding="utf-8") as f:
+                    cached = json.load(f)
+            except Exception:
+                continue
+            if cached.get("areas"):
+                return cached
+        return None
+
     for i, city in enumerate(targets):
         city_id = city["city_id"]
         city_name = city["city_name"]
@@ -878,6 +901,30 @@ def extract_all(
         if skip_existing and out_file.exists():
             stats["skipped_cached"] += 1
             print("CACHED")
+            continue
+
+        # Reuse-by-URL: if another city sharing this waste_page_url is already
+        # extracted, copy its result (re-branded with this city_id/name).
+        waste_page_url_early = city.get("waste_page_url", "")
+        shared = _shared_url_result(waste_page_url_early, city_id)
+        if shared is not None:
+            result = dict(shared)
+            result["city_id"] = city_id
+            result["city_name"] = city_name
+            result["source_url"] = waste_page_url_early
+            result["extracted_at"] = time.strftime("%Y-%m-%dT%H:%M:%S")
+            result["extraction_model"] = GEMINI_MODEL
+            result.setdefault("warnings", [])
+            note = f"Result reused from same-URL city"
+            if note not in result["warnings"]:
+                result["warnings"] = list(result["warnings"]) + [note]
+            out_file.write_text(
+                json.dumps(result, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+            stats["extracted"] += 1
+            n_areas = len(result.get("areas", []))
+            print(f"OK ({n_areas} areas, reused from shared URL)")
             continue
 
         # Read source files

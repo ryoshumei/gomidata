@@ -77,65 +77,109 @@
   {
     "city_id": "121037",
     "city_name": "千葉市稲毛区",
-    "status": "empty",
-    "issues": [
-      "empty areas; warnings: ['Gemini returned no result']"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
-      "area_count": 0,
+      "area_count": 261,
       "source_format": "html_table",
       "source_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
       "warnings": [
-        "Gemini returned no result"
-      ]
+        "Result reused from same-URL city"
+      ],
+      "waste_types": {
+        "burnable": 259,
+        "non_burnable": 261,
+        "pet_bottles": 261,
+        "bottles": 261,
+        "cans": 261,
+        "paper": 260,
+        "clothing": 260,
+        "hazardous": 261,
+        "branches": 258
+      },
+      "burnable_areas": 259,
+      "duplicate_days_count": 0
     }
   },
   {
     "city_id": "121045",
     "city_name": "千葉市若葉区",
-    "status": "empty",
-    "issues": [
-      "empty areas; warnings: ['Gemini returned no result']"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
-      "area_count": 0,
+      "area_count": 261,
       "source_format": "html_table",
       "source_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
       "warnings": [
-        "Gemini returned no result"
-      ]
+        "Result reused from same-URL city"
+      ],
+      "waste_types": {
+        "burnable": 259,
+        "non_burnable": 261,
+        "pet_bottles": 261,
+        "bottles": 261,
+        "cans": 261,
+        "paper": 260,
+        "clothing": 260,
+        "hazardous": 261,
+        "branches": 258
+      },
+      "burnable_areas": 259,
+      "duplicate_days_count": 0
     }
   },
   {
     "city_id": "121053",
     "city_name": "千葉市緑区",
-    "status": "empty",
-    "issues": [
-      "empty areas; warnings: ['Gemini returned no result']"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
-      "area_count": 0,
+      "area_count": 261,
       "source_format": "html_table",
       "source_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
       "warnings": [
-        "Gemini returned no result"
-      ]
+        "Result reused from same-URL city"
+      ],
+      "waste_types": {
+        "burnable": 259,
+        "non_burnable": 261,
+        "pet_bottles": 261,
+        "bottles": 261,
+        "cans": 261,
+        "paper": 260,
+        "clothing": 260,
+        "hazardous": 261,
+        "branches": 258
+      },
+      "burnable_areas": 259,
+      "duplicate_days_count": 0
     }
   },
   {
     "city_id": "121061",
     "city_name": "千葉市美浜区",
-    "status": "empty",
-    "issues": [
-      "empty areas; warnings: ['Gemini returned no result']"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
-      "area_count": 0,
+      "area_count": 261,
       "source_format": "html_table",
       "source_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
       "warnings": [
-        "Gemini returned no result"
-      ]
+        "Result reused from same-URL city"
+      ],
+      "waste_types": {
+        "burnable": 259,
+        "non_burnable": 261,
+        "pet_bottles": 261,
+        "bottles": 261,
+        "cans": 261,
+        "paper": 260,
+        "clothing": 260,
+        "hazardous": 261,
+        "branches": 258
+      },
+      "burnable_areas": 259,
+      "duplicate_days_count": 0
     }
   },
   {
