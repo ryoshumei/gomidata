@@ -1,0 +1,1349 @@
+[
+  {
+    "city_id": "121002",
+    "city_name": "千葉市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 261,
+      "source_format": "html_table",
+      "source_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 259,
+        "non_burnable": 261,
+        "pet_bottles": 261,
+        "bottles": 261,
+        "cans": 261,
+        "paper": 260,
+        "clothing": 260,
+        "hazardous": 261,
+        "branches": 258
+      },
+      "burnable_areas": 259,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "121011",
+    "city_name": "千葉市中央区",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 261,
+      "source_format": "html_table",
+      "source_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 259,
+        "non_burnable": 261,
+        "pet_bottles": 261,
+        "bottles": 261,
+        "cans": 261,
+        "paper": 260,
+        "clothing": 260,
+        "hazardous": 261,
+        "branches": 258
+      },
+      "burnable_areas": 259,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "121029",
+    "city_name": "千葉市花見川区",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 261,
+      "source_format": "html_table",
+      "source_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 259,
+        "non_burnable": 261,
+        "pet_bottles": 261,
+        "bottles": 261,
+        "cans": 261,
+        "paper": 260,
+        "clothing": 260,
+        "hazardous": 261,
+        "branches": 258
+      },
+      "burnable_areas": 259,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "121037",
+    "city_name": "千葉市稲毛区",
+    "status": "empty",
+    "issues": [
+      "empty areas; warnings: ['Gemini returned no result']"
+    ],
+    "stats": {
+      "area_count": 0,
+      "source_format": "html_table",
+      "source_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
+      "warnings": [
+        "Gemini returned no result"
+      ]
+    }
+  },
+  {
+    "city_id": "121045",
+    "city_name": "千葉市若葉区",
+    "status": "empty",
+    "issues": [
+      "empty areas; warnings: ['Gemini returned no result']"
+    ],
+    "stats": {
+      "area_count": 0,
+      "source_format": "html_table",
+      "source_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
+      "warnings": [
+        "Gemini returned no result"
+      ]
+    }
+  },
+  {
+    "city_id": "121053",
+    "city_name": "千葉市緑区",
+    "status": "empty",
+    "issues": [
+      "empty areas; warnings: ['Gemini returned no result']"
+    ],
+    "stats": {
+      "area_count": 0,
+      "source_format": "html_table",
+      "source_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
+      "warnings": [
+        "Gemini returned no result"
+      ]
+    }
+  },
+  {
+    "city_id": "121061",
+    "city_name": "千葉市美浜区",
+    "status": "empty",
+    "issues": [
+      "empty areas; warnings: ['Gemini returned no result']"
+    ],
+    "stats": {
+      "area_count": 0,
+      "source_format": "html_table",
+      "source_url": "https://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html",
+      "warnings": [
+        "Gemini returned no result"
+      ]
+    }
+  },
+  {
+    "city_id": "122025",
+    "city_name": "銚子市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 110,
+      "source_format": "pdf",
+      "source_url": "https://www.city.choshi.chiba.jp/kurashi/page150059_00001.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 110,
+        "pet_bottles": 110,
+        "bottles": 110,
+        "cans": 110,
+        "paper": 110,
+        "clothing": 110,
+        "metals": 110,
+        "hazardous": 110
+      },
+      "burnable_areas": 110,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122033",
+    "city_name": "市川市",
+    "status": "empty",
+    "issues": [
+      "empty areas; warnings: ['Gemini returned no result']"
+    ],
+    "stats": {
+      "area_count": 0,
+      "source_format": "html_table",
+      "source_url": "http://www.city.ichikawa.lg.jp/page/3716.html",
+      "warnings": [
+        "Gemini returned no result"
+      ]
+    }
+  },
+  {
+    "city_id": "122041",
+    "city_name": "船橋市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 306,
+      "source_format": "html_table",
+      "source_url": "https://www.city.funabashi.lg.jp/kurashi/gomi/001/p001523.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 306,
+        "non_burnable": 305,
+        "recyclable": 306,
+        "pet_bottles": 306,
+        "valuables": 304
+      },
+      "burnable_areas": 306,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122050",
+    "city_name": "館山市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 64,
+      "source_format": "pdf",
+      "source_url": "https://www.city.tateyama.chiba.jp/kankyou/page100017.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 64,
+        "pet_bottles": 64,
+        "bottles": 54,
+        "paper": 59,
+        "plastic": 64,
+        "metals": 64,
+        "non_burnable": 52,
+        "cans": 43,
+        "hazardous": 23,
+        "cardboard": 34
+      },
+      "burnable_areas": 64,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122068",
+    "city_name": "木更津市",
+    "status": "critical",
+    "issues": [
+      "[大久保/paper] duplicate days: ['火', '火']",
+      "[大久保/paper] duplicate days: ['火', '火']",
+      "[上烏田/paper] duplicate days: ['火', '火']",
+      "[中烏田/paper] duplicate days: ['火', '火']",
+      "[下烏田/paper] duplicate days: ['火', '火']",
+      "[八幡台/paper] duplicate days: ['火', '火']",
+      "[真舟/paper] duplicate days: ['火', '火']",
+      "[請西地区/paper] duplicate days: ['火', '火']",
+      "[請西地区/paper] duplicate days: ['火', '火']",
+      "[請西地区/paper] duplicate days: ['火', '火']",
+      "[請西地区/paper] duplicate days: ['火', '火']",
+      "[長須賀/paper] duplicate days: ['水', '水']",
+      "[永井作/paper] duplicate days: ['水', '水']",
+      "[永井作/paper] duplicate days: ['水', '水']",
+      "[祇園/paper] duplicate days: ['水', '水']",
+      "[牛袋/paper] duplicate days: ['水', '水']",
+      "[曽根/paper] duplicate days: ['水', '水']",
+      "[牛袋野/paper] duplicate days: ['水', '水']",
+      "[井尻/paper] duplicate days: ['水', '水']",
+      "[十日市場/paper] duplicate days: ['水', '水']",
+      "[大寺/paper] duplicate days: ['水', '水']",
+      "[有吉/paper] duplicate days: ['水', '水']",
+      "[上望陀/paper] duplicate days: ['水', '水']",
+      "[下望陀/paper] duplicate days: ['水', '水']",
+      "[戸国/paper] duplicate days: ['水', '水']",
+      "[下内橋/paper] duplicate days: ['水', '水']",
+      "[真里/paper] duplicate days: ['水', '水']",
+      "[大稲/paper] duplicate days: ['水', '水']",
+      "[真里谷/paper] duplicate days: ['水', '水']",
+      "[茅野/paper] duplicate days: ['水', '水']",
+      "[茅野七曲/paper] duplicate days: ['水', '水']",
+      "[山本七曲/paper] duplicate days: ['水', '水']",
+      "[高砂/paper] duplicate days: ['木', '木']",
+      "[本郷/paper] duplicate days: ['木', '木']",
+      "[高柳/paper] duplicate days: ['木', '木']",
+      "[高柳西山地区/paper] duplicate days: ['木', '木']",
+      "[若葉町/paper] duplicate days: ['木', '木']",
+      "[高柳/paper] duplicate days: ['木', '木']",
+      "[木更津/paper] duplicate days: ['木', '木']",
+      "[東中央/paper] duplicate days: ['木', '木']",
+      "[朝日/paper] duplicate days: ['木', '木']",
+      "[新宿/paper] duplicate days: ['木', '木']",
+      "[大和/paper] duplicate days: ['木', '木']",
+      "[文京/paper] duplicate days: ['木', '木']",
+      "[幸町/paper] duplicate days: ['木', '木']",
+      "[桜町/paper] duplicate days: ['木', '木']",
+      "[富岡地区/paper] duplicate days: ['木', '木']",
+      "[羽鳥野/paper] duplicate days: ['火', '火']",
+      "[請西東/paper] duplicate days: ['水', '水']",
+      "[木更津/paper] duplicate days: ['木', '木']",
+      "[東中央/paper] duplicate days: ['木', '木']",
+      "[朝日/paper] duplicate days: ['木', '木']",
+      "[新宿/paper] duplicate days: ['木', '木']",
+      "[大和/paper] duplicate days: ['木', '木']",
+      "[文京/paper] duplicate days: ['木', '木']",
+      "[幸町/paper] duplicate days: ['木', '木']",
+      "[桜町/paper] duplicate days: ['木', '木']",
+      "[下郡/paper] duplicate days: ['木', '木']",
+      "[田川/paper] duplicate days: ['木', '木']",
+      "[佐野/paper] duplicate days: ['木', '木']",
+      "[下宮田/paper] duplicate days: ['木', '木']",
+      "[上根岸/paper] duplicate days: ['木', '木']",
+      "[根岸/paper] duplicate days: ['木', '木']",
+      "[長須賀/paper] duplicate days: ['水', '水']",
+      "[永井作/paper] duplicate days: ['水', '水']",
+      "[永井作/paper] duplicate days: ['水', '水']",
+      "[祇園/paper] duplicate days: ['水', '水']",
+      "[牛袋/paper] duplicate days: ['水', '水']",
+      "[曽根/paper] duplicate days: ['水', '水']",
+      "[牛袋野/paper] duplicate days: ['水', '水']",
+      "[井尻/paper] duplicate days: ['水', '水']",
+      "[十日市場/paper] duplicate days: ['水', '水']",
+      "[大寺/paper] duplicate days: ['水', '水']",
+      "[有吉/paper] duplicate days: ['水', '水']",
+      "[上望陀/paper] duplicate days: ['水', '水']",
+      "[下望陀/paper] duplicate days: ['水', '水']",
+      "30 duplicate (name+detail) areas: ['3x 長須賀', '3x 永井作', '3x 永井作']",
+      "76 schedules with duplicate day_of_week (legacy bug)"
+    ],
+    "stats": {
+      "area_count": 160,
+      "source_format": "pdf",
+      "source_url": "https://www.city.kisarazu.lg.jp/soshiki/kankyo/shigenjunkansuishin/1/11980.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 160,
+        "non_burnable": 160,
+        "pet_bottles": 160,
+        "bottles": 160,
+        "cans": 160,
+        "paper": 160,
+        "clothing": 160,
+        "plastic": 160,
+        "cardboard": 160
+      },
+      "burnable_areas": 160,
+      "duplicate_days_count": 76
+    }
+  },
+  {
+    "city_id": "122076",
+    "city_name": "松戸市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 179,
+      "source_format": "html_table",
+      "source_url": "https://www.city.matsudo.chiba.jp/kurashi/gomi_shinyou/shuushuubi/tiiki-kijyun.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 179,
+        "non_burnable": 179,
+        "recyclable": 179,
+        "plastic": 179
+      },
+      "burnable_areas": 179,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122084",
+    "city_name": "野田市",
+    "status": "empty",
+    "issues": [
+      "empty areas, no warnings"
+    ],
+    "stats": {
+      "area_count": 0,
+      "source_format": "text",
+      "source_url": "https://manage.delight-system.com/threeR/web/calendar?jichitaiId=nodashi",
+      "warnings": []
+    }
+  },
+  {
+    "city_id": "122106",
+    "city_name": "茂原市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 248,
+      "source_format": "pdf",
+      "source_url": "http://www.city.mobara.chiba.jp/0000008826.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 248,
+        "non_burnable": 248,
+        "recyclable": 248,
+        "pet_bottles": 248
+      },
+      "burnable_areas": 248,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122114",
+    "city_name": "成田市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 9,
+      "source_format": "pdf",
+      "source_url": "https://www.city.narita.chiba.jp/kurashi/page117400_00007.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 9,
+        "non_burnable": 9,
+        "pet_bottles": 9,
+        "bottles": 9,
+        "cans": 9,
+        "paper": 9,
+        "clothing": 9,
+        "plastic": 9,
+        "metals": 5,
+        "hazardous": 9
+      },
+      "burnable_areas": 9,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122122",
+    "city_name": "佐倉市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 1,
+      "source_format": "direct_pdf",
+      "source_url": "https://www.city.sakura.lg.jp/material/files/group/38/B3_ja_0127.pdf",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 1,
+        "non_burnable": 1,
+        "bottles": 1,
+        "cans": 1,
+        "paper": 1,
+        "plastic": 1,
+        "metals": 1
+      },
+      "burnable_areas": 1,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122131",
+    "city_name": "東金市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 20,
+      "source_format": "pdf",
+      "source_url": "https://www.city.togane.chiba.jp/0000005742.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 20,
+        "pet_bottles": 20,
+        "bottles": 20,
+        "cans": 20,
+        "metals": 20,
+        "hazardous": 17
+      },
+      "burnable_areas": 20,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122157",
+    "city_name": "旭市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 13,
+      "source_format": "html_table",
+      "source_url": "https://www.city.asahi.lg.jp/soshiki/8/39548.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 13,
+        "pet_bottles": 13,
+        "bottles": 13,
+        "cans": 13,
+        "paper": 13,
+        "clothing": 13,
+        "metals": 13
+      },
+      "burnable_areas": 13,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122165",
+    "city_name": "習志野市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 20,
+      "source_format": "pdf",
+      "source_url": "https://www.city.narashino.lg.jp/kurashi/gomi/gomi/r8calendar.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 20,
+        "non_burnable": 20,
+        "recyclable": 20,
+        "hazardous": 20
+      },
+      "burnable_areas": 20,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122173",
+    "city_name": "柏市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 110,
+      "source_format": "pdf",
+      "source_url": "https://www.city.kashiwa.lg.jp/kankyoservice/garbage_environment/kashiwaarea/calender.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 110,
+        "non_burnable": 110,
+        "recyclable": 110,
+        "plastic": 110,
+        "pet_bottles": 84,
+        "bottles": 77,
+        "cans": 77,
+        "paper": 77,
+        "clothing": 77,
+        "metals": 77,
+        "hazardous": 86,
+        "branches": 87,
+        "cardboard": 77
+      },
+      "burnable_areas": 110,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122181",
+    "city_name": "勝浦市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 15,
+      "source_format": "pdf",
+      "source_url": "https://www.city.katsuura.lg.jp/page/1680.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 15,
+        "non_burnable": 15,
+        "pet_bottles": 15,
+        "bottles": 15,
+        "cans": 15,
+        "paper": 15,
+        "clothing": 15,
+        "plastic": 15,
+        "metals": 15,
+        "hazardous": 15,
+        "cardboard": 15
+      },
+      "burnable_areas": 15,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122190",
+    "city_name": "市原市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 145,
+      "source_format": "pdf",
+      "source_url": "https://www.city.ichihara.chiba.jp/article?articleId=698988628dbe435020068690",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 145,
+        "non_burnable": 145,
+        "recyclable": 145
+      },
+      "burnable_areas": 145,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122203",
+    "city_name": "流山市",
+    "status": "empty",
+    "issues": [
+      "empty areas, no warnings"
+    ],
+    "stats": {
+      "area_count": 0,
+      "source_format": "pdf",
+      "source_url": "https://www.city.nagareyama.chiba.jp/life/1002401/1002416/1048910/1048914.html",
+      "warnings": []
+    }
+  },
+  {
+    "city_id": "122211",
+    "city_name": "八千代市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 69,
+      "source_format": "html_table",
+      "source_url": "https://www.city.yachiyo.chiba.jp/site/gomi-recycle/",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 69,
+        "non_burnable": 69,
+        "pet_bottles": 69,
+        "bottles": 69,
+        "cans": 69,
+        "paper": 69,
+        "clothing": 69,
+        "metals": 69,
+        "hazardous": 69
+      },
+      "burnable_areas": 69,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122220",
+    "city_name": "我孫子市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 59,
+      "source_format": "pdf",
+      "source_url": "https://www.city.abiko.chiba.jp/kurashi/gomi_shigen/shushubi/clean.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 59,
+        "non_burnable": 37,
+        "recyclable": 59,
+        "branches": 37,
+        "pet_bottles": 28,
+        "bottles": 28,
+        "cans": 28,
+        "paper": 49,
+        "clothing": 49,
+        "plastic": 49,
+        "metals": 49,
+        "hazardous": 28,
+        "cardboard": 15
+      },
+      "burnable_areas": 59,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122238",
+    "city_name": "鴨川市",
+    "status": "critical",
+    "issues": [
+      "only 1 waste type(s) extracted (['burnable']); municipalities typically collect ≥3"
+    ],
+    "stats": {
+      "area_count": 17,
+      "source_format": "direct_pdf",
+      "source_url": "https://www.city.kamogawa.lg.jp/uploaded/attachment/20889.pdf",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 17
+      },
+      "burnable_areas": 17,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122246",
+    "city_name": "鎌ケ谷市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 64,
+      "source_format": "html_table",
+      "source_url": "https://www.city.kamagaya.chiba.jp/kurashi-tetsuzuki/gomi/shuushuu/gomidashi.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 64,
+        "non_burnable": 64,
+        "recyclable": 64,
+        "plastic": 64
+      },
+      "burnable_areas": 64,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122254",
+    "city_name": "君津市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 44,
+      "source_format": "pdf",
+      "source_url": "https://www.city.kimitsu.lg.jp/soshiki/15/29742.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 44,
+        "non_burnable": 44,
+        "pet_bottles": 44,
+        "bottles": 44,
+        "cans": 44,
+        "paper": 44,
+        "clothing": 44,
+        "plastic": 44,
+        "hazardous": 43
+      },
+      "burnable_areas": 44,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122262",
+    "city_name": "富津市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 49,
+      "source_format": "pdf",
+      "source_url": "https://www.city.futtsu.lg.jp/0000005451.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 49,
+        "non_burnable": 49,
+        "pet_bottles": 49,
+        "bottles": 49,
+        "cans": 49,
+        "paper": 49,
+        "clothing": 49,
+        "plastic": 49,
+        "hazardous": 49,
+        "cardboard": 49
+      },
+      "burnable_areas": 49,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122271",
+    "city_name": "浦安市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 1,
+      "source_format": "html_table",
+      "source_url": "https://www.city.urayasu.lg.jp/todokede/gomi/dashikata/1009097/1009098.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 1,
+        "non_burnable": 1,
+        "pet_bottles": 1,
+        "bottles": 1,
+        "cans": 1,
+        "paper": 1,
+        "hazardous": 1
+      },
+      "burnable_areas": 1,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122289",
+    "city_name": "四街道市",
+    "status": "critical",
+    "issues": [
+      "1 duplicate (name+detail) areas: ['2x 旭ケ丘']"
+    ],
+    "stats": {
+      "area_count": 84,
+      "source_format": "pdf",
+      "source_url": "https://www.city.yotsukaido.chiba.jp/kurashi/gomi/gominobunbetsu/gomi_bunnbetsu_guide/yhaiki202103.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 84,
+        "non_burnable": 84,
+        "recyclable": 84,
+        "plastic": 84,
+        "hazardous": 84
+      },
+      "burnable_areas": 84,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122297",
+    "city_name": "袖ケ浦市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 18,
+      "source_format": "pdf",
+      "source_url": "https://www.city.sodegaura.lg.jp/soshiki/haikibutsu/waste-calendar.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 18,
+        "non_burnable": 18,
+        "pet_bottles": 18,
+        "bottles": 18,
+        "cans": 18,
+        "paper": 18,
+        "clothing": 18,
+        "hazardous": 18
+      },
+      "burnable_areas": 18,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122301",
+    "city_name": "八街市",
+    "status": "empty",
+    "issues": [
+      "empty areas, no warnings"
+    ],
+    "stats": {
+      "area_count": 0,
+      "source_format": "pdf",
+      "source_url": "https://www.city.yachimata.lg.jp/soshiki/22/52202.html",
+      "warnings": []
+    }
+  },
+  {
+    "city_id": "122319",
+    "city_name": "印西市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 112,
+      "source_format": "html_table",
+      "source_url": "https://www.city.inzai.lg.jp/0000001685.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 112,
+        "non_burnable": 112,
+        "recyclable": 112,
+        "hazardous": 112
+      },
+      "burnable_areas": 112,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122327",
+    "city_name": "白井市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 44,
+      "source_format": "pdf",
+      "source_url": "https://www.city.shiroi.chiba.jp/kurashi/gomi/g02/1458797227371.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 44,
+        "non_burnable": 44,
+        "recyclable": 44
+      },
+      "burnable_areas": 44,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122335",
+    "city_name": "富里市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 1,
+      "source_format": "pdf",
+      "source_url": "https://www.city.tomisato.lg.jp/0000001069.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 1,
+        "non_burnable": 1,
+        "pet_bottles": 1,
+        "bottles": 1,
+        "hazardous": 1
+      },
+      "burnable_areas": 1,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122343",
+    "city_name": "南房総市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 14,
+      "source_format": "pdf",
+      "source_url": "https://www.city.minamiboso.chiba.jp/0000018208.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 14,
+        "non_burnable": 14,
+        "pet_bottles": 14,
+        "bottles": 14,
+        "cans": 14,
+        "paper": 14,
+        "clothing": 14,
+        "plastic": 14,
+        "metals": 14
+      },
+      "burnable_areas": 14,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122351",
+    "city_name": "匝瑳市",
+    "status": "missing",
+    "issues": [
+      "schedule file does not exist"
+    ],
+    "stats": {}
+  },
+  {
+    "city_id": "122360",
+    "city_name": "香取市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 12,
+      "source_format": "pdf",
+      "source_url": "https://www.city.katori.lg.jp/living/gomi_recycling/GOMI/R7gomisyusyu.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 12,
+        "non_burnable": 12,
+        "pet_bottles": 12,
+        "bottles": 12,
+        "cans": 12,
+        "paper": 12,
+        "clothing": 12,
+        "plastic": 12,
+        "cardboard": 12
+      },
+      "burnable_areas": 12,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122378",
+    "city_name": "山武市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 45,
+      "source_format": "pdf",
+      "source_url": "https://www.city.sammu.lg.jp/kurashi/gomi/page002179.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 45,
+        "non_burnable": 45,
+        "pet_bottles": 42,
+        "bottles": 42,
+        "cans": 42,
+        "recyclable": 3,
+        "hazardous": 3
+      },
+      "burnable_areas": 45,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122386",
+    "city_name": "いすみ市",
+    "status": "critical",
+    "issues": [
+      "3 duplicate (name+detail) areas: ['2x 大原・東海', '2x 岬地域', '2x 夷隅地域']"
+    ],
+    "stats": {
+      "area_count": 9,
+      "source_format": "pdf",
+      "source_url": "https://www.city.isumi.lg.jp/soshikikarasagasu/kankyosuidoka/kurashi_tetsuzuki/1/1/1354.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 9,
+        "non_burnable": 9,
+        "recyclable": 5,
+        "pet_bottles": 9,
+        "bottles": 9,
+        "cans": 9,
+        "paper": 7,
+        "metals": 3,
+        "cardboard": 3
+      },
+      "burnable_areas": 9,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "122394",
+    "city_name": "大網白里市",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 5,
+      "source_format": "html_table",
+      "source_url": "https://www.city.oamishirasato.lg.jp/0000013555.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 5,
+        "pet_bottles": 5,
+        "bottles": 5,
+        "cans": 5,
+        "metals": 5
+      },
+      "burnable_areas": 5,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "123226",
+    "city_name": "印旛郡酒々井町",
+    "status": "empty",
+    "issues": [
+      "empty areas; warnings: ['Tried 1 PDFs but extracted no areas']"
+    ],
+    "stats": {
+      "area_count": 0,
+      "source_format": "pdf",
+      "source_url": "https://www.town.shisui.chiba.jp/docs/2021092800017/",
+      "warnings": [
+        "Tried 1 PDFs but extracted no areas"
+      ]
+    }
+  },
+  {
+    "city_id": "123293",
+    "city_name": "印旛郡栄町",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 1,
+      "source_format": "html_table",
+      "source_url": "https://www.town.sakae.chiba.jp/kurashi/gomi/gomi-rules/page000497.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 1,
+        "non_burnable": 1,
+        "recyclable": 1,
+        "hazardous": 1
+      },
+      "burnable_areas": 1,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "123421",
+    "city_name": "香取郡神崎町",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 27,
+      "source_format": "pdf",
+      "source_url": "https://www.town.kozaki.chiba.jp/kurashi/living_bosai/seikatsu/gomi.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 27,
+        "non_burnable": 25,
+        "plastic": 27,
+        "cardboard": 25,
+        "pet_bottles": 21,
+        "bottles": 21,
+        "cans": 21
+      },
+      "burnable_areas": 27,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "123471",
+    "city_name": "香取郡多古町",
+    "status": "empty",
+    "issues": [
+      "empty areas; warnings: ['PDF download failed']"
+    ],
+    "stats": {
+      "area_count": 0,
+      "source_format": "direct_pdf",
+      "source_url": "https://www.town.tako.chiba.jp/docs/file_contents/2025gomibunbetuchou.pdf",
+      "warnings": [
+        "PDF download failed"
+      ]
+    }
+  },
+  {
+    "city_id": "123498",
+    "city_name": "香取郡東庄町",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 40,
+      "source_format": "pdf",
+      "source_url": "https://www.town.tohnosho.chiba.jp/life_scene/gomi/3324.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 24,
+        "non_burnable": 38,
+        "pet_bottles": 40,
+        "bottles": 38,
+        "cans": 38,
+        "paper": 40,
+        "clothing": 40,
+        "plastic": 40
+      },
+      "burnable_areas": 24,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "124036",
+    "city_name": "山武郡九十九里町",
+    "status": "empty",
+    "issues": [
+      "empty areas, no warnings"
+    ],
+    "stats": {
+      "area_count": 0,
+      "source_format": "pdf",
+      "source_url": "https://www.town.kujukuri.chiba.jp/0000008620.html",
+      "warnings": []
+    }
+  },
+  {
+    "city_id": "124095",
+    "city_name": "山武郡芝山町",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 1,
+      "source_format": "pdf",
+      "source_url": "https://www.town.shibayama.lg.jp/0000005619.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 1,
+        "non_burnable": 1,
+        "recyclable": 1,
+        "hazardous": 1
+      },
+      "burnable_areas": 1,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "124109",
+    "city_name": "山武郡横芝光町",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 11,
+      "source_format": "html_table",
+      "source_url": "https://www.town.yokoshibahikari.chiba.jp/soshiki/5/13005.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 11,
+        "non_burnable": 11,
+        "recyclable": 11,
+        "hazardous": 11
+      },
+      "burnable_areas": 11,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "124214",
+    "city_name": "長生郡一宮町",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 13,
+      "source_format": "pdf",
+      "source_url": "https://www.town.ichinomiya.chiba.jp/assets/files/R8%E3%82%B4%E3%83%9F%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC%E4%B8%80%E5%AE%AE%E7%94%BA1%E3%82%B3%E3%83%BC%E3%82%B9.pdf",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 13,
+        "non_burnable": 13,
+        "recyclable": 13,
+        "pet_bottles": 12,
+        "bottles": 12,
+        "cans": 12,
+        "paper": 12,
+        "clothing": 12,
+        "cardboard": 11
+      },
+      "burnable_areas": 13,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "124222",
+    "city_name": "長生郡睦沢町",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 16,
+      "source_format": "html_table",
+      "source_url": "https://www.town.mutsuzawa.chiba.jp/kurashi/平成29年度版ゴミと資源の分け方・出し方.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 16,
+        "non_burnable": 16,
+        "recyclable": 16
+      },
+      "burnable_areas": 16,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "124231",
+    "city_name": "長生郡長生村",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 3,
+      "source_format": "pdf",
+      "source_url": "https://www.vill.chosei.chiba.jp/0000000110.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 3,
+        "non_burnable": 3,
+        "recyclable": 3,
+        "pet_bottles": 1,
+        "bottles": 1,
+        "cans": 1,
+        "paper": 1,
+        "clothing": 1,
+        "cardboard": 1
+      },
+      "burnable_areas": 3,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "124249",
+    "city_name": "長生郡白子町",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 3,
+      "source_format": "pdf",
+      "source_url": "https://www.town.shirako.lg.jp/0000002270.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 3,
+        "non_burnable": 3,
+        "recyclable": 3,
+        "pet_bottles": 3,
+        "bottles": 3,
+        "cans": 3,
+        "paper": 3,
+        "clothing": 3
+      },
+      "burnable_areas": 3,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "124265",
+    "city_name": "長生郡長柄町",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 2,
+      "source_format": "html_table",
+      "source_url": "https://www.town.nagara.chiba.jp/soshiki/5/2341.html#4",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 2,
+        "non_burnable": 2,
+        "recyclable": 2
+      },
+      "burnable_areas": 2,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "124273",
+    "city_name": "長生郡長南町",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 3,
+      "source_format": "html_table",
+      "source_url": "https://www.town.chonan.chiba.jp/kurashi/gomi/35414",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 3,
+        "non_burnable": 3,
+        "recyclable": 3
+      },
+      "burnable_areas": 3,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "124419",
+    "city_name": "夷隅郡大多喜町",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 1,
+      "source_format": "pdf",
+      "source_url": "https://www.town.otaki.chiba.jp/life_event/gomi/1593.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 1,
+        "pet_bottles": 1,
+        "valuables": 1,
+        "plastic": 1
+      },
+      "burnable_areas": 1,
+      "duplicate_days_count": 0
+    }
+  },
+  {
+    "city_id": "124435",
+    "city_name": "夷隅郡御宿町",
+    "status": "empty",
+    "issues": [
+      "empty areas, no warnings"
+    ],
+    "stats": {
+      "area_count": 0,
+      "source_format": "pdf",
+      "source_url": "https://www.town.onjuku.chiba.jp/sub1/6/kannkyoukarenda.html",
+      "warnings": []
+    }
+  },
+  {
+    "city_id": "124630",
+    "city_name": "安房郡鋸南町",
+    "status": "ok",
+    "issues": [],
+    "stats": {
+      "area_count": 2,
+      "source_format": "pdf",
+      "source_url": "https://www.town.kyonan.chiba.jp/soshiki/13/2865.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 2,
+        "non_burnable": 2,
+        "pet_bottles": 2,
+        "bottles": 2,
+        "cans": 2,
+        "paper": 2,
+        "clothing": 2,
+        "hazardous": 2
+      },
+      "burnable_areas": 2,
+      "duplicate_days_count": 0
+    }
+  }
+]

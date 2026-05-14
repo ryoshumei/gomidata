@@ -91,6 +91,28 @@ Deleted and re-extracted 38 cities with fixed code. Results: 25 extracted, 1 ski
 - 6 cities have persistent low area counts — may need different extraction strategy
 - 千葉市 wards (4 of 7) timeout on huge 261-area table — may need chunking
 
+### Validation Round 2 (2026-05-15)
+
+Added `src/utils/validate_chiba.py` — read-only schema validator. Results saved to
+`validation_report.json` and prose summary in `VALIDATION_REPORT.md`.
+
+| Status | Count |
+|--------|------:|
+| OK (passes schema + heuristics) | 43 |
+| EMPTY (areas=0) | 12 |
+| CRITICAL (schema bugs) | 4 |
+| MISSING (no file) | 1 |
+
+Critical:
+- 木更津市 (122068) — 76 duplicate-day schedules, legacy bug pre-dating post-processor fix
+- 鴨川市 (122238) — only burnable waste type
+- 四街道市 (122289), いすみ市 (122386) — multi-PDF area-name collision
+
+Missing:
+- 匝瑳市 (122351) — file deleted in round 1; needs re-crawl + re-extract
+
+See `VALIDATION_REPORT.md` for full fix plan (one commit per fix).
+
 ### Last Updated
 
-2026-04-25 — Re-extraction round 1 complete; 25 improved, 12 empty (need retry), 6 low area counts
+2026-05-15 — Validation round 2: 43 OK, 12 empty, 4 critical, 1 missing. Fix plan in VALIDATION_REPORT.md.
