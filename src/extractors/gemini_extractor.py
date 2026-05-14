@@ -434,6 +434,27 @@ def _validate_and_fix_areas(areas: list[dict], warnings: list[str]) -> list[dict
 
 # --- PDF extraction ---
 
+def _normalise_base_for_relative_resolution(url: str) -> str:
+    """Add a trailing slash when the URL path's last segment has no extension
+    AND no trailing slash. Many municipal sites (e.g. 酒々井町) serve the
+    page at `/docs/2019032200041` (no slash) but the server treats it as
+    a directory — `urljoin('.../2019032200041', 'file_contents/8A.pdf')`
+    drops the last segment and 404s. Treating it as a directory matches
+    browser behaviour.
+    """
+    if not url:
+        return url
+    from urllib.parse import urlparse, urlunparse
+    parts = urlparse(url)
+    path = parts.path
+    if path and not path.endswith("/"):
+        last = path.rsplit("/", 1)[-1]
+        if "." not in last and last:
+            parts = parts._replace(path=path + "/")
+            return urlunparse(parts)
+    return url
+
+
 def _find_pdf_links(html: str, base_url: str) -> list[dict]:
     """Extract PDF links from an HTML page, categorized by type.
 
@@ -450,7 +471,7 @@ def _find_pdf_links(html: str, base_url: str) -> list[dict]:
     if base_tag:
         effective_base = urljoin(base_url, base_tag["href"]) if base_url else base_tag["href"]
     else:
-        effective_base = base_url
+        effective_base = _normalise_base_for_relative_resolution(base_url)
 
     pdfs = []
     for a in soup.find_all("a", href=True):

@@ -1053,17 +1053,22 @@
   {
     "city_id": "123226",
     "city_name": "印旛郡酒々井町",
-    "status": "empty",
-    "issues": [
-      "empty areas; warnings: ['Tried 1 PDFs but extracted no areas']"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
-      "area_count": 0,
+      "area_count": 26,
       "source_format": "pdf",
-      "source_url": "https://www.town.shisui.chiba.jp/docs/2021092800017/",
-      "warnings": [
-        "Tried 1 PDFs but extracted no areas"
-      ]
+      "source_url": "https://www.town.shisui.chiba.jp/docs/2019032200041",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 26,
+        "non_burnable": 26,
+        "bottles": 26,
+        "cans": 26,
+        "hazardous": 26
+      },
+      "burnable_areas": 26,
+      "duplicate_days_count": 0
     }
   },
   {
@@ -1152,15 +1157,21 @@
   {
     "city_id": "124036",
     "city_name": "山武郡九十九里町",
-    "status": "empty",
+    "status": "critical",
     "issues": [
-      "empty areas, no warnings"
+      "only 2 waste type(s) extracted (['burnable', 'pet_bottles']); municipalities typically collect ≥3"
     ],
     "stats": {
-      "area_count": 0,
+      "area_count": 50,
       "source_format": "pdf",
-      "source_url": "https://www.town.kujukuri.chiba.jp/0000008620.html",
-      "warnings": []
+      "source_url": "https://www.town.kujukuri.chiba.jp/0000008915.html",
+      "warnings": [],
+      "waste_types": {
+        "burnable": 50,
+        "pet_bottles": 50
+      },
+      "burnable_areas": 50,
+      "duplicate_days_count": 0
     }
   },
   {
