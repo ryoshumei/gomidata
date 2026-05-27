@@ -37,9 +37,18 @@ def issues_for_schedule(s: dict, area_name: str) -> list[str]:
         issues.append(f"[{area_name}/{wt}] invalid frequency: {freq!r}")
 
     days = s.get("day_of_week")
+    weeks = s.get("week_of_month")
+    dom = s.get("day_of_month")
+    monthly_by_date = freq == "monthly" and dom
+
     if freq == "on_demand":
         if days:
             issues.append(f"[{area_name}/{wt}] on_demand should have null day_of_week")
+    elif monthly_by_date:
+        if days:
+            issues.append(
+                f"[{area_name}/{wt}] monthly+day_of_month should have null day_of_week"
+            )
     else:
         if not days:
             issues.append(f"[{area_name}/{wt}] missing day_of_week for freq={freq}")
@@ -53,17 +62,36 @@ def issues_for_schedule(s: dict, area_name: str) -> list[str]:
                 if len(days) != len(set(days)):
                     issues.append(f"[{area_name}/{wt}] duplicate days: {days}")
 
-    weeks = s.get("week_of_month")
     if freq == "monthly":
-        if not weeks:
-            issues.append(f"[{area_name}/{wt}] monthly but no week_of_month")
-        elif isinstance(weeks, list):
+        # Must have EITHER week_of_month (Nth weekday) OR day_of_month
+        if not weeks and not dom:
+            issues.append(
+                f"[{area_name}/{wt}] monthly but no week_of_month or day_of_month"
+            )
+        if weeks and dom:
+            issues.append(
+                f"[{area_name}/{wt}] monthly has both week_of_month and "
+                f"day_of_month — must be one or the other"
+            )
+        if weeks and isinstance(weeks, list):
             for w in weeks:
                 if not isinstance(w, int) or not (1 <= w <= 5):
                     issues.append(f"[{area_name}/{wt}] invalid week_of_month: {w!r}")
     else:
         if weeks not in (None, []):
             issues.append(f"[{area_name}/{wt}] {freq} should not have week_of_month: {weeks}")
+        if dom not in (None, []):
+            issues.append(f"[{area_name}/{wt}] {freq} should not have day_of_month: {dom}")
+
+    if dom is not None and dom != []:
+        if not isinstance(dom, list):
+            issues.append(f"[{area_name}/{wt}] day_of_month not a list: {dom!r}")
+        else:
+            for d in dom:
+                if not isinstance(d, int) or not (1 <= d <= 31):
+                    issues.append(f"[{area_name}/{wt}] invalid day_of_month: {d!r}")
+            if len(dom) != len(set(dom)):
+                issues.append(f"[{area_name}/{wt}] duplicate day_of_month: {dom}")
 
     return issues
 

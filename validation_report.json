@@ -977,17 +977,17 @@
   {
     "city_id": "122351",
     "city_name": "匝瑳市",
-    "status": "warnings",
-    "issues": [
-      "limited source: only 1 waste type(s) extracted (['burnable'])"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
       "area_count": 14,
-      "source_format": "pdf",
+      "source_format": "pdf_table",
       "source_url": "https://www.city.sosa.lg.jp/page/page003574.html",
       "warnings": [],
       "waste_types": {
-        "burnable": 14
+        "burnable": 14,
+        "recyclable": 14,
+        "hazardous": 14
       },
       "burnable_areas": 14,
       "duplicate_days_count": 0

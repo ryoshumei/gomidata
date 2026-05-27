@@ -124,19 +124,31 @@ See `VALIDATION_REPORT.md` for full fix plan (one commit per fix).
 | ef48553 | `<base href>` + Imperva 404→Playwright (御宿/市川) | 53 OK / 6 empty / 1 missing |
 | b564797 | Directory-URL urljoin + refresh_source.py (九十九里/酒々井/御宿) | 54 OK / 4 empty / 1 critical / 1 missing |
 | 3195440 | classify_source for HTML-only refreshed pages (流山/八街/匝瑳/多古) | 57 OK / 1 empty / 2 critical |
-| 986471d | 野田市 SPA extractor + softer validator severity | **58 OK / 2 warnings / 0 critical / 0 empty / 0 missing** |
+| 986471d | 野田市 SPA extractor + softer validator severity | 58 OK / 2 warnings / 0 critical / 0 empty / 0 missing |
+| (next)  | Schema `day_of_month` + 匝瑳市 pdfplumber extractor | **59 OK / 1 warning / 0 critical / 0 empty / 0 missing** |
 
-### Remaining Known Limitations
+### Schema Extension — `day_of_month` (2026-05-28)
+
+Added optional `day_of_month: list[int]` field to schedule entries to
+represent monthly-by-calendar-date collection (e.g., "毎月 8日・22日").
+Validator now accepts `monthly` frequency with **either** `week_of_month`
+(Nth weekday-of-month) **or** `day_of_month` (specific dates), but not
+both. Backward compatible — all existing schedules continue to validate.
+
+New extractor `src/extractors/sosa_pdf_extractor.py` uses **pdfplumber**
+(no LLM, deterministic) to parse the 匝瑳市 "地区別一覧" PDF and emit
+14 areas × 3 waste types (burnable/recyclable/hazardous).
+
+### Remaining Known Limitation
 
 | City | ID | Issue | Why |
 |------|----|-------|----|
-| 匝瑳市 | 122351 | Only burnable extracted | Source PDF lists 資源(有害)ごみ as calendar day-of-month (e.g. "13日・27日") — our schema models day_of_week only |
-| 九十九里町 | 124036 | Only burnable + pet_bottles | FY2026 calendar PDF only lists these two types; other types in separate sorting guide |
+| 九十九里町 | 124036 | Only burnable + pet_bottles | FY2026 calendar PDF only lists these two types; other types in a separate sorting guide |
 
-Both have structurally valid data matching the source — flagged as
-`warnings` (limited source), not bugs.
+Data structurally valid and faithful to the source — flagged as a
+`warning` (limited source), not a bug.
 
 ### Last Updated
 
-2026-05-15 — All 60 Chiba cities have schedule data. 58 fully OK,
-2 with limited source warnings.
+2026-05-28 — 59 fully OK, 1 limited-source warning. Schema extended
+with `day_of_month`; 匝瑳市 now extracts all 3 waste categories.

@@ -1,7 +1,7 @@
 # Chiba Validation Report
 
 Generated: 2026-05-15
-Last updated: 2026-05-15 (Round 3 — after iterative code fixes 5e8e21a–986471d)
+Last updated: 2026-05-28 (Round 4 — after `day_of_month` schema extension)
 
 Run `python3 src/utils/validate_chiba.py` to regenerate `validation_report.json`.
 
@@ -9,26 +9,38 @@ Run `python3 src/utils/validate_chiba.py` to regenerate `validation_report.json`
 
 | Status | Count |
 |--------|------:|
-| ✅ OK | **58** |
-| ⚠️ warnings (limited source) | 2 |
+| ✅ OK | **59** |
+| ⚠️ warnings (limited source) | 1 |
 | critical / empty / missing | 0 |
 
 | City | ID | Outstanding issue |
 |------|----|------|
-| 匝瑳市 | 122351 | Source PDF expresses recyclable/hazardous as calendar dates (13日・27日 of month) — outside our day-of-week schema |
 | 九十九里町 | 124036 | FY2026 calendar PDF only lists burnable + pet_bottles |
 
-Both records are structurally valid and faithful to the source; the
-warning is purely about coverage breadth.
+Structurally valid and faithful to source; the warning is purely about
+coverage breadth (other waste types live in a separate sorting guide,
+not the calendar PDF).
 
-## History (initial → final)
+## Schema Extension — `day_of_month` (Round 4)
 
-| Status | Initial | Final |
-|--------|------:|------:|
-| ✅ OK | 43 | 58 |
-| ⚠️ CRITICAL | 4 | 0 |
-| 🟡 EMPTY | 12 | 0 |
-| 🔴 MISSING | 1 | 0 |
+匝瑳市's "ごみ収集日地区別一覧" PDF expresses 資源(有害)ごみ collection as
+calendar dates (e.g., "8日・22日" = the 8th and 22nd of every month).
+The previous schema only supported `day_of_week` and `week_of_month`, so
+this data couldn't be represented and the city stayed flagged.
+
+Round 4 added an optional `day_of_month: list[int]` field. A `monthly`
+schedule may now carry **either** `week_of_month` **or** `day_of_month`,
+but not both. New extractor `src/extractors/sosa_pdf_extractor.py` uses
+pdfplumber (deterministic, no LLM) to parse the 14-row table.
+
+## History (initial → current)
+
+| Status | Initial | After Round 3 | After Round 4 |
+|--------|------:|------:|------:|
+| ✅ OK | 43 | 58 | **59** |
+| ⚠️ CRITICAL | 4 | 0 | 0 |
+| 🟡 EMPTY | 12 | 0 | 0 |
+| 🔴 MISSING | 1 | 0 | 0 |
 
 ## Initial Issues (snapshot)
 
