@@ -1197,18 +1197,20 @@
   {
     "city_id": "124036",
     "city_name": "山武郡九十九里町",
-    "status": "warnings",
-    "issues": [
-      "limited source: only 2 waste type(s) extracted (['burnable', 'pet_bottles'])"
-    ],
+    "status": "ok",
+    "issues": [],
     "stats": {
       "area_count": 50,
-      "source_format": "pdf",
+      "source_format": "pdf_calendar",
       "source_url": "https://www.town.kujukuri.chiba.jp/0000008915.html",
       "warnings": [],
       "waste_types": {
         "burnable": 50,
-        "pet_bottles": 50
+        "pet_bottles": 50,
+        "cans": 50,
+        "bottles": 50,
+        "metals": 50,
+        "hazardous": 100
       },
       "burnable_areas": 50,
       "duplicate_days_count": 0

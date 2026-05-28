@@ -125,7 +125,8 @@ See `VALIDATION_REPORT.md` for full fix plan (one commit per fix).
 | b564797 | Directory-URL urljoin + refresh_source.py (九十九里/酒々井/御宿) | 54 OK / 4 empty / 1 critical / 1 missing |
 | 3195440 | classify_source for HTML-only refreshed pages (流山/八街/匝瑳/多古) | 57 OK / 1 empty / 2 critical |
 | 986471d | 野田市 SPA extractor + softer validator severity | 58 OK / 2 warnings / 0 critical / 0 empty / 0 missing |
-| (next)  | Schema `day_of_month` + 匝瑳市 pdfplumber extractor | **59 OK / 1 warning / 0 critical / 0 empty / 0 missing** |
+| e4faebc | Schema `day_of_month` + 匝瑳市 pdfplumber extractor | 59 OK / 1 warning / 0 critical / 0 empty / 0 missing |
+| (next)  | Schema `collection_dates` + 九十九里町 multimodal extractor | **60 OK / 0 warnings / 0 critical / 0 empty / 0 missing** |
 
 ### Schema Extension — `day_of_month` (2026-05-28)
 
@@ -139,16 +140,28 @@ New extractor `src/extractors/sosa_pdf_extractor.py` uses **pdfplumber**
 (no LLM, deterministic) to parse the 匝瑳市 "地区別一覧" PDF and emit
 14 areas × 3 waste types (burnable/recyclable/hazardous).
 
-### Remaining Known Limitation
+### Schema Extension — `collection_dates` (2026-05-29)
 
-| City | ID | Issue | Why |
-|------|----|-------|----|
-| 九十九里町 | 124036 | Only burnable + pet_bottles | FY2026 calendar PDF only lists these two types; other types in a separate sorting guide |
+Added optional `collection_dates: list[ISO date]` for schedules whose
+collection day is an explicit calendar date rather than a recurring
+pattern. Also added the `scheduled` frequency (for twice-yearly pickups
+with no simple cadence). A schedule now uses exactly one timing mode:
+`day_of_week` (+`week_of_month`) | `day_of_month` | `collection_dates` |
+`on_demand`. Backward compatible.
 
-Data structurally valid and faithful to the source — flagged as a
-`warning` (limited source), not a bug.
+New extractor `src/extractors/kujukuri_extractor.py` handles 九十九里町's
+vector calendar PDF (no text layer). Gemini multimodal reads the dense
+numeric tables; the script does all date logic and area assembly
+deterministically. The 8-zone カン/ビン類/金属類 numbers (288 cells) were
+spot-checked against the published calendar — all matched. 九十九里町 went
+from 2 → 6 waste types (burnable, pet_bottles, cans, bottles, metals,
+hazardous[batteries+fluorescent]).
+
+### Remaining Known Limitations
+
+None. All 60 Chiba cities pass schema + heuristic validation.
 
 ### Last Updated
 
-2026-05-28 — 59 fully OK, 1 limited-source warning. Schema extended
-with `day_of_month`; 匝瑳市 now extracts all 3 waste categories.
+2026-05-29 — **60/60 Chiba cities fully OK**, no warnings. Schema now
+supports `collection_dates`; 九十九里町 extracts all 6 waste categories.

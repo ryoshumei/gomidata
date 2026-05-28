@@ -6,6 +6,7 @@ Does NOT modify any data files.
 
 from __future__ import annotations
 
+import datetime
 import json
 import sys
 from collections import Counter
@@ -16,7 +17,9 @@ CITIES_FILE = DATA_DIR / "cities" / "chiba.json"
 SCHEDULES_DIR = DATA_DIR / "schedules" / "chiba"
 
 VALID_DAYS = {"月", "火", "水", "木", "金", "土", "日"}
-VALID_FREQ = {"weekly", "biweekly", "monthly", "on_demand"}
+# "scheduled" = collected on explicit calendar dates (collection_dates) with no
+# simple recurring cadence (e.g. twice-yearly battery/fluorescent collection).
+VALID_FREQ = {"weekly", "biweekly", "monthly", "on_demand", "scheduled"}
 KNOWN_WASTE_TYPES = {
     "burnable", "non_burnable", "recyclable", "pet_bottles", "valuables",
     "bottles", "cans", "paper", "clothing", "plastic", "metals",
@@ -39,16 +42,33 @@ def issues_for_schedule(s: dict, area_name: str) -> list[str]:
     days = s.get("day_of_week")
     weeks = s.get("week_of_month")
     dom = s.get("day_of_month")
-    monthly_by_date = freq == "monthly" and dom
+    dates = s.get("collection_dates")
+
+    # A schedule expresses its timing through exactly ONE of these modes:
+    #   on_demand                 — no timing fields
+    #   collection_dates          — explicit calendar dates (FY-specific)
+    #   day_of_month              — recurring calendar day(s) every month
+    #   day_of_week (+week_of_month) — recurring weekday pattern
+    has_dates = bool(dates)
+    has_dom = bool(dom)
 
     if freq == "on_demand":
         if days:
             issues.append(f"[{area_name}/{wt}] on_demand should have null day_of_week")
-    elif monthly_by_date:
+    elif has_dates:
         if days:
+            issues.append(f"[{area_name}/{wt}] collection_dates should have null day_of_week")
+        if freq not in ("monthly", "scheduled"):
             issues.append(
-                f"[{area_name}/{wt}] monthly+day_of_month should have null day_of_week"
+                f"[{area_name}/{wt}] collection_dates expects monthly/scheduled freq, got {freq!r}"
             )
+    elif has_dom:
+        if freq != "monthly":
+            issues.append(f"[{area_name}/{wt}] day_of_month expects monthly freq, got {freq!r}")
+        if days:
+            issues.append(f"[{area_name}/{wt}] day_of_month should have null day_of_week")
+    elif freq == "scheduled":
+        issues.append(f"[{area_name}/{wt}] scheduled freq requires collection_dates")
     else:
         if not days:
             issues.append(f"[{area_name}/{wt}] missing day_of_week for freq={freq}")
@@ -62,28 +82,22 @@ def issues_for_schedule(s: dict, area_name: str) -> list[str]:
                 if len(days) != len(set(days)):
                     issues.append(f"[{area_name}/{wt}] duplicate days: {days}")
 
-    if freq == "monthly":
-        # Must have EITHER week_of_month (Nth weekday) OR day_of_month
-        if not weeks and not dom:
-            issues.append(
-                f"[{area_name}/{wt}] monthly but no week_of_month or day_of_month"
-            )
-        if weeks and dom:
-            issues.append(
-                f"[{area_name}/{wt}] monthly has both week_of_month and "
-                f"day_of_month — must be one or the other"
-            )
-        if weeks and isinstance(weeks, list):
+    # week_of_month only valid for monthly + weekday pattern (not dates/dom)
+    if freq == "monthly" and not has_dates and not has_dom:
+        if not weeks:
+            issues.append(f"[{area_name}/{wt}] monthly but no week_of_month, day_of_month or collection_dates")
+        elif isinstance(weeks, list):
             for w in weeks:
                 if not isinstance(w, int) or not (1 <= w <= 5):
                     issues.append(f"[{area_name}/{wt}] invalid week_of_month: {w!r}")
     else:
         if weeks not in (None, []):
             issues.append(f"[{area_name}/{wt}] {freq} should not have week_of_month: {weeks}")
-        if dom not in (None, []):
-            issues.append(f"[{area_name}/{wt}] {freq} should not have day_of_month: {dom}")
 
-    if dom is not None and dom != []:
+    # day_of_month validation
+    if has_dom:
+        if has_dates:
+            issues.append(f"[{area_name}/{wt}] cannot have both day_of_month and collection_dates")
         if not isinstance(dom, list):
             issues.append(f"[{area_name}/{wt}] day_of_month not a list: {dom!r}")
         else:
@@ -92,6 +106,19 @@ def issues_for_schedule(s: dict, area_name: str) -> list[str]:
                     issues.append(f"[{area_name}/{wt}] invalid day_of_month: {d!r}")
             if len(dom) != len(set(dom)):
                 issues.append(f"[{area_name}/{wt}] duplicate day_of_month: {dom}")
+
+    # collection_dates validation — explicit ISO YYYY-MM-DD dates
+    if has_dates:
+        if not isinstance(dates, list):
+            issues.append(f"[{area_name}/{wt}] collection_dates not a list: {dates!r}")
+        else:
+            for ds in dates:
+                try:
+                    datetime.date.fromisoformat(ds)
+                except (ValueError, TypeError):
+                    issues.append(f"[{area_name}/{wt}] invalid collection_date: {ds!r}")
+            if len(dates) != len(set(dates)):
+                issues.append(f"[{area_name}/{wt}] duplicate collection_dates")
 
     return issues
 

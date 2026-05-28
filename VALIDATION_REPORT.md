@@ -1,7 +1,7 @@
 # Chiba Validation Report
 
 Generated: 2026-05-15
-Last updated: 2026-05-28 (Round 4 — after `day_of_month` schema extension)
+Last updated: 2026-05-29 (Round 5 — after `collection_dates` schema extension)
 
 Run `python3 src/utils/validate_chiba.py` to regenerate `validation_report.json`.
 
@@ -9,17 +9,25 @@ Run `python3 src/utils/validate_chiba.py` to regenerate `validation_report.json`
 
 | Status | Count |
 |--------|------:|
-| ✅ OK | **59** |
-| ⚠️ warnings (limited source) | 1 |
-| critical / empty / missing | 0 |
+| ✅ OK | **60** |
+| warnings / critical / empty / missing | 0 |
 
-| City | ID | Outstanding issue |
-|------|----|------|
-| 九十九里町 | 124036 | FY2026 calendar PDF only lists burnable + pet_bottles |
+All 60 Chiba municipalities pass schema + heuristic validation. No
+outstanding issues.
 
-Structurally valid and faithful to source; the warning is purely about
-coverage breadth (other waste types live in a separate sorting guide,
-not the calendar PDF).
+## Schema Extension — `collection_dates` (Round 5)
+
+九十九里町's FY calendar PDF turned out to carry far more than the
+burnable + pet_bottles we had: カン/ビン類/金属類 (8 zones, per-month
+dates that drift across weekdays) plus 電池類/蛍光灯類 (twice-yearly fixed
+dates). None of these fit a recurring weekday/`day_of_month` pattern, so
+Round 5 added an explicit `collection_dates: list[ISO date]` field and a
+`scheduled` frequency.
+
+The PDF has no text layer (vector outlines), so `src/extractors/
+kujukuri_extractor.py` uses Gemini multimodal for perception and does all
+date/assembly logic in code. The 288 extracted numbers were verified
+against the published calendar (0 mismatches). 九十九里町: 2 → 6 waste types.
 
 ## Schema Extension — `day_of_month` (Round 4)
 
@@ -35,12 +43,13 @@ pdfplumber (deterministic, no LLM) to parse the 14-row table.
 
 ## History (initial → current)
 
-| Status | Initial | After Round 3 | After Round 4 |
-|--------|------:|------:|------:|
-| ✅ OK | 43 | 58 | **59** |
-| ⚠️ CRITICAL | 4 | 0 | 0 |
-| 🟡 EMPTY | 12 | 0 | 0 |
-| 🔴 MISSING | 1 | 0 | 0 |
+| Status | Initial | After Round 3 | After Round 4 | After Round 5 |
+|--------|------:|------:|------:|------:|
+| ✅ OK | 43 | 58 | 59 | **60** |
+| ⚠️ warnings | — | 2 | 1 | 0 |
+| ⚠️ CRITICAL | 4 | 0 | 0 | 0 |
+| 🟡 EMPTY | 12 | 0 | 0 | 0 |
+| 🔴 MISSING | 1 | 0 | 0 | 0 |
 
 ## Initial Issues (snapshot)
 
